@@ -58,7 +58,7 @@
 				<div class="row">
 					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
 						<div class="logo_container">
-							<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+							<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
@@ -110,7 +110,7 @@
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="logo menu_logo"><a href="#"><img src="assets/client/images/logo.png" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="index.html">home</a></li>
 				<li class="menu_item"><a href="#">about us</a></li>
@@ -124,7 +124,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/about_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">about us</div>
 		</div>
@@ -136,7 +136,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<div class="intro_image"><img src="images/intro.png" alt=""></div>
+					<div class="intro_image"><img src="assets/client/images/intro.png" alt=""></div>
 				</div>
 				<div class="col-lg-5">
 					<div class="intro_content">
@@ -195,7 +195,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_1.png" alt="">
+									<img src="assets/client/images/stats_1.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">3527</div>
@@ -208,7 +208,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_2.png" alt="">
+									<img src="assets/client/images/stats_2.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">768</div>
@@ -224,7 +224,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_2.png" alt="">
+									<img src="assets/client/images/stats_2.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">145</div>
@@ -237,7 +237,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_3.png" alt="">
+									<img src="assets/client/images/stats_3.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">11546</div>
@@ -253,7 +253,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_3.png" alt="">
+									<img src="assets/client/images/stats_3.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">9321</div>
@@ -266,7 +266,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_4.png" alt="">
+									<img src="assets/client/images/stats_4.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">3729</div>
@@ -282,7 +282,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_4.png" alt="">
+									<img src="assets/client/images/stats_4.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">17429</div>
@@ -304,7 +304,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="add_container">
-						<div class="add_background" style="background-image:url(images/add.jpg)"></div>
+						<div class="add_background" style="background-image:url(assets/client/images/add.jpg)"></div>
 						<div class="add_content">
 							<h1 class="add_title">thailand</h1>
 							<div class="add_subtitle">From <span>$999</span></div>
@@ -325,7 +325,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="images/milestone_1.png" alt=""></div>
+						<div class="milestone_icon"><img src="assets/client/images/milestone_1.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="255">0</div>
 						<div class="milestone_text">Clients</div>
 					</div>
@@ -334,7 +334,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="images/milestone_2.png" alt=""></div>
+						<div class="milestone_icon"><img src="assets/client/images/milestone_2.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="1176">0</div>
 						<div class="milestone_text">Projects</div>
 					</div>
@@ -343,7 +343,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="images/milestone_3.png" alt=""></div>
+						<div class="milestone_icon"><img src="assets/client/images/milestone_3.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="39">0</div>
 						<div class="milestone_text">Countries</div>
 					</div>
@@ -352,7 +352,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="images/milestone_4.png" alt=""></div>
+						<div class="milestone_icon"><img src="assets/client/images/milestone_4.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="127">0</div>
 						<div class="milestone_text">Coffees</div>
 					</div>
@@ -373,7 +373,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
@@ -395,7 +395,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -404,7 +404,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -413,7 +413,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -450,19 +450,19 @@
 						<div class="footer_content footer_contact">
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/placeholder.svg" alt=""></div></div>
 									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/phone-call.svg" alt=""></div></div>
 									<div class="contact_info_text">2556-808-8613</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/message.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/planet-earth.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 								</li>
 							</ul>
@@ -505,18 +505,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/styles/bootstrap4/popper.js"></script>
-<script src="assets/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/plugins/easing/easing.js"></script>
-<script src="assets/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="assets/js/about_custom.js"></script>
+<script src="assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="assets/client/styles/bootstrap4/popper.js"></script>
+<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/client/plugins/greensock/TweenMax.min.js"></script>
+<script src="assets/client/plugins/greensock/TimelineMax.min.js"></script>
+<script src="assets/client/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="assets/client/plugins/greensock/animation.gsap.min.js"></script>
+<script src="assets/client/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="assets/client/plugins/easing/easing.js"></script>
+<script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="assets/client/js/about_custom.js"></script>
 
 </body>
 
