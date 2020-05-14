@@ -6,11 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="styles/blog_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/blog_responsive.css">
+<base href="/">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="assets/client/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/blog_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/blog_responsive.css">
 </head>
 
 <body>
@@ -106,7 +107,7 @@
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="logo menu_logo"><a href="#"><img src="assets/client/images/logo.png" alt=""></a></div>
 			<ul>
 				<li class="menu_item"><a href="index.html">home</a></li>
 				<li class="menu_item"><a href="about.html">about us</a></li>
@@ -142,7 +143,7 @@
 
 						<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
+								<img src="assets/client/images/blog_1.jpg" alt="https://unsplash.com/@anniespratt">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
 									<div class="blog_post_day">01</div>
 									<div class="blog_post_month">Dec, 2017</div>
@@ -166,7 +167,7 @@
 
 						<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="images/blog_2.jpg" alt="https://unsplash.com/@tschax">
+								<img src="assets/client/images/blog_2.jpg" alt="https://unsplash.com/@tschax">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
 									<div class="blog_post_day">01</div>
 									<div class="blog_post_month">Dec, 2017</div>
@@ -190,7 +191,7 @@
 
 						<div class="blog_post">
 							<div class="blog_post_image">
-								<img src="images/blog_3.jpg" alt="https://unsplash.com/@stilclassics">
+								<img src="assets/client/images/blog_3.jpg" alt="https://unsplash.com/@stilclassics">
 								<div class="blog_post_date d-flex flex-column align-items-center justify-content-center">
 									<div class="blog_post_day">01</div>
 									<div class="blog_post_month">Dec, 2017</div>
@@ -293,7 +294,7 @@
 								<!-- Latest Post -->
 								<li class="latest_post clearfix">
 									<div class="latest_post_image">
-										<a href="#"><img src="images/latest_1.jpg" alt=""></a>
+										<a href="#"><img src="assets/client/images/latest_1.jpg" alt=""></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">A simple blog post</a></div>
@@ -307,7 +308,7 @@
 								<!-- Latest Post -->
 								<li class="latest_post clearfix">
 									<div class="latest_post_image">
-										<a href="#"><img src="images/latest_2.jpg" alt=""></a>
+										<a href="#"><img src="assets/client/images/latest_2.jpg" alt=""></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Dream destination for you</a></div>
@@ -321,7 +322,7 @@
 								<!-- Latest Post -->
 								<li class="latest_post clearfix">
 									<div class="latest_post_image">
-										<a href="#"><img src="images/latest_3.jpg" alt=""></a>
+										<a href="#"><img src="assets/client/images/latest_3.jpg" alt=""></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">Tips to travel light</a></div>
@@ -335,7 +336,7 @@
 								<!-- Latest Post -->
 								<li class="latest_post clearfix">
 									<div class="latest_post_image">
-										<a href="#"><img src="images/latest_4.jpg" alt=""></a>
+										<a href="#"><img src="assets/client/images/latest_4.jpg" alt=""></a>
 									</div>
 									<div class="latest_post_content">
 										<div class="latest_post_title trans_200"><a href="#">How to pick your vacation</a></div>
@@ -357,32 +358,32 @@
 							<ul class="gallery_items d-flex flex-row align-items-start justify-content-between flex-wrap">
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?ixlib=rb-0.3.5&s=c0996cd16eda8c6f54c398de02d03cd3&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_1.jpg" alt="https://unsplash.com/@mantashesthaven">
+										<img src="assets/client/images/gallery_1.jpg" alt="https://unsplash.com/@mantashesthaven">
 									</a>
 								</li>
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1495162048225-6b3b37b8a69e?ixlib=rb-0.3.5&s=861dd3c7b9d3e735d7fd7cbb1eefed64&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_2.jpg" alt="https://unsplash.com/@kensuarez">
+										<img src="assets/client/images/gallery_2.jpg" alt="https://unsplash.com/@kensuarez">
 									</a>
 								</li>
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1502646275263-04be86afa386?ixlib=rb-0.3.5&s=682a41d7d9bf6e3feabc73a5fdd61dd2&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_3.jpg" alt="https://unsplash.com/@jakobowens1">
+										<img src="assets/client/images/gallery_3.jpg" alt="https://unsplash.com/@jakobowens1">
 									</a>
 								</li>
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1484820301304-0b43512779dc?ixlib=rb-0.3.5&s=7a3393e9f507fb4718c36337a8014c52&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_4.jpg" alt="https://unsplash.com/@seefromthesky">
+										<img src="assets/client/images/gallery_4.jpg" alt="https://unsplash.com/@seefromthesky">
 									</a>
 								</li>
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1490380169520-0a4b88d52565?ixlib=rb-0.3.5&s=7e6b68b1911fb4ffeea4c0750b8a5269&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_5.jpg" alt="https://unsplash.com/@deannaritchie">
+										<img src="assets/client/images/gallery_5.jpg" alt="https://unsplash.com/@deannaritchie">
 									</a>
 								</li>
 								<li class="gallery_item">
 									<a class="colorbox" href="https://images.unsplash.com/photo-1504434026032-a7e440a30b68?ixlib=rb-0.3.5&s=2cc35bf903b78ba4f7f7ed69bc2abe3f&auto=format&fit=crop&w=720&q=80">
-										<img src="images/gallery_6.jpg" alt="https://unsplash.com/@benobro">
+										<img src="assets/client/images/gallery_6.jpg" alt="https://unsplash.com/@benobro">
 									</a>
 								</li>
 							</ul>
@@ -405,7 +406,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
@@ -427,7 +428,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -436,7 +437,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -445,7 +446,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -482,19 +483,19 @@
 						<div class="footer_content footer_contact">
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/placeholder.svg" alt=""></div></div>
 									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/phone-call.svg" alt=""></div></div>
 									<div class="contact_info_text">2556-808-8613</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/message.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/planet-earth.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 								</li>
 							</ul>
@@ -537,12 +538,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/blog_custom.js"></script>
+<script src="assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="assets/client/styles/bootstrap4/popper.js"></script>
+<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/client/plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="assets/client/js/blog_custom.js"></script>
 
 </body>
 
