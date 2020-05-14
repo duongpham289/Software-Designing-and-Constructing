@@ -6,20 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<base href="/">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="styles/single_listing_styles.css">
-<link rel="stylesheet" type="text/css" href="styles/single_listing_responsive.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/single_listing_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/single_listing_responsive.css">
 </head>
 
 <body>
 
 <div class="super_container">
-	
+
 	<!-- Header -->
 
 	<header class="header">
@@ -47,7 +48,7 @@
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 
 		<!-- Main Navigation -->
@@ -61,11 +62,11 @@
 						</div>
 						<div class="main_nav_container ml-auto">
 							<ul class="main_nav_list">
-								<li class="main_nav_item"><a href="index.html">home</a></li>
-								<li class="main_nav_item"><a href="about.html">about us</a></li>
-								<li class="main_nav_item"><a href="offers.html">offers</a></li>
-								<li class="main_nav_item"><a href="blog.html">news</a></li>
-								<li class="main_nav_item"><a href="contact.html">contact</a></li>
+								<li class="main_nav_item"><a href="assets/client/index.html">home</a></li>
+								<li class="main_nav_item"><a href="assets/client/about.html">about us</a></li>
+								<li class="main_nav_item"><a href="assets/client/offers.html">offers</a></li>
+								<li class="main_nav_item"><a href="assets/client/blog.html">news</a></li>
+								<li class="main_nav_item"><a href="assets/client/contact.html">contact</a></li>
 							</ul>
 						</div>
 						<div class="content_search ml-lg-0 ml-auto">
@@ -95,13 +96,13 @@
 						<form id="search_form" class="search_form bez_1">
 							<input type="search" class="search_content_input bez_1">
 						</form>
-						
+
 						<div class="hamburger">
 							<i class="fa fa-bars trans_200"></i>
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</nav>
 
 	</header>
@@ -109,13 +110,13 @@
 	<div class="menu trans_500">
 		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
 			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="logo menu_logo"><a href="#"><img src="assets/client/images/logo.png" alt=""></a></div>
 			<ul>
-				<li class="menu_item"><a href="index.html">home</a></li>
-				<li class="menu_item"><a href="about.html">about us</a></li>
-				<li class="menu_item"><a href="offers.html">offers</a></li>
-				<li class="menu_item"><a href="blog.html">news</a></li>
-				<li class="menu_item"><a href="contact.html">contact</a></li>
+				<li class="menu_item"><a href="assets/client/index.html">home</a></li>
+				<li class="menu_item"><a href="assets/client/about.html">about us</a></li>
+				<li class="menu_item"><a href="assets/client/offers.html">offers</a></li>
+				<li class="menu_item"><a href="assets/client/blog.html">news</a></li>
+				<li class="menu_item"><a href="assets/client/contact.html">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -123,7 +124,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/single_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/single_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">the offers</div>
 		</div>
@@ -139,7 +140,7 @@
 			<div class="search_inner">
 
 				<!-- Search Contents -->
-				
+
 				<div class="container fill_height no-padding">
 					<div class="row fill_height no-margin">
 						<div class="col fill_height no-padding">
@@ -154,7 +155,7 @@
 									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
 									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
 									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
-								</div>		
+								</div>
 							</div>
 
 							<!-- Search Panel -->
@@ -195,7 +196,7 @@
 												<div class="clearfix">
 													<input type="checkbox" id="search_extras_1" class="search_extras_cb">
 													<label for="search_extras_1">Pet Friendly</label>
-												</div>	
+												</div>
 											</li>
 											<li class="search_extras_item">
 												<div class="clearfix">
@@ -250,7 +251,7 @@
 												<div class="clearfix">
 													<input type="checkbox" id="more_options_1" class="search_extras_cb">
 													<label for="more_options_1">Pet Friendly</label>
-												</div>	
+												</div>
 											</li>
 											<li class="more_options_item">
 												<div class="clearfix">
@@ -445,8 +446,8 @@
 							</div>
 						</div>
 					</div>
-				</div>	
-			</div>	
+				</div>
+			</div>
 		</div>
 
 		<!-- Single Listing -->
@@ -455,7 +456,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="single_listing">
-						
+
 						<!-- Hotel Info -->
 
 						<div class="hotel_info">
@@ -484,7 +485,7 @@
 							<!-- Listing Image -->
 
 							<div class="hotel_image">
-								<img src="images/listing_hotel.jpg" alt="">
+								<img src="assets/client/images/listing_hotel.jpg" alt="">
 								<div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
 									<div class="hotel_review">
 										<div class="hotel_review_content">
@@ -579,11 +580,11 @@
 											<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 											M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 											C22.545,2,26,5.541,26,9.909V23.091z"/>
-											<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+											<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
 											11.042,18.219 "/>
 										</svg>
 									</div>
-									
+
 									<!-- Hotel Slider Nav - Next -->
 									<div class="hotel_slider_nav hotel_slider_next">
 										<svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -597,7 +598,7 @@
 										<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 										M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 										C22.545,2,26,5.541,26,9.909V23.091z"/>
-										<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+										<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
 										17.046,15.554 "/>
 										</svg>
 									</div>
@@ -615,15 +616,15 @@
 
 							<div class="hotel_info_tags">
 								<ul class="hotel_icons_list">
-									<li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
 								</ul>
 							</div>
 
 						</div>
-						
+
 						<!-- Rooms -->
 
 						<div class="rooms">
@@ -634,7 +635,7 @@
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
+										<div class="room_image"><img src="assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
@@ -649,7 +650,7 @@
 											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
-								</div>	
+								</div>
 							</div>
 
 							<!-- Room -->
@@ -658,7 +659,7 @@
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
+										<div class="room_image"><img src="assets/client/images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
@@ -673,7 +674,7 @@
 											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
-								</div>	
+								</div>
 							</div>
 
 						</div>
@@ -689,7 +690,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="images/review_1.jpg" alt="https://unsplash.com/@saaout">
+												<img src="assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -713,7 +714,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="images/review_2.jpg" alt="Image by Andrew Robles">
+												<img src="assets/client/images/review_2.jpg" alt="Image by Andrew Robles">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -741,7 +742,7 @@
 							<div class="location_on_map_title">location on map</div>
 
 							<!-- Google Map -->
-		
+
 							<div class="travelix_map">
 								<div id="google_map" class="google_map">
 									<div class="map_container">
@@ -754,7 +755,7 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<!-- Footer -->
@@ -768,7 +769,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
@@ -787,19 +788,19 @@
 					<div class="footer_col">
 						<div class="footer_title">blog posts</div>
 						<div class="footer_content footer_blog">
-							
+
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
 								</div>
 							</div>
-							
+
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -808,7 +809,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -845,19 +846,19 @@
 						<div class="footer_content footer_contact">
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/placeholder.svg" alt=""></div></div>
 									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/phone-call.svg" alt=""></div></div>
 									<div class="contact_info_text">2556-808-8613</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/message.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/planet-earth.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 								</li>
 							</ul>
@@ -900,15 +901,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/single_listing_custom.js"></script>
+<script src="assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="assets/client/styles/bootstrap4/popper.js"></script>
+<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/client/plugins/easing/easing.js"></script>
+<script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="assets/client/plugins/colorbox/jquery.colorbox-min.js"></script>
+<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="assets/client/https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="assets/client/js/single_listing_custom.js"></script>
 
 </body>
 
