@@ -6,11 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Travelix Project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<base href="/">
+<link rel="stylesheet" type="text/css" href="assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
@@ -18,7 +19,7 @@
 <body>
 
 <div class="super_container">
-	
+
 	<!-- Header -->
 
 	<header class="header">
@@ -46,7 +47,7 @@
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 
 		<!-- Main Navigation -->
@@ -100,7 +101,7 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</nav>
 
 	</header>
@@ -122,11 +123,11 @@
 	<!-- Home -->
 
 	<div class="home">
-		
+
 		<!-- Home Slider -->
 
 		<div class="home_slider_container">
-			
+
 			<div class="owl-carousel owl-theme home_slider">
 
 				<!-- Slider Item -->
@@ -170,7 +171,7 @@
 				</div>
 
 			</div>
-			
+
 			<!-- Home Slider Nav - Prev -->
 			<div class="home_slider_nav home_slider_prev">
 				<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -184,11 +185,11 @@
 					<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 					M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 					C22.545,2,26,5.541,26,9.909V23.091z"/>
-					<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+					<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
 					11.042,18.219 "/>
 				</svg>
 			</div>
-			
+
 			<!-- Home Slider Nav - Next -->
 			<div class="home_slider_nav home_slider_next">
 				<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -202,7 +203,7 @@
 				<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 				M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 				C22.545,2,26,5.541,26,9.909V23.091z"/>
-				<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+				<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
 				17.046,15.554 "/>
 				</svg>
 			</div>
@@ -216,7 +217,7 @@
 					<li class="home_slider_custom_dot"><div></div>03.</li>
 				</ul>
 			</div>
-			
+
 		</div>
 
 	</div>
@@ -224,10 +225,10 @@
 	<!-- Search -->
 
 	<div class="search">
-		
+
 
 		<!-- Search Contents -->
-		
+
 		<div class="container fill_height">
 			<div class="row fill_height">
 				<div class="col fill_height">
@@ -242,7 +243,7 @@
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
 							<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
-						</div>		
+						</div>
 					</div>
 
 					<!-- Search Panel -->
@@ -462,11 +463,11 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 
 	<!-- Intro -->
-	
+
 	<div class="intro">
 		<div class="container">
 			<div class="row">
@@ -567,7 +568,7 @@
 	<div class="cta">
 		<!-- Image by https://unsplash.com/@thanni -->
 		<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
-		
+
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -618,7 +619,7 @@
 								<p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
 								<div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
 							</div>
-							
+
 						</div>
 
 						<!-- CTA Slider Nav - Prev -->
@@ -634,11 +635,11 @@
 								<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 								C22.545,2,26,5.541,26,9.909V23.091z"/>
-								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
 								11.042,18.219 "/>
 							</svg>
 						</div>
-						
+
 						<!-- CTA Slider Nav - Next -->
 						<div class="cta_slider_nav cta_slider_next">
 							<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -652,7 +653,7 @@
 							<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 							C22.545,2,26,5.541,26,9.909V23.091z"/>
-							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
 							17.046,15.554 "/>
 							</svg>
 						</div>
@@ -662,7 +663,7 @@
 				</div>
 			</div>
 		</div>
-					
+
 	</div>
 
 	<!-- Offers -->
@@ -700,10 +701,10 @@
 									<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
 									<div class="offers_icons">
 										<ul class="offers_icons_list">
-											<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
 										</ul>
 									</div>
 									<div class="offers_link"><a href="offers.html">read more</a></div>
@@ -712,7 +713,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<!-- Offers Item -->
 				<div class="col-lg-6 offers_col">
 					<div class="offers_item">
@@ -774,10 +775,10 @@
 									<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
 									<div class="offers_icons">
 										<ul class="offers_icons_list">
-											<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
 										</ul>
 									</div>
 									<div class="offers_link"><a href="offers.html">read more</a></div>
@@ -811,10 +812,10 @@
 									<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
 									<div class="offers_icons">
 										<ul class="offers_icons_list">
-											<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-											<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+											<li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
 										</ul>
 									</div>
 									<div class="offers_link"><a href="offers.html">read more</a></div>
@@ -840,7 +841,7 @@
 			</div>
 			<div class="row">
 				<div class="col">
-					
+
 					<!-- Testimonials Slider -->
 
 					<div class="test_slider_container">
@@ -849,8 +850,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
-									<div class="test_icon"><img src="images/backpack.png" alt=""></div>
+									<div class="test_image"><img src="assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+									<div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -885,8 +886,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-									<div class="test_icon"><img src="images/kayak.png" alt=""></div>
+									<div class="test_image"><img src="assets/client/assets/client/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
+									<div class="test_icon"><img src="assets/client/assets/client/images/kayak.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -903,8 +904,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_2.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/island_t.png" alt=""></div>
+									<div class="test_image"><img src="assets/client/images/test_2.jpg" alt=""></div>
+									<div class="test_icon"><img src="assets/client/images/island_t.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -921,8 +922,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/backpack.png" alt=""></div>
+									<div class="test_image"><img src="assets/client/images/test_1.jpg" alt=""></div>
+									<div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -939,8 +940,8 @@
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image"><img src="images/test_3.jpg" alt=""></div>
-									<div class="test_icon"><img src="images/kayak.png" alt=""></div>
+									<div class="test_image"><img src="assets/client/images/test_3.jpg" alt=""></div>
+									<div class="test_icon"><img src="assets/client/images/kayak.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
 											<div class="test_item_info">
@@ -969,11 +970,11 @@
 								<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 								C22.545,2,26,5.541,26,9.909V23.091z"/>
-								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219 
+								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
 								11.042,18.219 "/>
 							</svg>
 						</div>
-						
+
 						<!-- Testimonials Slider Nav - Next -->
 						<div class="test_slider_nav test_slider_next">
 							<svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -987,13 +988,13 @@
 							<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
 							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
 							C22.545,2,26,5.541,26,9.909V23.091z"/>
-							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554 
+							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
 							17.046,15.554 "/>
 							</svg>
 						</div>
 
 					</div>
-					
+
 				</div>
 			</div>
 
@@ -1012,7 +1013,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">grand hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1024,7 +1025,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">mars hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1036,7 +1037,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">queen hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1048,7 +1049,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">mars hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1060,7 +1061,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">grand hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1072,7 +1073,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">mars hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1084,7 +1085,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">queen hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1096,7 +1097,7 @@
 				<!-- Trending Item -->
 				<div class="col-lg-3 col-sm-6">
 					<div class="trending_item clearfix">
-						<div class="trending_image"><img src="images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
+						<div class="trending_image"><img src="assets/client/images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
 						<div class="trending_content">
 							<div class="trending_title"><a href="#">mars hotel</a></div>
 							<div class="trending_price">From $182</div>
@@ -1116,7 +1117,7 @@
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="contact_image">
-						
+
 					</div>
 				</div>
 				<div class="col-lg-7">
@@ -1146,7 +1147,7 @@
 					<div class="footer_col">
 						<div class="footer_content footer_about">
 							<div class="logo_container footer_logo">
-								<div class="logo"><a href="#"><img src="images/logo.png" alt="">travelix</a></div>
+								<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
 							</div>
 							<p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
 							<ul class="footer_social_list">
@@ -1165,19 +1166,19 @@
 					<div class="footer_col">
 						<div class="footer_title">blog posts</div>
 						<div class="footer_content footer_blog">
-							
+
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
 								</div>
 							</div>
-							
+
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -1186,7 +1187,7 @@
 
 							<!-- Footer blog item -->
 							<div class="footer_blog_item clearfix">
-								<div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
+								<div class="footer_blog_image"><img src="assets/client/images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
 								<div class="footer_blog_content">
 									<div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
 									<div class="footer_blog_date">Nov 29, 2017</div>
@@ -1223,19 +1224,19 @@
 						<div class="footer_content footer_contact">
 							<ul class="contact_info_list">
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/placeholder.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/placeholder.svg" alt=""></div></div>
 									<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/phone-call.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/phone-call.svg" alt=""></div></div>
 									<div class="contact_info_text">2556-808-8613</div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/message.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
-									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>
+									<div><div class="contact_info_icon"><img src="assets/client/images/planet-earth.svg" alt=""></div></div>
 									<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 								</li>
 							</ul>
@@ -1278,12 +1279,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+<script src="assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="assets/client/styles/bootstrap4/popper.js"></script>
+<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="assets/client/plugins/easing/easing.js"></script>
+<script src="assets/client/js/custom.js"></script>
 
 </body>
 
