@@ -287,4 +287,4 @@
 <script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="assets/client/js/blog_custom.js"></script>
 
-@endsection@endsection
+@endsection
