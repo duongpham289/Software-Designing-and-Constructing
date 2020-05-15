@@ -638,7 +638,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@nevenkrcmarek -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_3.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_3.jpg)"></div>
                                 <div class="offer_name"><a href="#">island dream</a></div>
                             </div>
                         </div>
@@ -675,7 +675,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@mantashesthaven -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_4.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_4.jpg)"></div>
                                 <div class="offer_name"><a href="#">travel light</a></div>
                             </div>
                         </div>
