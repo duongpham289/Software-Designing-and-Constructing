@@ -8,6 +8,7 @@
                     <div class="footer_content footer_about">
                         <div class="logo_container footer_logo">
                             <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
+                            <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
                         </div>
                         <p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
                         <ul class="footer_social_list">
@@ -26,7 +27,7 @@
                 <div class="footer_col">
                     <div class="footer_title">blog posts</div>
 
-                    
+
                     <div class="footer_content footer_blog">
 
                         <!-- Footer blog item -->
