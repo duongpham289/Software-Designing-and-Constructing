@@ -84,7 +84,7 @@
                     <div class="footer_content footer_contact">
                         <ul class="contact_info_list">
                             <li class="contact_info_item d-flex flex-row">
-                                <div><div class="contact_info_icon"><img src=/assets/client/"images/placeholder.svg" alt=""></div></div>
+                                <div><div class="contact_info_icon"><img src="/assets/client/images/placeholder.svg" alt=""></div></div>
                                 <div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
                             </li>
                             <li class="contact_info_item d-flex flex-row">
