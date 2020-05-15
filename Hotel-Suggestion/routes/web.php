@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'Client'], function () {
+    Route::get('', 'HomeController@index');
+    Route::get('about', 'HomeController@about');
+    Route::get('contact', 'HomeController@contact');
+    Route::get('blog','HomeController@blog');
+    Route::get('offer','HomeController@offer');
+    Route::get('single_listing','HomeController@single_listing');
+});
