@@ -33,7 +33,11 @@
             <div class="row">
                 <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                     <div class="logo_container">
+<<<<<<< HEAD
                         <div class="logo"><a href="#"><img src="/asset/client/images/logo.png" alt="">travelix</a></div>
+=======
+                        <div class="logo"><a href="#"><img src="/assets/clientimages/logo.png" alt="">travelix</a></div>
+>>>>>>> cb0ea13bec68a95bbf23e76da95fa2b371c245c3
                     </div>
                     <div class="main_nav_container ml-auto">
                         <ul class="main_nav_list">
@@ -85,7 +89,11 @@
 <div class="menu trans_500">
     <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
         <div class="menu_close_container"><div class="menu_close"></div></div>
+<<<<<<< HEAD
         <div class="logo menu_logo"><a href="#"><img src="/asset/client/images/logo.png" alt=""></a></div>
+=======
+        <div class="logo menu_logo"><a href="#"><img src="/assets/clientimages/logo.png" alt=""></a></div>
+>>>>>>> cb0ea13bec68a95bbf23e76da95fa2b371c245c3
         <ul>
             <li class="menu_item"><a href="#">home</a></li>
             <li class="menu_item"><a href="about.html">about us</a></li>
