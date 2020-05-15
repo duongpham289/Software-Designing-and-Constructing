@@ -13,7 +13,7 @@
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
                 <!-- Image by https://unsplash.com/@anikindimitry -->
-                <div class="home_slider_background" style="background-image:url(/asset/client/images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -26,7 +26,7 @@
 
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
-                <div class="home_slider_background" style="background-image:url(/asset/client/images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -39,7 +39,7 @@
 
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
-                <div class="home_slider_background" style="background-image:url(/asset/client/images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -370,7 +370,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@dnevozhai -->
-                    <div class="intro_item_background" style="background-image:url(/asset/client/images/intro_1.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_1.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -395,7 +395,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@hellolightbulb -->
-                    <div class="intro_item_background" style="background-image:url(/asset/client/images/intro_2.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_2.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -420,7 +420,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@willianjusten -->
-                    <div class="intro_item_background" style="background-image:url(/asset/client/images/intro_3.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_3.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -447,7 +447,7 @@
 
 <div class="cta">
     <!-- Image by https://unsplash.com/@thanni -->
-    <div class="cta_background" style="background-image:url(/asset/client/images/cta.jpg)"></div>
+    <div class="cta_background" style="background-image:url(/assets/client/images/cta.jpg)"></div>
 
     <div class="container">
         <div class="row">
@@ -564,7 +564,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_1.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
                                 <div class="offer_name"><a href="#">grand castle</a></div>
                             </div>
                         </div>
@@ -601,7 +601,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by Egzon Bytyqi -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_2.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_2.jpg)"></div>
                                 <div class="offer_name"><a href="#">turkey hills</a></div>
                             </div>
                         </div>
@@ -991,7 +991,7 @@
 </div>
 
 <div class="contact">
-    <div class="contact_background" style="background-image:url(/asset/client/images/contact.png)"></div>
+    <div class="contact_background" style="background-image:url(/assets/client/images/contact.png)"></div>
 
     <div class="container">
         <div class="row">

@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                     <div class="logo_container">
-                        <div class="logo"><a href="#"><img src="/asset/client/images/logo.png" alt="">travelix</a></div>
+                        <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
                         <div class="logo"><a href="#"><img src="/assets/clientimages/logo.png" alt="">travelix</a></div>
                         <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
                     </div>
@@ -87,7 +87,7 @@
 <div class="menu trans_500">
     <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
         <div class="menu_close_container"><div class="menu_close"></div></div>
-        <div class="logo menu_logo"><a href="#"><img src="/asset/client/images/logo.png" alt=""></a></div>
+        <div class="logo menu_logo"><a href="#"><img src="/assets/client/images/logo.png" alt=""></a></div>
         <div class="logo menu_logo"><a href="#"><img src="/assets/clientimages/logo.png" alt=""></a></div>
         <div class="logo menu_logo"><a href="#"><img src="/assets/client/images/logo.png" alt=""></a></div>
         <ul>
