@@ -117,12 +117,12 @@
 
                 <div class="search_tabs_container">
                     <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-                        <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+                        <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/bus.png" alt="">car rentals</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/departure.png" alt="">flights</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/island.png" alt="">trips</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/cruise.png" alt="">cruises</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/diving.png" alt="">activities</div>
                     </div>
                 </div>
 
@@ -581,10 +581,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -618,10 +618,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -655,10 +655,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -692,10 +692,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -730,8 +730,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
-                                <div class="test_icon"><img src="images/backpack.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+                                <div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -748,8 +748,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
-                                <div class="test_icon"><img src="images/island_t.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
+                                <div class="test_icon"><img src="assets/client/images/island_t.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -766,8 +766,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-                                <div class="test_icon"><img src="images/kayak.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
+                                <div class="test_icon"><img src="assets/client/images/kayak.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -784,8 +784,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_2.jpg" alt=""></div>
-                                <div class="test_icon"><img src="images/island_t.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_2.jpg" alt=""></div>
+                                <div class="test_icon"><img src="assets/client/images/island_t.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -802,8 +802,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_1.jpg" alt=""></div>
-                                <div class="test_icon"><img src="images/backpack.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_1.jpg" alt=""></div>
+                                <div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -820,8 +820,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="images/test_3.jpg" alt=""></div>
-                                <div class="test_icon"><img src="images/kayak.png" alt=""></div>
+                                <div class="test_image"><img src="assets/client/images/test_3.jpg" alt=""></div>
+                                <div class="test_icon"><img src="assets/client/images/kayak.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -893,7 +893,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">grand hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -905,7 +905,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -917,7 +917,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">queen hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -929,7 +929,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -941,7 +941,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">grand hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -953,7 +953,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -965,7 +965,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">queen hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -977,7 +977,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
+                    <div class="trending_image"><img src="assets/client/images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -1016,11 +1016,11 @@
     </div>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="js/custom.js"></script>
+<script src="assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="assets/client/styles/bootstrap4/popper.js"></script>
+<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="assets/client/plugins/easing/easing.js"></script>
+<script src="assets/client/js/custom.js"></script>
 
 @endsection
