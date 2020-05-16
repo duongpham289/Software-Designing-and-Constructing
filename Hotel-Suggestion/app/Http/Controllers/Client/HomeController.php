@@ -7,12 +7,6 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-<<<<<<< HEAD
-    public function about(){
-        return view('client.about');
-    }
-
-=======
 
     public function index()
     {
@@ -32,8 +26,15 @@ class HomeController extends Controller
     public function blog(){
         return view('client.home.blog');
     }
-    public function offer(){
+    public function offers(){
         return view('client.home.offers');
     }
->>>>>>> master
+
+    public function single_listing(){
+        return view('client.single_listing');
+    }
+
+    public function booking(){
+        return view('client.booking');
+    }
 }
