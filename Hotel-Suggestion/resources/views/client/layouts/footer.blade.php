@@ -31,7 +31,7 @@
                         <div class="footer_blog_item clearfix">
                             <div class="footer_blog_image"><img src="images/footer_blog_1.jpg" alt="https://unsplash.com/@avidenov"></div>
                             <div class="footer_blog_content">
-                                <div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
+                                <div class="footer_blog_title"><a href="/blog">Travel with us this year</a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                         <div class="footer_blog_item clearfix">
                             <div class="footer_blog_image"><img src="images/footer_blog_2.jpg" alt="https://unsplash.com/@deannaritchie"></div>
                             <div class="footer_blog_content">
-                                <div class="footer_blog_title"><a href="blog.html">New destinations for you</a></div>
+                                <div class="footer_blog_title"><a href="/blog">New destinations for you</a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="footer_blog_item clearfix">
                             <div class="footer_blog_image"><img src="images/footer_blog_3.jpg" alt="https://unsplash.com/@bergeryap87"></div>
                             <div class="footer_blog_content">
-                                <div class="footer_blog_title"><a href="blog.html">Travel with us this year</a></div>
+                                <div class="footer_blog_title"><a href="/blog">Travel with us this year</a></div>
                                 <div class="footer_blog_date">Nov 29, 2017</div>
                             </div>
                         </div>
@@ -124,11 +124,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                     <div class="footer_nav">
                         <ul class="footer_nav_list">
-                            <li class="footer_nav_item"><a href="#">home</a></li>
-                            <li class="footer_nav_item"><a href="about.html">about us</a></li>
-                            <li class="footer_nav_item"><a href="offers.html">offers</a></li>
-                            <li class="footer_nav_item"><a href="blog.html">news</a></li>
-                            <li class="footer_nav_item"><a href="contact.html">contact</a></li>
+                            <li class="footer_nav_item"><a href="/index">home</a></li>
+                            <li class="footer_nav_item"><a href="/about">about us</a></li>
+                            <li class="footer_nav_item"><a href="/offers">offers</a></li>
+                            <li class="footer_nav_item"><a href="/blog">news</a></li>
+                            <li class="footer_nav_item"><a href="/contact">contact</a></li>
                         </ul>
                     </div>
                 </div>
