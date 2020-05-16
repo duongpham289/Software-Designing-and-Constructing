@@ -1,10 +1,20 @@
 @extends('client.layouts.web', ['title' => 'Contact'])
+
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/contact_responsive.css">
+
+@endsection
+
 @section('content')
 
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/contact_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/contact_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">contact</div>
 		</div>
@@ -43,7 +53,7 @@
 					<!-- About - Image -->
 
 					<div class="about_image">
-						<img src="assets/client/images/man.png" alt="">
+						<img src="/assets/client/images/man.png" alt="">
 					</div>
 
 				</div>
@@ -54,7 +64,7 @@
 
 					<div class="about_content">
 						<div class="logo_container about_logo">
-							<div class="logo"><a href="#"><img src="assets/client/images/logo.png" alt="">travelix</a></div>
+							<div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
 						</div>
 						<p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula iaculis consequat nisl. Nunc et suscipit urna pretium.</p>
 						<ul class="about_social_list">
@@ -75,19 +85,19 @@
 					<div class="about_info">
 						<ul class="contact_info_list">
 							<li class="contact_info_item d-flex flex-row">
-								<div><div class="contact_info_icon"><img src="assets/client/images/placeholder.svg" alt=""></div></div>
+								<div><div class="contact_info_icon"><img src="/assets/client/images/placeholder.svg" alt=""></div></div>
 								<div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
 							</li>
 							<li class="contact_info_item d-flex flex-row">
-								<div><div class="contact_info_icon"><img src="assets/client/images/phone-call.svg" alt=""></div></div>
+								<div><div class="contact_info_icon"><img src="/assets/client/images/phone-call.svg" alt=""></div></div>
 								<div class="contact_info_text">2556-808-8613</div>
 							</li>
 							<li class="contact_info_item d-flex flex-row">
-								<div><div class="contact_info_icon"><img src="assets/client/images/message.svg" alt=""></div></div>
+								<div><div class="contact_info_icon"><img src="/assets/client/images/message.svg" alt=""></div></div>
 								<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
 							</li>
 							<li class="contact_info_item d-flex flex-row">
-								<div><div class="contact_info_icon"><img src="assets/client/images/planet-earth.svg" alt=""></div></div>
+								<div><div class="contact_info_icon"><img src="/assets/client/images/planet-earth.svg" alt=""></div></div>
 								<div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
 							</li>
 						</ul>
@@ -110,12 +120,12 @@
 	</div>
 
 
-<script src="assets/client/js/jquery-3.2.1.min.js"></script>
-<script src="assets/client/styles/bootstrap4/popper.js"></script>
-<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/client/styles/bootstrap4/popper.js"></script>
+<script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="assets/client/js/contact_custom.js"></script>
+<script src="/assets/client/js/contact_custom.js"></script>
 
 @endsection
 

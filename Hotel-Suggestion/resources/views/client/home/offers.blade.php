@@ -1,11 +1,21 @@
 @extends('client.layouts.web', ['title' => 'Offers'])
+
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/offers_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/offers_responsive.css">
+
+@endsection
+
 @section('content')
 
 
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/about_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/about_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">our offers</div>
 		</div>
@@ -30,12 +40,12 @@
 
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/bus.png" alt="">car rentals</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/departure.png" alt="">flights</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/island.png" alt="">trips</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/cruise.png" alt="">cruises</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/diving.png" alt="">activities</div>
 								</div>
 							</div>
 
@@ -403,7 +413,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
 									</div>
 								</div>
@@ -420,10 +430,10 @@
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -447,7 +457,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@thoughtcatalog -->
-										<div class="offers_image_background" style="background-image:url(images/offer_5.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_5.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
 									</div>
 								</div>
@@ -464,10 +474,10 @@
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -491,7 +501,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@mindaugas -->
-										<div class="offers_image_background" style="background-image:url(images/offer_6.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_6.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
 									</div>
 								</div>
@@ -508,10 +518,10 @@
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -535,7 +545,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@rktkn -->
-										<div class="offers_image_background" style="background-image:url(images/offer_7.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_7.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">eurostar hotel</a></div>
 									</div>
 								</div>
@@ -552,10 +562,10 @@
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -579,7 +589,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@itsnwa -->
-										<div class="offers_image_background" style="background-image:url(images/offer_8.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_8.jpg)"></div>
 										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
 									</div>
 								</div>
@@ -596,10 +606,10 @@
 										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+												<li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 											</ul>
 										</div>
 										<div class="button book_button"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -624,12 +634,12 @@
 
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/offers_custom.js"></script>
+<script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/client/styles/bootstrap4/popper.js"></script>
+<script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/assets/client/plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="/assets/client/plugins/easing/easing.js"></script>
+<script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="/assets/client/js/offers_custom.js"></script>
 
 @endsection
