@@ -13,7 +13,7 @@ class CategoryController extends Controller
     public function index(Request $request){
         $categories = DB::table('categories')->select(['name','parent_id'])
         ->get();
-        debugbar()->info($categories);
+        // debugbar()->info($categories);
 
         if ($request->wantsJson()) {  //API
             $client = new \GuzzleHttp\Client();
@@ -66,7 +66,7 @@ class CategoryController extends Controller
     }
     public function edit($id){ //Bắt id trên uri
         $category = Category::findOrFail($id); //Model Category , biến lưu bản ghi
-       
+
         $category->products()->get(); //Trả về 1 query builder
         Product::where('category_id', $category);
 

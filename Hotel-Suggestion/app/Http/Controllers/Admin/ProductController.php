@@ -17,7 +17,7 @@ class ProductController extends Controller
             'products' => $products
         ]);
     }
-    
+
     public function create(){
         return view('admin.products.create');
     }
