@@ -13,7 +13,7 @@ class CreateAcountTable extends Migration
      */
     public function up()
     {
-        Schema::create('acount', function (Blueprint $table) {
+        Schema::create('account', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
             $table->string('password');
