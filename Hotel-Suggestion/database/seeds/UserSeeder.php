@@ -15,24 +15,31 @@ class UserSeeder extends Seeder
             ['first_name'=>'Tuan',
             'last_name'=>'Le',
             'phone'=>'0931231242',
-            'password'=>'password'
+            'address'=>'Hanoi',
+            'nationality'=>'Vietnam',
             ],
             [
-                'first_name'=>'Hieu',
-                'last_name'=>'Bui',
+            'first_name'=>'Hieu',
+            'last_name'=>'Bui',
             'phone'=>'0931231984',
-            'password'=>'password'
+            'address'=>'Hanoi',
+            'nationality'=>'Vietnam',
+
             ],
             ['first_name'=>'duong',
             'last_name'=>'pham',
             'phone'=>'09312431242',
-            'password'=>'password'
+            'address'=>'Hanoi',
+            'nationality'=>'Vietnam',
+
             ],
             [
-                'first_name'=>'duc anh',
-                'last_name'=>'bui',
+            'first_name'=>'duc anh',
+            'last_name'=>'bui',
             'phone'=>'0931431242',
-            'password'=>'password'
+            'address'=>'Hanoi',
+            'nationality'=>'Vietnam',
+
             ]
         ]);
     }
