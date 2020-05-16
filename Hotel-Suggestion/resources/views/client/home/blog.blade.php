@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+<link href="/assets/client/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/blog_styles.css">
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/blog_responsive.css">
 
