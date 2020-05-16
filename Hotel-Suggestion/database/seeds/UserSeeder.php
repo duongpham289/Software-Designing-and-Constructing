@@ -12,21 +12,25 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            ['name'=>'Tuan',
+            ['first_name'=>'Tuan',
+            'last_name'=>'Le',
             'phone'=>'0931231242',
             'password'=>'password'
             ],
             [
-            'name'=>'HieuBui',
+                'first_name'=>'Hieu',
+                'last_name'=>'Bui',
             'phone'=>'0931231984',
             'password'=>'password'
             ],
-            ['name'=>'DuongPham',
+            ['first_name'=>'duong',
+            'last_name'=>'pham',
             'phone'=>'09312431242',
             'password'=>'password'
             ],
             [
-            'name'=>'DucanhBui',
+                'first_name'=>'duc anh',
+                'last_name'=>'bui',
             'phone'=>'0931431242',
             'password'=>'password'
             ]
