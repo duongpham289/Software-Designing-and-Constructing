@@ -1,4 +1,17 @@
 @extends('client.layouts.web', ['title' => 'About'])
+
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/about_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/about_responsive.css">
+
+@endsection
+
 @section('content')
 
 	<!-- Home -->
@@ -117,7 +130,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/assets/client/images/stats_3.png" alt="">
+									<img src="/assets/client/images/stats_3.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">11546</div>

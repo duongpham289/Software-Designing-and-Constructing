@@ -1,4 +1,17 @@
 @extends('client.layouts.web', ['title' => 'Homepage'])
+
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/responsive.css">
+
+@endsection
+
 @section('content')
 <!-- Home -->
 
@@ -638,7 +651,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@nevenkrcmarek -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_3.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_3.jpg)"></div>
                                 <div class="offer_name"><a href="#">island dream</a></div>
                             </div>
                         </div>
@@ -675,7 +688,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@mantashesthaven -->
-                                <div class="offers_image_background" style="background-image:url(/asset/client/images/offer_4.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_4.jpg)"></div>
                                 <div class="offer_name"><a href="#">travel light</a></div>
                             </div>
                         </div>
@@ -1016,5 +1029,11 @@
     </div>
 </div>
 
+<script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/client/styles/bootstrap4/popper.js"></script>
+<script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/assets/client/plugins/easing/easing.js"></script>
+<script src="/assets/client/js/custom.js"></script>
 
 @endsection
