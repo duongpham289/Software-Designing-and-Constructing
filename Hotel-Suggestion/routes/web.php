@@ -33,7 +33,7 @@ Route::group([
 ], function () {
 
     Route::resource('categories', 'CategoryController');
-    Route::get('', 'DashboardController');
+    // Route::get('', 'DashboardController');
     Route::get('login', 'LoginController@showLoginForm');
     Route::post('login', 'LoginController@login');
     Route::post('logout', 'LoginController@logout');
