@@ -12,12 +12,12 @@ class RoomSeeder extends Seeder
     public function run()
     {
         DB::table('room')->insert([
-        ['name' => '102','type' => 'Phòng đôi','price' =>'200', 'details'=>''],
-        ['name' => '101','type' => 'Phòng đơn','price' =>'250', 'details'=>''],
-        ['name' => '106','type' => 'Phòng đôi','price' =>'170', 'details'=>''],
-        ['name' => '205','type' => 'Phòng đơn','price' =>'350', 'details'=>''],
-        ['name' => '207','type' => 'Phòng đôi','price' =>'260', 'details'=>''],
-        ['name' => '301','type' => 'Phòng đơn','price' =>'180', 'details'=>''],
+        ['hotel_id'=>'1','name' => '102','type' => 'Phòng đôi','price' =>'200', 'detail'=>''],
+        ['hotel_id'=>'2','name' => '101','type' => 'Phòng đơn','price' =>'250', 'detail'=>''],
+        ['hotel_id'=>'3','name' => '106','type' => 'Phòng đôi','price' =>'170', 'detail'=>''],
+        ['hotel_id'=>'4','name' => '205','type' => 'Phòng đơn','price' =>'350', 'detail'=>''],
+        ['hotel_id'=>'5','name' => '207','type' => 'Phòng đôi','price' =>'260', 'detail'=>''],
+        ['hotel_id'=>'6','name' => '301','type' => 'Phòng đơn','price' =>'180', 'detail'=>''],
         ]);
     }
 }
