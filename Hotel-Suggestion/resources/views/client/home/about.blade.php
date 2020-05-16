@@ -4,7 +4,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/about_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/about_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">about us</div>
 		</div>
@@ -16,7 +16,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<div class="intro_image"><img src="assets/client/images/intro.png" alt=""></div>
+					<div class="intro_image"><img src="/assets/client/images/intro.png" alt=""></div>
 				</div>
 				<div class="col-lg-5">
 					<div class="intro_content">
@@ -59,7 +59,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="images/stats_1.png" alt="">
+									<img src="/assets/client/images/stats_1.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">1642</div>
@@ -75,7 +75,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_1.png" alt="">
+									<img src="/assets/client/images/stats_1.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">3527</div>
@@ -88,7 +88,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_2.png" alt="">
+									<img src="/assets/client/images/stats_2.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">768</div>
@@ -104,7 +104,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_2.png" alt="">
+									<img src="/assets/client/images/stats_2.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">145</div>
@@ -117,7 +117,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_3.png" alt="">
+									<img src="assets/client/assets/client/images/stats_3.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">11546</div>
@@ -133,7 +133,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_3.png" alt="">
+									<img src="/assets/client/images/stats_3.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">9321</div>
@@ -146,7 +146,7 @@
 						<div class="stats_item d-flex flex-md-row flex-column clearfix">
 							<div class="stats_last order-md-1 order-3">
 								<div class="stats_last_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_4.png" alt="">
+									<img src="/assets/client/images/stats_4.png" alt="">
 								</div>
 								<div class="stats_last_content">
 									<div class="stats_number">3729</div>
@@ -162,7 +162,7 @@
 							</div>
 							<div class="stats_new order-md-3 order-1 text-right">
 								<div class="stats_new_icon d-flex flex-column align-items-center justify-content-end">
-									<img src="assets/client/images/stats_4.png" alt="">
+									<img src="/assets/client/images/stats_4.png" alt="">
 								</div>
 								<div class="stats_new_content">
 									<div class="stats_number">17429</div>
@@ -184,7 +184,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="add_container">
-						<div class="add_background" style="background-image:url(assets/client/images/add.jpg)"></div>
+						<div class="add_background" style="background-image:url(/assets/client/images/add.jpg)"></div>
 						<div class="add_content">
 							<h1 class="add_title">thailand</h1>
 							<div class="add_subtitle">From <span>$999</span></div>
@@ -205,7 +205,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="assets/client/images/milestone_1.png" alt=""></div>
+						<div class="milestone_icon"><img src="/assets/client/images/milestone_1.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="255">0</div>
 						<div class="milestone_text">Clients</div>
 					</div>
@@ -214,7 +214,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="assets/client/images/milestone_2.png" alt=""></div>
+						<div class="milestone_icon"><img src="/assets/client/images/milestone_2.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="1176">0</div>
 						<div class="milestone_text">Projects</div>
 					</div>
@@ -223,7 +223,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="assets/client/images/milestone_3.png" alt=""></div>
+						<div class="milestone_icon"><img src="/assets/client/images/milestone_3.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="39">0</div>
 						<div class="milestone_text">Countries</div>
 					</div>
@@ -232,7 +232,7 @@
 				<!-- Milestone -->
 				<div class="col-lg-3 milestone_col">
 					<div class="milestone text-center">
-						<div class="milestone_icon"><img src="assets/client/images/milestone_4.png" alt=""></div>
+						<div class="milestone_icon"><img src="/assets/client/images/milestone_4.png" alt=""></div>
 						<div class="milestone_counter" data-end-value="127">0</div>
 						<div class="milestone_text">Coffees</div>
 					</div>
@@ -242,17 +242,17 @@
 		</div>
 	</div>
 
-<script src="assets/client/js/jquery-3.2.1.min.js"></script>
-<script src="assets/client/styles/bootstrap4/popper.js"></script>
-<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/client/plugins/greensock/TweenMax.min.js"></script>
-<script src="assets/client/plugins/greensock/TimelineMax.min.js"></script>
-<script src="assets/client/plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="assets/client/plugins/greensock/animation.gsap.min.js"></script>
-<script src="assets/client/plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/client/plugins/easing/easing.js"></script>
-<script src="assets/client/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="assets/client/js/about_custom.js"></script>
+<script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/client/styles/bootstrap4/popper.js"></script>
+<script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/assets/client/plugins/greensock/TweenMax.min.js"></script>
+<script src="/assets/client/plugins/greensock/TimelineMax.min.js"></script>
+<script src="/assets/client/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="/assets/client/plugins/greensock/animation.gsap.min.js"></script>
+<script src="/assets/client/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/assets/client/plugins/easing/easing.js"></script>
+<script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="/assets/client/js/about_custom.js"></script>
 
 @endsection

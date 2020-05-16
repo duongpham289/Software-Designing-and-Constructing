@@ -26,7 +26,15 @@ class HomeController extends Controller
     public function blog(){
         return view('client.home.blog');
     }
-    public function offer(){
+    public function offers(){
         return view('client.home.offers');
+    }
+
+    public function single_listing(){
+        return view('client.single_listing');
+    }
+
+    public function booking(){
+        return view('client.booking');
     }
 }
