@@ -1,4 +1,17 @@
 @extends('client.layouts.web', ['title' => 'Homepage'])
+
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/responsive.css">
+
+@endsection
+
 @section('content')
 <!-- Home -->
 
@@ -13,7 +26,7 @@
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
                 <!-- Image by https://unsplash.com/@anikindimitry -->
-                <div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -26,7 +39,7 @@
 
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
-                <div class="home_slider_background" style="background-image:url(asset/client/images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -39,7 +52,7 @@
 
             <!-- Slider Item -->
             <div class="owl-item home_slider_item">
-                <div class="home_slider_background" style="background-image:url(images/home_slider.jpg)"></div>
+                <div class="home_slider_background" style="background-image:url(/assets/client/images/home_slider.jpg)"></div>
 
                 <div class="home_slider_content text-center">
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
@@ -117,12 +130,12 @@
 
                 <div class="search_tabs_container">
                     <div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-                        <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/bus.png" alt="">car rentals</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/departure.png" alt="">flights</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/island.png" alt="">trips</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/cruise.png" alt="">cruises</div>
-                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="assets/client/images/diving.png" alt="">activities</div>
+                        <div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/bus.png" alt="">car rentals</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/departure.png" alt="">flights</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/island.png" alt="">trips</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/cruise.png" alt="">cruises</div>
+                        <div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/diving.png" alt="">activities</div>
                     </div>
                 </div>
 
@@ -370,7 +383,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@dnevozhai -->
-                    <div class="intro_item_background" style="background-image:url(images/intro_1.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_1.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -395,7 +408,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@hellolightbulb -->
-                    <div class="intro_item_background" style="background-image:url(images/intro_2.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_2.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -420,7 +433,7 @@
                 <div class="intro_item">
                     <div class="intro_item_overlay"></div>
                     <!-- Image by https://unsplash.com/@willianjusten -->
-                    <div class="intro_item_background" style="background-image:url(images/intro_3.jpg)"></div>
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_3.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
@@ -447,7 +460,7 @@
 
 <div class="cta">
     <!-- Image by https://unsplash.com/@thanni -->
-    <div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+    <div class="cta_background" style="background-image:url(/assets/client/images/cta.jpg)"></div>
 
     <div class="container">
         <div class="row">
@@ -564,7 +577,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
-                                <div class="offers_image_background" style="background-image:url(images/offer_1.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
                                 <div class="offer_name"><a href="#">grand castle</a></div>
                             </div>
                         </div>
@@ -581,10 +594,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -601,7 +614,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by Egzon Bytyqi -->
-                                <div class="offers_image_background" style="background-image:url(images/offer_2.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_2.jpg)"></div>
                                 <div class="offer_name"><a href="#">turkey hills</a></div>
                             </div>
                         </div>
@@ -618,10 +631,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -638,7 +651,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@nevenkrcmarek -->
-                                <div class="offers_image_background" style="background-image:url(images/offer_3.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_3.jpg)"></div>
                                 <div class="offer_name"><a href="#">island dream</a></div>
                             </div>
                         </div>
@@ -655,10 +668,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -675,7 +688,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@mantashesthaven -->
-                                <div class="offers_image_background" style="background-image:url(images/offer_4.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_4.jpg)"></div>
                                 <div class="offer_name"><a href="#">travel light</a></div>
                             </div>
                         </div>
@@ -692,10 +705,10 @@
                                 <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
-                                        <li class="offers_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-                                        <li class="offers_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
                                 <div class="offers_link"><a href="offers.html">read more</a></div>
@@ -730,8 +743,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
-                                <div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
+                                <div class="test_icon"><img src="/assets/client/images/backpack.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -748,8 +761,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
-                                <div class="test_icon"><img src="assets/client/images/island_t.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
+                                <div class="test_icon"><img src="/assets/client/images/island_t.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -766,8 +779,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
-                                <div class="test_icon"><img src="assets/client/images/kayak.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
+                                <div class="test_icon"><img src="/assets/client/images/kayak.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -784,8 +797,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_2.jpg" alt=""></div>
-                                <div class="test_icon"><img src="assets/client/images/island_t.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_2.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/island_t.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -802,8 +815,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_1.jpg" alt=""></div>
-                                <div class="test_icon"><img src="assets/client/images/backpack.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/backpack.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -820,8 +833,8 @@
                         <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
-                                <div class="test_image"><img src="assets/client/images/test_3.jpg" alt=""></div>
-                                <div class="test_icon"><img src="assets/client/images/kayak.png" alt=""></div>
+                                <div class="test_image"><img src="/assets/client/images/test_3.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/kayak.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
@@ -893,7 +906,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">grand hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -905,7 +918,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -917,7 +930,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">queen hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -929,7 +942,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -941,7 +954,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">grand hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -953,7 +966,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -965,7 +978,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">queen hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -977,7 +990,7 @@
             <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="assets/client/images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
+                    <div class="trending_image"><img src="/assets/client/images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="#">mars hotel</a></div>
                         <div class="trending_price">From $182</div>
@@ -991,7 +1004,7 @@
 </div>
 
 <div class="contact">
-    <div class="contact_background" style="background-image:url(images/contact.png)"></div>
+    <div class="contact_background" style="background-image:url(/assets/client/images/contact.png)"></div>
 
     <div class="container">
         <div class="row">
@@ -1016,11 +1029,11 @@
     </div>
 </div>
 
-<script src="assets/client/js/jquery-3.2.1.min.js"></script>
-<script src="assets/client/styles/bootstrap4/popper.js"></script>
-<script src="assets/client/styles/bootstrap4/bootstrap.min.js"></script>
-<script src="assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="assets/client/plugins/easing/easing.js"></script>
-<script src="assets/client/js/custom.js"></script>
+<script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+<script src="/assets/client/styles/bootstrap4/popper.js"></script>
+<script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="/assets/client/plugins/easing/easing.js"></script>
+<script src="/assets/client/js/custom.js"></script>
 
 @endsection
