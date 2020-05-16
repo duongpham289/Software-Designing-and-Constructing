@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class hotel extends Seeder
+class HotelSeeder extends Seeder
 {
     /**
      * Run the database seeds.

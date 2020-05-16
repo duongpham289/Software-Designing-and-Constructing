@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class AcountSeeder extends Seeder
+class AccountSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class AcountSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('acount')->insert([
+        DB::table('account')->insert([
             ['email'=>'tuanadbac@email.com',
             'password'=>'password',
             'level'=>1
