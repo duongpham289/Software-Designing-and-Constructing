@@ -16,7 +16,15 @@ class Users extends Authenticatable
      * @var array
      */
     protected $fillable = [
+<<<<<<< Updated upstream:Hotel-Suggestion/app/Entities/Users.php
         //
+=======
+<<<<<<< Updated upstream:Hotel-Suggestion/app/Entities/User.php
+        'name', 'email', 'password',
+=======
+        
+>>>>>>> Stashed changes:Hotel-Suggestion/app/Entities/Users.php
+>>>>>>> Stashed changes:Hotel-Suggestion/app/Entities/User.php
     ];
 
     /**
