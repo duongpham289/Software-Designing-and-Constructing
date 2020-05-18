@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Entities\Product;
+use App\Entities\Room;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateProductRequest;
 use Illuminate\Http\Request;
@@ -11,10 +11,9 @@ class ProductController extends Controller
 {
     public function index(){
         // DB::table('products') //truy vấn cả db
-
-        $products = Product::with('category')->get(); //Lấy ra dssp, with() = category()->first(), $product trả về 1 mảng mà Product ở Entities sử dụng hàm category
+        $rooms = Room::select('id','name','hotel_id','type','price','detail');
         return view('admin.products.index',[
-            'products' => $products
+            'rooms' => $rooms
         ]);
     }
 

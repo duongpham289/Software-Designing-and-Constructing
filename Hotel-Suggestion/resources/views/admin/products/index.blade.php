@@ -47,7 +47,7 @@
 									</thead>
 									<tbody>
 
-                                        @forelse ($products as $item)
+                                        @forelse ($rooms as $item)
 										<tr>
 											<td>{{$item->id}}</td>
 											<td>
@@ -65,7 +65,8 @@
 											<td>
 												<a class="btn btn-{{ $item->quantity>0 ? 'success' : 'danger' }}" href="#" role="button">{{$item->quantity>0 ? 'Còn hàng' : 'Hết hàng'}}</a>
 											</td>
-											<td>{{ optional($item->category)->name }}</td> {{-- $item là 1 bản ghi product, hàm category() định nghĩa ở entities/product --}}
+                                            {{--  <td>{{ optional($item->category)->name }}</td>  --}}
+                                            {{-- $item là 1 bản ghi product, hàm category() định nghĩa ở entities/product --}}
 											<td>
 												<a href="/admin/products/{{$item->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> Sửa</a>
 												<a href="/admin/products/{{$item->id}}" class="btn btn-danger btn-destroy"><i class="fa fa-trash" aria-hidden="true"></i> Xóa</a>
