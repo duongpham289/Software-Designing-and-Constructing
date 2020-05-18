@@ -16,9 +16,14 @@ class UserController extends Controller
         //     'email' => 'abcd@gmail.com',
         //     'name' => 'Hieu Bui',
         // ]);
-        //$users = DB::table('users')->select(['id','name','email','address'])
-        // $users = User::select(['id','name','email','address'])
+        // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
+        $users = User::select(['id','first_name','last_name','address','phone','nationality'])
+        ->get();
+        // $accounts = Account::select(['id','email','level'])
         // ->get();
+
+        $accounts = DB::table('account')->select(['id','email','level'])->get();
+
         // ->where('email','=','%o@mail.com%')
         //->whereId('2')
         //->whereName('abc')
@@ -39,11 +44,12 @@ class UserController extends Controller
         // print_r($users);
         // die;
 
-            $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
+            // $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
 
         // debugbar()->info($users);
         return view('admin.users.index',[
-            'users' => $users
+            'users' => $users,
+            'accounts' => $accounts
         ]);
     }
     public function create(){
