@@ -2,7 +2,7 @@
 
 @section('css')
 
-<link rel="stylesheet" type="text/css" href="assets/client/styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="/assets/client/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -17,7 +17,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/single_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/single_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">the offers</div>
 		</div>
@@ -357,7 +357,7 @@
 							<!-- Title -->
 							<div class="hotel_title_container d-flex flex-lg-row flex-column">
 								<div class="hotel_title_content">
-									<h1 class="hotel_title">Grand Hotel Eurostar</h1>
+                                <h1 class="hotel_title">{{$hotel->name}}</h1>
 									<div class="rating_r rating_r_4 hotel_rating">
 										<i></i>
 										<i></i>
@@ -365,7 +365,7 @@
 										<i></i>
 										<i></i>
 									</div>
-									<div class="hotel_location">345 677 Gran Via Street, no 34, Madrid, Spain</div>
+                                <div class="hotel_location">{{$hotel->address}}</div>
 								</div>
 								<div class="hotel_title_button ml-lg-auto text-lg-right">
 									<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -378,7 +378,7 @@
 							<!-- Listing Image -->
 
 							<div class="hotel_image">
-								<img src="assets/client/images/listing_hotel.jpg" alt="">
+								<img src="/assets/client/images/listing_hotel.jpg" alt="">
 								<div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
 									<div class="hotel_review">
 										<div class="hotel_review_content">
@@ -398,64 +398,64 @@
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_1.jpg">
-												<img src="images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_1.jpg">
+												<img src="/assets/client/images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_2.jpg">
-												<img src="images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_2.jpg">
+												<img src="/assets/client/images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_3.jpg">
-												<img src="images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_3.jpg">
+												<img src="/assets/client/images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_4.jpg">
-												<img src="images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_4.jpg">
+												<img src="/assets/client/images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_5.jpg">
-												<img src="images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_5.jpg">
+												<img src="/assets/client/images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_6.jpg">
-												<img src="images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_6.jpg">
+												<img src="/assets/client/images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_7.jpg">
-												<img src="images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_7.jpg">
+												<img src="/assets/client/images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_8.jpg">
-												<img src="images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_8.jpg">
+												<img src="/assets/client/images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_9.jpg">
-												<img src="images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_9.jpg">
+												<img src="/assets/client/images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
 											</a>
 										</div>
 									</div>
@@ -502,17 +502,17 @@
 							<!-- Hotel Info Text -->
 
 							<div class="hotel_info_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+                            <p>{{$hotel->detail}}</p>
 							</div>
 
 							<!-- Hotel Info Tags -->
 
 							<div class="hotel_info_tags">
 								<ul class="hotel_icons_list">
-									<li class="hotel_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 								</ul>
 							</div>
 
@@ -525,17 +525,19 @@
 							<!-- Room -->
 							<div class="room">
 
-								<!-- Room -->
+                                <!-- Room -->
+                                @foreach ($hotel->room()->get() as $item)
+
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
+										<div class="room_image"><img src="/assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
-											<div class="room_title">Double or Twin Room</div>
-											<div class="room_price">$99/night</div>
+											<div class="room_title">{{ $item->name  }}</div>
+											<div class="room_price">Giá: {{ number_format($item->price)}}VNĐ/ 1 đêm</div>
 											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-											<div class="room_extra">Breakfast $7.50</div>
+											<div class="room_extra">{{ $item->type  }}</div>
 										</div>
 									</div>
 									<div class="col-lg-3 text-lg-right">
@@ -543,10 +545,11 @@
 											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
-								</div>
+                                </div>
+                                @endforeach
 							</div>
 
-							<!-- Room -->
+							{{-- <!-- Room -->
 							<div class="room">
 
 								<!-- Room -->
@@ -568,7 +571,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> --}}
 
 						</div>
 
@@ -583,7 +586,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
+												<img src="/assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -607,7 +610,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="assets/client/images/review_2.jpg" alt="Image by Andrew Robles">
+												<img src="/assets/client/images/review_2.jpg" alt="Image by Andrew Robles">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -631,7 +634,7 @@
 
 						<!-- Location on Map -->
 
-						<div class="location_on_map">
+						{{-- <div class="location_on_map">
 							<div class="location_on_map_title">location on map</div>
 
 							<!-- Google Map -->
@@ -644,7 +647,7 @@
 								</div>
 							</div>
 
-						</div>
+						</div> --}}
 					</div>
 				</div>
 			</div>
