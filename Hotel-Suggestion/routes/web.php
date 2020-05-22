@@ -43,14 +43,14 @@ Route::group([
         Route::get('{order}/edit', 'OrderController@edit');
         Route::put('{order}', 'OrderController@update');
     });
-    Route::group(['prefix' => 'products'], function () {
-        Route::get('', 'ProductController@index');
-        Route::get('create', 'ProductController@create');
-        Route::post('', 'ProductController@store');
-        Route::get('{product}/edit', 'ProductController@edit');
-        Route::put('{product}', 'ProductController@update');
-        Route::delete('{product}', 'ProductController@destroy');
-        Route::get('{product}', 'ProductController@show');
+    Route::group(['prefix' => 'hotels'], function () {
+        Route::get('', 'HotelController@index');
+        Route::get('create', 'HotelController@create');
+        Route::post('', 'HotelController@store');
+        Route::get('{Hotel}/edit', 'HotelController@edit');
+        Route::put('{Hotel}', 'HotelController@update');
+        Route::delete('{Hotel}', 'HotelController@destroy');
+        Route::get('{Hotel}', 'HotelController@show');
     });
     Route::resource('users', 'UserController');
 });
