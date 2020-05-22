@@ -52,5 +52,15 @@ Route::group([
         Route::delete('{product}', 'ProductController@destroy');
         Route::get('{product}', 'ProductController@show');
     });
-    Route::resource('users', 'UserController');
+
+
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('', 'UserController@index');
+        Route::get('create', 'UserController@create');
+        Route::post('', 'UserController@store');
+        Route::get('{account}/edit', 'UserController@edit');
+        Route::put('{account}', 'UserController@update');
+        Route::delete('{account}', 'UserController@destroy');
+        Route::get('{account}', 'UserController@show');
+    });
 });

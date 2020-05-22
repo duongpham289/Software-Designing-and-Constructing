@@ -29,9 +29,7 @@
                                     <tr class="bg-primary">
                                         <th>ID</th>
                                         <th>Email</th>
-                                        <th>Full</th>
-                                        <th>Address</th>
-                                        <th>Phone</th>
+                                        <th>Tên</th>
                                         <th>Level</th>
                                         <th width='18%'>Tùy chọn</th>
                                     </tr>
@@ -39,13 +37,12 @@
                                 <tbody>
                                 @forelse($users as $user)
                                 <tr>
-                                        <td>{{ $user->id }}</td>
-                                        <td>{{ $user->email }}</td>
-                                        <td>{{ $user->name }}</td>
-                                        <td>{{ $user->address }}</td>
-                                        <td>{{ $user->phone ?? '' }}</td>
-                                        {{--  <td>{{ $user->created_at ?? '' }}</td>  --}}
-                                        <td>{{ $user->roles->pluck('name')->implode(', ') ?? '' }}</td>
+                                    <td>{{ $account->id }}</td>
+                                    <td>{{ $account->email }}</td>
+                                    <td>{{ $account->name }}</td>
+                                    <td>{{ $account->level ?? '' }}</td>
+
+
                                         <td>
                                             <a href="/admin/users/{{$user->id}}/edit" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i> Sửa</a>
                                             <a href="/admin/users/{{$user->id}}" class="btn btn-danger btn-destroy"><i class="fa fa-trash" aria-hidden="true"></i> Xóa</a>

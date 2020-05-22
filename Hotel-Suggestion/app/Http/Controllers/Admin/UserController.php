@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Entities\User;
+// use App\Entities\Users;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
 use Illuminate\Http\Request;
@@ -16,9 +16,12 @@ class UserController extends Controller
         //     'email' => 'abcd@gmail.com',
         //     'name' => 'Hieu Bui',
         // ]);
-        //$users = DB::table('users')->select(['id','name','email','address'])
-        // $users = User::select(['id','name','email','address'])
+
+        $accounts = DB::table('account')->select(['id','name','email','level'])->get();
+
+        // $accounts = Users::select(['id','email','level'])
         // ->get();
+
         // ->where('email','=','%o@mail.com%')
         //->whereId('2')
         //->whereName('abc')
@@ -43,29 +46,21 @@ class UserController extends Controller
 
         // debugbar()->info($users);
         return view('admin.users.index',[
-            'users' => $users
+            'accounts' => $accounts
         ]);
     }
     public function create(){
         return view('admin.users.create');
     }
-    public function store(Request $request){
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required|min:6|confirmed',
-            'full' => 'required',
-            'address' => 'required',
-            'phone' => 'required|numeric',
-        ]);
+    public function store(UpdateUserRequest $request){
         $input = $request->only([
+            'name',
             'email',
             'password',
-            'full',
-            'address',
-            'phone',
+            'level',
         ]);
-        $user = User::create($input);
-        return redirect("/admin/user/{$user->id}/edit");
+        $account = Account::create($input);
+        return redirect("/admin/users/{$account->id}/edit");
     }
     public function edit($user){ // User $user ?
         $user = User::findOrFail($user);
@@ -74,18 +69,19 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, $user){
         $input = $request->only([
             'email',
+            'name',
             'password',
-            'full',
-            'address',
-            'phone',
+            'level',
         ]);
-        $user = User::findOrFail($user);
-        $user->fill($input);
-        $user->save();
+        $account = Account::findOrFail($account);
+        $account->fill($input);
+
+        $account->save();
+        // print_r($account);die;
         return back();
     }
-    public function destroy($user){
-        $deleted = User::destroy($user);
+    public function destroy($account){
+        $deleted = Account::destroy($account);
         if($deleted){
             return response()->json([], 204);
         }
