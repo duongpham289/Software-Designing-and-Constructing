@@ -11,22 +11,38 @@ class AccountSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('account')->insert([
-            ['email'=>'tuanadbac@email.com',
-            'password'=>'password',
-            'level'=>1
+        DB::table('accounts')->insert([
+            [
+                'name'=>'tuan',
+                'email'=>'tuanadbac@email.com',
+                'password'=>'password',
+                'level'=>1,
+                'created_at'=>now(),
+                'updated_at'=>now()
             ],
-            ['email'=>'Hieubui@email.com',
-            'password'=>'password',
-            'level'=>1
+            [
+                'name'=>'hieu',
+                'email'=>'Hieubui@email.com',
+                'password'=>'password',
+                'level'=>1,
+                'created_at'=>now(),
+                'updated_at'=>now()
             ],
-            ['email'=>'DuongPham@email.com',
-            'password'=>'password',
-            'level'=>1
+            [
+                'name'=>'duong',
+                'email'=>'DuongPham@email.com',
+                'password'=>'password',
+                'level'=>1,
+                'created_at'=>now(),
+                'updated_at'=>now()
             ],
-            ['email'=>'Anhducbui@email.com',
-            'password'=>'password',
-            'level'=>1
+            [
+                'name'=>'ducanh',
+                'email'=>'Anhducbui@email.com',
+                'password'=>'password',
+                'level'=>1,
+                'created_at'=>now(),
+                'updated_at'=>now()
             ],
         ]);
     }

@@ -2,24 +2,21 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Entities\Product;
+use App\Entities\Hotel;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UpdateProductRequest;
+use App\Http\Requests\UpdateHotelRequest;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class HotelController extends Controller
 {
     public function index(){
-        // DB::table('products') //truy vấn cả db
-
-        $products = Product::with('category')->get(); //Lấy ra dssp, with() = category()->first(), $product trả về 1 mảng mà Product ở Entities sử dụng hàm category
-        return view('admin.products.index',[
-            'products' => $products
-        ]);
+        // DB::table('hotels') //truy vấn cả db
+        $hotels = Hotel::get();
+        return view('admin.hotels.index',compact('hotels'));
     }
 
     public function create(){
-        return view('admin.products.create');
+        return view('admin.hotels.create');
     }
 
     public function store(Request $request){
@@ -29,8 +26,6 @@ class ProductController extends Controller
             'name' => 'required|',
             'price' =>'required|numeric|min:0',
             'img' => 'sometimes|image',
-        ], [
-            'sku.required' => 'Thiếu mã sản phẩm'
         ]);
         $input = $request->only([
             'category_id',
@@ -43,27 +38,27 @@ class ProductController extends Controller
         ]);
 
             if ($request->hasFile('img')){
-                $imgName=uniqid('vietpro_k88'). '.' . $request->img->getClientOriginalExtension();  //Đổi tên unique cho ảnh để không trùng ,getClientOriginalExtension : lấy ra phần đuôi (tên file mở rộng)
-                $destinationDir = public_path('/files/images/products'); //Directory , public_path : Trả tới địa chỉ đang có trên pc (hardaddress)
+                $imgName=uniqid('img'). '.' . $request->img->getClientOriginalExtension();  //Đổi tên unique cho ảnh để không trùng ,getClientOriginalExtension : lấy ra phần đuôi (tên file mở rộng)
+                $destinationDir = public_path('/files/images/hotels_img'); //Directory , public_path : Trả tới địa chỉ đang có trên pc (hardaddress)
                 $request->img->move($destinationDir,$imgName);  //move($Location,$filesName), $Location: Là thư mục chứa file upload lên Sever, $filesName: Là tên mới của file.
-                $input['avatar'] = asset("/files/images/products/{$imgName}"); //asset trả tới địa chỉ đường dẫn trên server(browser) (softaddress)
+                $input['avatar'] = asset("/files/images/hotels_img/{$imgName}"); //asset trả tới địa chỉ đường dẫn trên server(browser) (softaddress)
             }
 
             //.gitignore ignore mọi thứ (.) thư mục trừ file .gitigore
             // print_r($request ->all());
-            $product = Product::create($input);
-            return redirect("/admin/products/{$product->id}/edit");
+            $hotel = Hotel::create($input);
+            return redirect("/admin/hotels/{$hotel->id}/edit");
         // print_r($request->all());die;
     }
-    public function edit($product){
-        //public function edit(Product $product){
-        $product = Product::findOrFail($product);
-        //if (!$product) abort(404);
-        return view('admin.products.edit', compact('product'));
+    public function edit($hotel){
+        //public function edit(hotel $hotel){
+        $hotel = Hotel::findOrFail($hotel);
+        //if (!$hotel) abort(404);
+        return view('admin.hotels.edit', compact('hotel'));
       //<=>
-      //return view('admin.products.edit',['product' => $product]);
+      //return view('admin.hotels.edit',['hotel' => $hotel]);
     }
-    public function update(UpdateProductRequest $request, $product){
+    public function update(UpdateHotelRequest $request, $hotel){
         $input = $request->only([
             'category_id',
             'sku',
@@ -74,13 +69,13 @@ class ProductController extends Controller
             'detail',
             'description',
         ]);
-        $product = Product::findOrFail($product);
-        $product->fill($input);
-        $product->save();
+        $hotel = Hotel::findOrFail($hotel);
+        $hotel->fill($input);
+        $hotel->save();
         return back();
     }
-    public function destroy($product){
-        $deleted = Product::destroy($product);  //Trả về 1,2,3 nếu tìm thấy 1,2,3 bản ghi ngược lại là 0
+    public function destroy($hotel){
+        $deleted = Hotel::destroy($hotel);  //Trả về 1,2,3 nếu tìm thấy 1,2,3 bản ghi ngược lại là 0
         if ($deleted){
             return response()->json([], 204); //204 No Content: Server đã xử lý thành công request nhưng không trả về bất cứ content nào.
         }
