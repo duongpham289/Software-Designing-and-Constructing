@@ -29,11 +29,12 @@ class HomeController extends Controller
     }
 
     public function blog(){
-        
+
         return view('client.home.blog');
     }
     public function offers(){
-        return view('client.home.offers');
+        $hotel = Hotel::limit(6)->get();
+        return view('client.home.offers',compact('hotel'));
     }
 
     public function single_listing(){
