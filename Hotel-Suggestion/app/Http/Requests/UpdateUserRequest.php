@@ -13,7 +13,7 @@ class UpdateUserRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,11 +24,19 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email|unique',
-            'password' => 'required|min:6|confirmed',
-            'full' => 'required',
-            'address' => 'required',
-            'phone' => 'required|numeric',
+            'name' =>'required',
+            'email'=>'required|email',
+            'password'=>'required|min:6',
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'name.required'=>'Không được để trống name',
+            'email.required'=>'Không được để trống email',
+            'email.email'=>'Email không đúng định dạng',
+            'password.required'=>'Password không được để trống',
+            'password.min'=>'Password không được nhỏ hơn 6 ký tự',
         ];
     }
 }

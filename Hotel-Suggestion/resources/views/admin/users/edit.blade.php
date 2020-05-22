@@ -11,14 +11,14 @@
         <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading"><i class="fas fa-user"></i> Sửa thành viên - admin@gmail.com</div>
-
+{{--
                 @if ($errors->any())
                 @component('admin.layouts.components.alert')
                 @slot('type', 'danger')
                 @slot('stroke', 'cancel')
                 {{ $errors->first() }}
                 @endcomponent
-                @endif
+                @endif  --}}
 
                 <div class="panel-body">
                     <form action="/admin/users/{{$account->id}}" method="POST">
@@ -33,6 +33,12 @@
                                 <input type="text" name="email" class="form-control" value="{{$account->email}}">
                                 <div class="alert alert-danger" role="alert">
                                     <strong>email đã tồn tại!</strong>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Tên</label>
+                                <input type="text" name="name" class="form-control" value="{{$account->name}}">
+                                <div class="alert" role="alert">
                                 </div>
                             </div>
                             <div class="form-group">

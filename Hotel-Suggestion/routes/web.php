@@ -52,6 +52,16 @@ Route::group([
         Route::delete('{Hotel}', 'HotelController@destroy');
         Route::get('{Hotel}', 'HotelController@show');
     });
-    Route::resource('users', 'UserController');
     Route::get('','DashboardController');
+
+
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('', 'UserController@index');
+        Route::get('create', 'UserController@create');
+        Route::post('', 'UserController@store');
+        Route::get('{account}/edit', 'UserController@edit');
+        Route::put('{account}', 'UserController@update');
+        Route::delete('{account}', 'UserController@destroy');
+        Route::get('{account}', 'UserController@show');
+    });
 });
