@@ -23,8 +23,7 @@
                                 ><svg class="glyph stroked cancel">
                                     <use xlink:href="#stroked-cancel"></use>
                                 </svg>
-                                Logout</a
-                            >
+                                Logout</a>
                         </li>
                     </ul>
                 </li>

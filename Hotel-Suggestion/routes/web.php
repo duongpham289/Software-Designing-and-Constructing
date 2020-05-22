@@ -32,7 +32,7 @@ Route::group([
     'namespace' => 'Admin'
 ], function () {
 
-    Route::resource('categories', 'CategoryController');
+    Route::resource('rooms', 'RoomController');
     // Route::get('', 'DashboardController');
     Route::get('login', 'LoginController@showLoginForm');
     Route::post('login', 'LoginController@login');
@@ -53,4 +53,5 @@ Route::group([
         Route::get('{Hotel}', 'HotelController@show');
     });
     Route::resource('users', 'UserController');
+    Route::get('','DashboardController');
 });
