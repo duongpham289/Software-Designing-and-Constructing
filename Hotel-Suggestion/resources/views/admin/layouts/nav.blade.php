@@ -16,9 +16,7 @@
                                 ><svg class="glyph stroked male-user">
                                     <use
                                         xlink:href="#stroked-male-user"
-                                    ></use></svg
-                                >Thông tin</a
-                            >
+                                    ></use></svg>Thông tin</a>
                         </li>
                         <li>
                             <a href="login.html"
