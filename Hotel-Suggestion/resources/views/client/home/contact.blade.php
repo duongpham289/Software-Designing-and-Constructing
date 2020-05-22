@@ -111,20 +111,20 @@
 
 	<!-- Google Map -->
 
-	<div class="travelix_map">
+	{{-- <div class="travelix_map">
 		<div id="google_map" class="google_map">
 			<div class="map_container">
 				<div id="map"></div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 
 
 <script src="/assets/client/js/jquery-3.2.1.min.js"></script>
 <script src="/assets/client/styles/bootstrap4/popper.js"></script>
 <script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
 <script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+{{-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script> --}}
 <script src="/assets/client/js/contact_custom.js"></script>
 
 @endsection
