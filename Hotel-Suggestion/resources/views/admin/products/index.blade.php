@@ -7,14 +7,14 @@
 				<li><a href="#"><svg class="glyph stroked home">
 							<use xlink:href="#stroked-home"></use>
 						</svg></a></li>
-				<li class="active">Danh sách sản phẩm</li>
+				<li class="active">Danh sách </li>
 			</ol>
 		</div>
 		<!--/.row-->
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Danh sách sản phẩm</h1>
+				<h1 class="page-header">Danh sách phòng</h1>
 			</div>
 		</div>
 		<!--/.row-->

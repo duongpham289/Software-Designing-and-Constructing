@@ -4,7 +4,7 @@ namespace App\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Room extends Model
+class Comment extends Model
 {
     //
 }

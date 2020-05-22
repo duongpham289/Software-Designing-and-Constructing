@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Entities\User;
+use App\Entities\Users;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Entities\Account;
 class UserController extends Controller
 {
     public function index(){
@@ -16,9 +17,33 @@ class UserController extends Controller
         //     'email' => 'abcd@gmail.com',
         //     'name' => 'Hieu Bui',
         // ]);
+<<<<<<< Updated upstream
+        // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
+        $users = User::select(['id','first_name','last_name','address','phone','nationality'])
+        ->get();
+        // $accounts = Account::select(['id','email','level'])
+        // ->get();
+
+        $accounts = DB::table('account')->select(['id','email','level'])->get();
+
+=======
+<<<<<<< Updated upstream
         //$users = DB::table('users')->select(['id','name','email','address'])
         // $users = User::select(['id','name','email','address'])
         // ->get();
+=======
+        // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
+        $users = Users::select(['id','first_name','last_name','address','phone','nationality'])
+        ->get();
+        // $accounts = Account::select(['id','email','level'])
+        // ->get();
+
+        $accounts = DB::table('account')->select(['id','email','level'])->get();
+
+        // $accounts = Users::select(['id','email','level'])
+        // ->get();
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         // ->where('email','=','%o@mail.com%')
         //->whereId('2')
         //->whereName('abc')
@@ -39,11 +64,12 @@ class UserController extends Controller
         // print_r($users);
         // die;
 
-            $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
+            // $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
 
         // debugbar()->info($users);
         return view('admin.users.index',[
-            'users' => $users
+            'users' => $users,
+            'accounts' => $accounts
         ]);
     }
     public function create(){
@@ -67,19 +93,17 @@ class UserController extends Controller
         $user = User::create($input);
         return redirect("/admin/user/{$user->id}/edit");
     }
-    public function edit($user){ // User $user ?
-        $user = User::findOrFail($user);
-        return view('admin.users.edit',compact('user'));
+    public function edit($account){ // User $user ?
+        $account = Account::findOrFail($account);
+        return view('admin.users.edit',compact('account'));
     }
-    public function update(UpdateUserRequest $request, $user){
+    public function update(UpdateUserRequest $request, $account){
         $input = $request->only([
             'email',
             'password',
-            'full',
-            'address',
-            'phone',
+            'level'
         ]);
-        $user = User::findOrFail($user);
+        $account = Account::findOrFail($account);
         $user->fill($input);
         $user->save();
         return back();

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAcountTable extends Migration
+class CreateAccountTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAcountTable extends Migration
      */
     public function up()
     {
-        Schema::create('acount', function (Blueprint $table) {
+        Schema::create('account', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
             $table->string('password');
