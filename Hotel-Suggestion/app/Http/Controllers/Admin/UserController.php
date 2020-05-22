@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Entities\Account;
 class UserController extends Controller
 {
     public function index(){
@@ -17,34 +18,13 @@ class UserController extends Controller
         //     'name' => 'Hieu Bui',
         // ]);
 
+
         $accounts = DB::table('account')->select(['id','name','email','level'])->get();
 
         // $accounts = Users::select(['id','email','level'])
         // ->get();
 
-        // ->where('email','=','%o@mail.com%')
-        //->whereId('2')
-        //->whereName('abc')
-        //->whereEmailVerifieldAt('abc')
-        //->where('id','>','2') // = > < >= <= <> like
-        //->limit(2)->offset(1) // bỏ qua
-        //=
-        //->skip(1)->take(2)
-        //->get(); //lấy ra dạng mảng
-        //->first(); //lấy ra chính xác 1 cái
-        // print_r($users);
-        // DB::table('users')->insert([
-        //     'name'=>'Boss',
-        //     'email'=>'boss@mail.com',
-        //     'password'=>'123123123',
-        // ]);
-        // $users = DB::table('users')->where('email','=','boss@mail.com')->first();
-        // print_r($users);
-        // die;
 
-            $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
-
-        // debugbar()->info($users);
         return view('admin.users.index',[
             'accounts' => $accounts
         ]);
@@ -62,11 +42,11 @@ class UserController extends Controller
         $account = Account::create($input);
         return redirect("/admin/users/{$account->id}/edit");
     }
-    public function edit($user){ // User $user ?
-        $user = User::findOrFail($user);
-        return view('admin.users.edit',compact('user'));
+    public function edit($account){ // User $user ?
+        $account = Account::findOrFail($account);
+        return view('admin.users.edit',compact('account'));
     }
-    public function update(UpdateUserRequest $request, $user){
+    public function update(UpdateUserRequest $request, $account){
         $input = $request->only([
             'email',
             'name',

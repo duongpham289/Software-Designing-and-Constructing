@@ -18,7 +18,7 @@
             </a>
         </li>
         <li>
-            <a href="admin/products" class="menu-products">
+            <a href="admin/hotels" class="menu-products">
                 <svg class="glyph stroked bag">
                     <use xlink:href="#stroked-bag"></use>
                 </svg>

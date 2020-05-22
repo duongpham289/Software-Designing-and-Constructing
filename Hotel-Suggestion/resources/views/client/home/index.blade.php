@@ -390,7 +390,7 @@
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
                         <div class="intro_center text-center">
                             <h1>{{$item->address}}</h1>
-                            <div class="intro_price">From {{ $item->suggest_price }}đ</div>
+                            <div class="intro_price">From {{ number_format($item->suggest_price) }}VND</div>
                             <div class="rating rating_4">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -579,7 +579,7 @@
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
                                 <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
-                                <div class="offer_name"><a href="#">{{$item->name}}</a></div>
+                                <div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{$item->name}}</a></div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -914,7 +914,7 @@
                 <div class="trending_item clearfix">
                     <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
-                        <div class="trending_title"><a href="#">{{ $item->name }}</a></div>
+                        <div class="trending_title"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
                         <div class="trending_price">From {{ $item->suggest_price }}</div>
                         <div class="trending_location">{{ $item->address }}</div>
                     </div>
