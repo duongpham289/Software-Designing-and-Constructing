@@ -27,6 +27,7 @@ class HomeController extends Controller
         return view('client.home.blog');
     }
     public function offers(){
+        
         return view('client.home.offers');
     }
 

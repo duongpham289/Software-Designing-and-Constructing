@@ -17,7 +17,7 @@
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="assets/client/images/single_background.jpg"></div>
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/single_background.jpg"></div>
 		<div class="home_content">
 			<div class="home_title">the offers</div>
 		</div>
@@ -42,12 +42,12 @@
 
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/bus.png" alt="">car rentals</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/departure.png" alt="">flights</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/island.png" alt="">trips</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/cruise.png" alt="">cruises</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/diving.png" alt="">activities</div>
 								</div>
 							</div>
 
@@ -378,7 +378,7 @@
 							<!-- Listing Image -->
 
 							<div class="hotel_image">
-								<img src="assets/client/images/listing_hotel.jpg" alt="">
+								<img src="/assets/client/images/listing_hotel.jpg" alt="">
 								<div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
 									<div class="hotel_review">
 										<div class="hotel_review_content">
@@ -398,64 +398,64 @@
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_1.jpg">
-												<img src="images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_1.jpg">
+												<img src="/assets/client/images/listing_thumb_1.jpg" alt="https://unsplash.com/@jbriscoe">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_2.jpg">
-												<img src="images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_2.jpg">
+												<img src="/assets/client/images/listing_thumb_2.jpg" alt="https://unsplash.com/@grovemade">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_3.jpg">
-												<img src="images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_3.jpg">
+												<img src="/assets/client/images/listing_thumb_3.jpg" alt="https://unsplash.com/@fransaraco">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_4.jpg">
-												<img src="images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_4.jpg">
+												<img src="/assets/client/images/listing_thumb_4.jpg" alt="https://unsplash.com/@workweek">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_5.jpg">
-												<img src="images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_5.jpg">
+												<img src="/assets/client/images/listing_thumb_5.jpg" alt="https://unsplash.com/@workweek">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_6.jpg">
-												<img src="images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_6.jpg">
+												<img src="/assets/client/images/listing_thumb_6.jpg" alt="https://unsplash.com/@avidenov">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_7.jpg">
-												<img src="images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_7.jpg">
+												<img src="/assets/client/images/listing_thumb_7.jpg" alt="https://unsplash.com/@pietruszka">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_8.jpg">
-												<img src="images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_8.jpg">
+												<img src="/assets/client/images/listing_thumb_8.jpg" alt="https://unsplash.com/@rktkn">
 											</a>
 										</div>
 
 										<!-- Hotel Gallery Slider Item -->
 										<div class="owl-item">
-											<a class="colorbox cboxElement" href="images/listing_9.jpg">
-												<img src="images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
+											<a class="colorbox cboxElement" href="/assets/client/images/listing_9.jpg">
+												<img src="/assets/client/images/listing_thumb_9.jpg" alt="https://unsplash.com/@mindaugas">
 											</a>
 										</div>
 									</div>
@@ -509,10 +509,10 @@
 
 							<div class="hotel_info_tags">
 								<ul class="hotel_icons_list">
-									<li class="hotel_icons_item"><img src="assets/client/images/post.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/compass.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/bicycle.png" alt=""></li>
-									<li class="hotel_icons_item"><img src="assets/client/images/sailboat.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+									<li class="hotel_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
 								</ul>
 							</div>
 
@@ -528,7 +528,7 @@
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
+										<div class="room_image"><img src="/assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
@@ -552,7 +552,7 @@
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="assets/client/images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
+										<div class="room_image"><img src="/assets/client/images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
@@ -583,7 +583,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
+												<img src="/assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -607,7 +607,7 @@
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
-												<img src="assets/client/images/review_2.jpg" alt="Image by Andrew Robles">
+												<img src="/assets/client/images/review_2.jpg" alt="Image by Andrew Robles">
 											</div>
 										</div>
 										<div class="col-lg-11">
@@ -629,22 +629,7 @@
 							</div>
 						</div>
 
-						<!-- Location on Map -->
 
-						<div class="location_on_map">
-							<div class="location_on_map_title">location on map</div>
-
-							<!-- Google Map -->
-
-							<div class="travelix_map">
-								<div id="google_map" class="google_map">
-									<div class="map_container">
-										<div id="map"></div>
-									</div>
-								</div>
-							</div>
-
-						</div>
 					</div>
 				</div>
 			</div>
