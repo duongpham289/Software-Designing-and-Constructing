@@ -1,10 +1,37 @@
 
+@extends('client.layouts.web', ['title' => 'Booking'])
 
+@section('css')
+
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
+<link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/offers_styles.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/offers_responsive.css">
+
+@endsection
+
+@section('content')
+<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="/assets/client/images/contact_background.jpg"></div>
+		<div class="home_content">
+			<div class="home_title">Booking</div>
+		</div>
+    </div>
+<!-- Booking -->
 <div class="section-top-border">
     <div class="row">
         <div class="col-lg-8 col-md-8">
-            <h3 class="mb-30">Form Element</h3>
-            <form action="#">
+            @if ($errors->any())
+                            @component('admin.layouts.components.alert')
+                            @slot('type', 'danger')
+                            @slot('stroke', 'cancel')
+                            {{ $errors->first() }}
+                            @endcomponent
+                            @endif
+            <h3 class="mb-30">Booking Information</h3>
+            <form action="/booking",@method(POST)>
                 <div class="mt-10">
                     <input type="text" name="first_name" placeholder="First Name"
                         onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'" required
@@ -59,3 +86,12 @@
                     <textarea class="single-textarea" placeholder="Message" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = 'Message'" required></textarea>
                 </div>
+                <script src="/assets/client/js/jquery-3.2.1.min.js"></script>
+                <script src="/assets/client/styles/bootstrap4/popper.js"></script>
+                <script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
+                <script src="/assets/client/plugins/Isotope/isotope.pkgd.min.js"></script>
+                <script src="/assets/client/plugins/easing/easing.js"></script>
+                <script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
+                <script src="/assets/client/js/offers_custom.js"></script>
+
+                @endsection
