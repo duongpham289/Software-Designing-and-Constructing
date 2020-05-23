@@ -17,33 +17,25 @@ class UserController extends Controller
         //     'email' => 'abcd@gmail.com',
         //     'name' => 'Hieu Bui',
         // ]);
-<<<<<<< Updated upstream
         // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
-        $users = User::select(['id','first_name','last_name','address','phone','nationality'])
-        ->get();
+        $users = User::get();
         // $accounts = Account::select(['id','email','level'])
-        // ->get();
+        // // ->get();
 
-        $accounts = DB::table('account')->select(['id','email','level'])->get();
+        // $accounts = DB::table('account')->select(['id','email','level'])->get();
 
-=======
-<<<<<<< Updated upstream
         //$users = DB::table('users')->select(['id','name','email','address'])
         // $users = User::select(['id','name','email','address'])
         // ->get();
-=======
         // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
-        $users = Users::select(['id','first_name','last_name','address','phone','nationality'])
-        ->get();
+        // $users = Users::select(['id','first_name','last_name','address','phone','nationality'])
+        // ->get();
         // $accounts = Account::select(['id','email','level'])
         // ->get();
-
-        $accounts = DB::table('account')->select(['id','email','level'])->get();
+        $accounts = Account::get();
 
         // $accounts = Users::select(['id','email','level'])
         // ->get();
->>>>>>> Stashed changes
->>>>>>> Stashed changes
         // ->where('email','=','%o@mail.com%')
         //->whereId('2')
         //->whereName('abc')
@@ -71,6 +63,7 @@ class UserController extends Controller
             'users' => $users,
             'accounts' => $accounts
         ]);
+
     }
     public function create(){
         return view('admin.users.create');
@@ -93,7 +86,7 @@ class UserController extends Controller
         $user = User::create($input);
         return redirect("/admin/user/{$user->id}/edit");
     }
-    public function edit($account){ // User $user ?
+    public function edit($account){
         $account = Account::findOrFail($account);
         return view('admin.users.edit',compact('account'));
     }
@@ -104,8 +97,8 @@ class UserController extends Controller
             'level'
         ]);
         $account = Account::findOrFail($account);
-        $user->fill($input);
-        $user->save();
+        $account->fill($input);
+        $account->save();
         return back();
     }
     public function destroy($user){

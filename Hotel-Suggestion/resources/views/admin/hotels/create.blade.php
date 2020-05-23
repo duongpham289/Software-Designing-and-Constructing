@@ -52,10 +52,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Giá kiến nghị</label>
-                                        <input type="number" name="price" class="form-control">
+                                        <input type="number" name="suggest_price" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        {{-- <label>khách sạn có nổi bật</label>
+                                        <label>Địa chỉ</label>
+                                        <input type="text" name="address" class="form-control">
+                                    </div>
+                                    {{-- <div class="form-group">
+                                        <label>khách sạn có nổi bật</label>
                                         <select name="featured" class="form-control">
                                             <option value="0">Không</option>
                                             <option value="1">Có</option>
@@ -69,14 +73,14 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Ảnh khách sạn</label>
-                                        <input id="img" type="file" name="img" class="form-control hidden"
+                                        <input id="img" type="file" name="images" class="form-control hidden"
                                             onchange="changeImg(this)">
                                         <img id="avatar" class="thumbnail" width="100%" height="350px" src="/assets/admin/img/import-img.png">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label>Thông tin</label>
+                                        <label>Chi tiết khách sạn</label>
                                         <textarea name="detail" style="width: 100%;height: 100px;"></textarea>
                                     </div>
                                  </div>

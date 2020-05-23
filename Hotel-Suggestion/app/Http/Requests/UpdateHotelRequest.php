@@ -25,11 +25,10 @@ class UpdateHotelRequest extends FormRequest
     public function rules()
     {
         return [
-            'category_id' => 'required',
-            'name' => 'required|numeric',
-            'price' =>'required|numeric|min:0',
-            'img' => 'sometimes|image',
-            'quantity' =>'required|numeric'
+            'name' => 'required|',
+            'suggest_price' =>'required|numeric|min:0',
+            'images' => 'sometimes|image',
+            'address' => 'required|'
         ];
     }
 }

@@ -42,12 +42,12 @@
                                     <input type="text" name="name" class="form-control" value="{{ $hotel->name }}">
                                 </div>
                                 <div class="form-group">
-                                    <label>Giá khách sạn</label>
-                                    <input type="number" name="price" class="form-control" value="{{ $hotel->price }}">
+                                    <label>Giá tham khảo</label>
+                                    <input type="number" name="suggest_price" class="form-control" value="{{ $hotel->suggest_price }}">
                                 </div>
                                 <div class="form-group">
-                                    <label>Loại khách sạn</label>
-                                    <input type="text" name="type" class="form-control" value="{{ $hotel->type }}">
+                                    <label>Địa chỉ</label>
+                                    <input type="text" name="address" class="form-control" value="{{ $hotel->address }}">
                                 </div>
                                 {{-- <div class="form-group">
                                     <label>khách sạn có nổi bật</label>
@@ -67,15 +67,15 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>Ảnh khách sạn</label>
-                                    <input id="img" type="file" name="img" class="form-control hidden" onchange="changeImg(this)">
+                                    <input id="img" type="file" name="images" class="form-control hidden" onchange="changeImg(this)">
                                     <img id="avatar" class="thumbnail" width="100%" height="350px" src="/assets/admin/img/import-img.png">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label>Thông tin</label>
+                                    <label>Chi tiết</label>
                                     <textarea name="detail" style="width: 100%;height: 100px;">
-
+                                        {{ $hotel->detail }}
                                     </textarea>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                                         {{ $product->category->name }}
                                         {{ $product->category->name }} --}}
                                     </textarea>
-                                </div> --}}
+                                </div>
                                 <button class="btn btn-success" name="add-product" type="submit">Sửa khách sạn</button>
                                 <button class="btn btn-danger" type="reset">Huỷ bỏ</button>
                             </div>

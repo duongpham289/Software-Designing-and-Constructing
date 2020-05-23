@@ -522,7 +522,8 @@
 
 						<div class="rooms">
 
-							<!-- Room -->
+                            <!-- Room -->
+                            @foreach ($hotel->rooms()->get() as $item)
 							<div class="room">
 
 								<!-- Room -->
