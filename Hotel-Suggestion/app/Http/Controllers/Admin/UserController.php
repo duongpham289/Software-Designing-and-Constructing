@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-use App\Entities\Users;
+// use App\Entities\Users;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateUserRequest;
 use Illuminate\Http\Request;
@@ -56,11 +56,8 @@ class UserController extends Controller
         // print_r($users);
         // die;
 
-            // $users = User::with('roles')->get(); //roles vẫn là hàm ở Entities/User.php , lưu trên RAM, tốn bộ nhớ không tốn thời gian query
 
-        // debugbar()->info($users);
         return view('admin.users.index',[
-            'users' => $users,
             'accounts' => $accounts
         ]);
 
@@ -68,23 +65,15 @@ class UserController extends Controller
     public function create(){
         return view('admin.users.create');
     }
-    public function store(Request $request){
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required|min:6|confirmed',
-            'full' => 'required',
-            'address' => 'required',
-            'phone' => 'required|numeric',
-        ]);
+    public function store(UpdateUserRequest $request){
         $input = $request->only([
+            'name',
             'email',
             'password',
-            'full',
-            'address',
-            'phone',
+            'level',
         ]);
-        $user = User::create($input);
-        return redirect("/admin/user/{$user->id}/edit");
+        $account = Account::create($input);
+        return redirect("/admin/users/{$account->id}/edit");
     }
     public function edit($account){
         $account = Account::findOrFail($account);
@@ -93,16 +82,17 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, $account){
         $input = $request->only([
             'email',
+            'name',
             'password',
-            'level'
+            'level',
         ]);
         $account = Account::findOrFail($account);
         $account->fill($input);
         $account->save();
         return back();
     }
-    public function destroy($user){
-        $deleted = User::destroy($user);
+    public function destroy($account){
+        $deleted = Account::destroy($account);
         if($deleted){
             return response()->json([], 204);
         }

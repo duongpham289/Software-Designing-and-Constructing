@@ -2,7 +2,7 @@
 
 @section('css')
 
-<link rel="stylesheet" type="text/css" href="assets/client/styles/bootstrap4/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="/assets/client/plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -357,7 +357,7 @@
 							<!-- Title -->
 							<div class="hotel_title_container d-flex flex-lg-row flex-column">
 								<div class="hotel_title_content">
-									<h1 class="hotel_title">Grand Hotel Eurostar</h1>
+									<h1 class="hotel_title">{{ $hotel->name }}</h1>
 									<div class="rating_r rating_r_4 hotel_rating">
 										<i></i>
 										<i></i>
@@ -365,7 +365,7 @@
 										<i></i>
 										<i></i>
 									</div>
-									<div class="hotel_location">345 677 Gran Via Street, no 34, Madrid, Spain</div>
+									<div class="hotel_location">{{ $hotel->address }}</div>
 								</div>
 								<div class="hotel_title_button ml-lg-auto text-lg-right">
 									<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -502,7 +502,7 @@
 							<!-- Hotel Info Text -->
 
 							<div class="hotel_info_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu</p>
+								<p>{{ $hotel->detail }}</p>
 							</div>
 
 							<!-- Hotel Info Tags -->
@@ -525,7 +525,6 @@
                             <!-- Room -->
                             @foreach ($hotel->rooms()->get() as $item)
 							<div class="room">
-
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
@@ -533,8 +532,8 @@
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
-											<div class="room_title">Double or Twin Room</div>
-											<div class="room_price">$99/night</div>
+											<div class="room_title">{{ $item->type }}</div>
+											<div class="room_price">{{ number_format($item->price) }}</div>
 											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
 											<div class="room_extra">Breakfast $7.50</div>
 										</div>
@@ -545,15 +544,16 @@
 										</div>
 									</div>
 								</div>
-							</div>
+                            </div>
+                            @endforeach
 
 							<!-- Room -->
-							<div class="room">
+							{{-- <div class="room">
 
 								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="room_image"><img src="/assets/client/images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
+										<div class="room_image"><img src="assets/client/images/room_2.jpg" alt="https://unsplash.com/@oowgnuj"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
@@ -569,7 +569,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> --}}
 
 						</div>
 
@@ -630,7 +630,22 @@
 							</div>
 						</div>
 
+						<!-- Location on Map -->
+{{--
+						<div class="location_on_map">
+							<div class="location_on_map_title">location on map</div>
 
+							<!-- Google Map -->
+
+							<div class="travelix_map">
+								<div id="google_map" class="google_map">
+									<div class="map_container">
+										<div id="map"></div>
+									</div>
+								</div>
+							</div>
+
+						</div> --}}
 					</div>
 				</div>
 			</div>

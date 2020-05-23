@@ -16,17 +16,14 @@
                                 ><svg class="glyph stroked male-user">
                                     <use
                                         xlink:href="#stroked-male-user"
-                                    ></use></svg
-                                >Thông tin</a
-                            >
+                                    ></use></svg>Thông tin</a>
                         </li>
                         <li>
                             <a href="login.html"
                                 ><svg class="glyph stroked cancel">
                                     <use xlink:href="#stroked-cancel"></use>
                                 </svg>
-                                Logout</a
-                            >
+                                Logout</a>
                         </li>
                     </ul>
                 </li>

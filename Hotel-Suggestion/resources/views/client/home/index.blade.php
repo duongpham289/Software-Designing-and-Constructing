@@ -378,6 +378,7 @@
         <div class="row intro_items">
 
             <!-- Intro Item -->
+            @foreach ($hotel->slice(0,3) as $item)
 
             <div class="col-lg-4 intro_col">
                 <div class="intro_item">
@@ -388,8 +389,8 @@
                         <div class="intro_date">May 25th - June 01st</div>
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
                         <div class="intro_center text-center">
-                            <h1>Mauritius</h1>
-                            <div class="intro_price">From $1450</div>
+                            <h1>{{$item->address}}</h1>
+                            <div class="intro_price">From {{ number_format($item->suggest_price) }}VND</div>
                             <div class="rating rating_4">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -401,8 +402,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Intro Item -->
+            @endforeach
+            {{--  <!-- Intro Item -->
 
             <div class="col-lg-4 intro_col">
                 <div class="intro_item">
@@ -450,7 +451,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  --}}
 
         </div>
     </div>
@@ -569,7 +570,7 @@
             </div>
         </div>
         <div class="row offers_items">
-
+            @foreach ($hotel->slice(0,4) as $item)
             <!-- Offers Item -->
             <div class="col-lg-6 offers_col">
                 <div class="offers_item">
@@ -578,12 +579,12 @@
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
                                 <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
-                                <div class="offer_name"><a href="#">grand castle</a></div>
+                                <div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{$item->name}}</a></div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="offers_content">
-                                <div class="offers_price">$70<span>per night</span></div>
+                                <div class="offers_price">{{ $item->suggest_price }}đ<span>per night</span></div>
                                 <div class="rating_r rating_r_4 offers_rating">
                                     <i></i>
                                     <i></i>
@@ -591,7 +592,7 @@
                                     <i></i>
                                     <i></i>
                                 </div>
-                                <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                                <p class="offers_text">{{ $item->detail }}</p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list">
                                         <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
@@ -606,8 +607,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Offers Item -->
+            @endforeach
+            {{-- <!-- Offers Item -->
             <div class="col-lg-6 offers_col">
                 <div class="offers_item">
                     <div class="row">
@@ -716,13 +717,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>    --}}
 
         </div>
     </div>
 </div>
 
 <!-- Testimonials -->
+{{--  @foreach ($comment->slice(0,7) as $item)  --}}
+
 
 <div class="testimonials">
     <div class="test_border"></div>
@@ -752,13 +755,13 @@
                                             <div class="test_date">May 24, 2017</div>
                                         </div>
                                         <div class="test_quote_title">" Best holliday ever "</div>
-                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                        {{--  <p class="test_quote_text">{{ $item->detail }}</p>  --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial Item -->
+                        {{--  @endforeach  --}}
+                        {{--  <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
                                 <div class="test_image"><img src="/assets/client/images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
@@ -846,7 +849,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  --}}
 
                     </div>
 
@@ -904,18 +907,21 @@
         <div class="row trending_container">
 
             <!-- Trending Item -->
+            @foreach ($hotel->slice(0,7) as $item)
+
+
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
                     <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
-                        <div class="trending_title"><a href="#">grand hotel</a></div>
-                        <div class="trending_price">From $182</div>
-                        <div class="trending_location">madrid, spain</div>
+                        <div class="trending_title"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
+                        <div class="trending_price">From {{ $item->suggest_price }}</div>
+                        <div class="trending_location">{{ $item->address }}</div>
                     </div>
                 </div>
             </div>
-
-            <!-- Trending Item -->
+            @endforeach
+            {{--  <!-- Trending Item -->
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
                     <div class="trending_image"><img src="/assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
@@ -997,7 +1003,7 @@
                         <div class="trending_location">madrid, spain</div>
                     </div>
                 </div>
-            </div>
+            </div>  --}}
 
         </div>
     </div>

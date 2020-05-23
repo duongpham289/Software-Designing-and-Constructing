@@ -29,6 +29,7 @@
                                     <tr class="bg-primary">
                                         <th>ID</th>
                                         <th>Email</th>
+                                        <th>Tên</th>
                                         <th>Level</th>
                                         <th width='18%'>Tùy chọn</th>
                                     </tr>
@@ -38,6 +39,7 @@
                                 <tr>
                                     <td>{{ $account->id }}</td>
                                     <td>{{ $account->email }}</td>
+                                    <td>{{ $account->name }}</td>
                                     <td>{{ $account->level ?? '' }}</td>
 
 

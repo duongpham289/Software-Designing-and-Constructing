@@ -23,7 +23,7 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('contact', 'HomeController@contact');
     Route::get('blog','HomeController@blog');
     Route::get('offers','HomeController@offers');
-    Route::get('single_listing','HomeController@single_listing');
+Route::get('{detail}/single_listing','HomeController@single_listing');
     Route::get('booking','HomeController@booking');
 });
 // admin
@@ -52,5 +52,16 @@ Route::group([
         Route::put('{Hotel}', 'HotelController@update');
         Route::delete('{Hotel}', 'HotelController@destroy');
     });
-    Route::resource('users', 'UserController');
+    Route::get('','DashboardController');
+
+
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('', 'UserController@index');
+        Route::get('create', 'UserController@create');
+        Route::post('', 'UserController@store');
+        Route::get('{account}/edit', 'UserController@edit');
+        Route::put('{account}', 'UserController@update');
+        Route::delete('{account}', 'UserController@destroy');
+        Route::get('{account}', 'UserController@show');
+    });
 });

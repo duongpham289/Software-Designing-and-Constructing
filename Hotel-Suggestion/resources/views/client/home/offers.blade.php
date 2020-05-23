@@ -406,7 +406,7 @@
 					<div class="offers_grid">
 
 						<!-- Offers Item -->
-
+                        @foreach($hotel as $item)
 						<div class="offers_item rating_4">
 							<div class="row">
 								<div class="col-lg-1 temp_col"></div>
@@ -414,12 +414,12 @@
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
 										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">grand castle</a></div>
+										<div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
 									</div>
 								</div>
 								<div class="col-lg-8">
 									<div class="offers_content">
-										<div class="offers_price">$70<span>per night</span></div>
+										<div class="offers_price">{{ number_format($item->suggest_price) }}VND <span>per night</span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 											<i></i>
 											<i></i>
@@ -427,7 +427,7 @@
 											<i></i>
 											<i></i>
 										</div>
-										<p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+										<p class="offers_text">{{ $item->detail }}</p>
 										<div class="offers_icons">
 											<ul class="offers_icons_list">
 												<li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
@@ -448,8 +448,8 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- Offers Item -->
+                        @endforeach
+						{{-- <!-- Offers Item -->
 
 						<div class="offers_item rating_3">
 							<div class="row">
@@ -623,7 +623,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 
 					</div>
 				</div>
