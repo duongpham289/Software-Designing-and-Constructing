@@ -1,4 +1,4 @@
-@forelse ($categories as $item)
+@forelse ($rooms as $item)
 <option value="{{ $item->id }}"
     {{-- isset($category) && $category->parent_id===$item->id ? 'selected' : '' --}} > {{--  có $category truyền vào thì mới in ra selected  --}}
     {{--  @for ($i = 0; $i < $level; $i++)

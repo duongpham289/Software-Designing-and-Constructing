@@ -523,7 +523,7 @@
 						<div class="rooms">
 
                             <!-- Room -->
-                            @foreach ($hotel->room()->get() as $item)
+                            @foreach ($hotel->rooms()->get() as $item)
 							<div class="room">
 								<!-- Room -->
 								<div class="row">

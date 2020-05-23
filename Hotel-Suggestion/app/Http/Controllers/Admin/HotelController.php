@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Entities\Hotel;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UpdateHotelRequest;
-use Illuminate\Http\Request;
 
 class HotelController extends Controller
 {
@@ -19,35 +18,26 @@ class HotelController extends Controller
         return view('admin.hotels.create');
     }
 
-    public function store(Request $request){
-        $request->validate([
-            'category_id' => 'required',
-            'sku' => 'required',
-            'name' => 'required|',
-            'price' =>'required|numeric|min:0',
-            'img' => 'sometimes|image',
-        ]);
-        $input = $request->only([
-            'category_id',
-            'sku',
+    public function store(UpdateHotelRequest $r){
+
+        $input = $r->only([
             'name',
-            'price',
-            'featured',
+            'suggest_price',
             'detail',
-            'description',
+            'address'
         ]);
 
-            if ($request->hasFile('img')){
-                $imgName=uniqid('img'). '.' . $request->img->getClientOriginalExtension();  //Đổi tên unique cho ảnh để không trùng ,getClientOriginalExtension : lấy ra phần đuôi (tên file mở rộng)
-                $destinationDir = public_path('/files/images/hotels_img'); //Directory , public_path : Trả tới địa chỉ đang có trên pc (hardaddress)
-                $request->img->move($destinationDir,$imgName);  //move($Location,$filesName), $Location: Là thư mục chứa file upload lên Sever, $filesName: Là tên mới của file.
-                $input['avatar'] = asset("/files/images/hotels_img/{$imgName}"); //asset trả tới địa chỉ đường dẫn trên server(browser) (softaddress)
+            if ($r->hasFile('images')){
+                $imgName=uniqid('hotels').".".$r->images->getClientOriginalExtension();
+                $destinationDir = public_path('/files/images/hotels');
+                $r->images->move($destinationDir,$imgName);
+                $input['images'] = asset("files/images/hotels/{$imgName}");
             }
 
             //.gitignore ignore mọi thứ (.) thư mục trừ file .gitigore
-            // print_r($request ->all());
+            // print_r($input);die;
             $hotel = Hotel::create($input);
-            return redirect("/admin/hotels/{$hotel->id}/edit");
+            return redirect("/admin/hotels");
         // print_r($request->all());die;
     }
     public function edit($hotel){
@@ -58,42 +48,47 @@ class HotelController extends Controller
       //<=>
       //return view('admin.hotels.edit',['hotel' => $hotel]);
     }
-    public function update(UpdateHotelRequest $request, $hotel){
-        $input = $request->only([
-            'category_id',
-            'sku',
+    public function update(UpdateHotelRequest $r, $hotel){
+        $input = $r->only([
             'name',
-            'price',
-            'img',
-            'featured',
+            'suggest_price',
             'detail',
-            'description',
+            'address'
         ]);
+        if ($r->hasFile('images')){
+            $imgName=uniqid('hotels').".".$r->images->getClientOriginalExtension();
+            $destinationDir = public_path('/files/images/hotels');
+            $r->images->move($destinationDir,$imgName);
+            $input['images'] = asset("files/images/hotels/{$imgName}");
+        }
+
         $hotel = Hotel::findOrFail($hotel);
         $hotel->fill($input);
         $hotel->save();
-        return back();
+        return redirect("/admin/hotels");
     }
     public function destroy($hotel){
         $deleted = Hotel::destroy($hotel);  //Trả về 1,2,3 nếu tìm thấy 1,2,3 bản ghi ngược lại là 0
         if ($deleted){
             return response()->json([], 204); //204 No Content: Server đã xử lý thành công request nhưng không trả về bất cứ content nào.
         }
-        return response()->json(['message'=>'Sản phẩm cần xóa không tồn tại.'], 404); //404 Not Found: Các tài nguyên hiện tại không được tìm thấy nhưng có thể có trong tương lai. Các request tiếp theo của Client được chấp nhận.
+        return response()->json(['message'=>'Khách sạn cần xóa không tồn tại.'], 404); //404 Not Found: Các tài nguyên hiện tại không được tìm thấy nhưng có thể có trong tương lai. Các request tiếp theo của Client được chấp nhận.
     }
 
-    private function getSubCategories($parentId, $ignoreId =null)
-    {
-        $categories = Category::whereParentId($parentId)
-        ->where('id','<>', $ignoreId)
-        ->get();
-        $categories->map(function($category) use($ignoreId){ // Đệ quy dừng khi $categories = NULL , map : lặp tất cả trong cate tìm đến sub của nó
-            $category->sub = $this->getSubCategories($category->id, $ignoreId); // Tìm parentId, gọi $ignoreId vào đệ quy
-            // print_r($categories->toArray());
-            return $category;
-        });
-        return $categories;
-    }
+    // private function getSubCategories($parentId, $ignoreId =null)
+    // {
+    //     $categories = Category::whereParentId($parentId)
+    //     ->where('id','<>', $ignoreId)
+    //     ->get();
+    //     $categories->map(function($category) use($ignoreId){ // Đệ quy dừng khi $categories = NULL , map : lặp tất cả trong cate tìm đến sub của nó
+    //         $category->sub = $this->getSubCategories($category->id, $ignoreId); // Tìm parentId, gọi $ignoreId vào đệ quy
+    //         // print_r($categories->toArray());
+    //         return $category;
+    //     });
+    //     return $categories;
+    // }
+
+
 
 }
 

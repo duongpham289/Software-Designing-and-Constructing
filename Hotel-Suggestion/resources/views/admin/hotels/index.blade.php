@@ -1,4 +1,4 @@
-@extends('admin.layouts.app', ['title' => 'Danh sách sản phẩm', 'activePage' => 'products' ])
+@extends('admin.layouts.app', ['title' => 'Danh sách sản phẩm', 'activePage' => 'hotels' ])
 @section('content')
 <!--main-->
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
@@ -14,7 +14,7 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Danh sách phòng</h1>
+				<h1 class="page-header">Danh sách khách sạn</h1>
 			</div>
 		</div>
 		<!--/.row-->
@@ -27,12 +27,12 @@
 					<div class="panel-body">
 						<div class="bootstrap-table">
 							<div class="table-responsive">
-								<div class="alert bg-success" role="alert">
+								{{-- <div class="alert bg-success" role="alert">
 									<svg class="glyph stroked checkmark">
 										<use xlink:href="#stroked-checkmark"></use>
 									</svg>Đã thêm thành công<a href="#" class="pull-right"><span class="glyphicon glyphicon-remove"></span></a>
-								</div>
-								<a href="/admin/hotels/create" class="btn btn-primary">Thêm sản phẩm</a>
+								</div> --}}
+								<a href="/admin/hotels/create" class="btn btn-primary">Thêm khách sạn</a>
 								<table class="table table-bordered" style="margin-top:20px;">
 
 									<thead>
@@ -41,6 +41,7 @@
                                             <th>Thông tin khách sạn</th>
                                             <th>Địa chỉ</th>
                                             <th>Chi tiết</th>
+                                            <th>Giá tham khảo</th>
 											<th width='18%'>Tùy chọn</th>
 										</tr>
 									</thead>
@@ -51,14 +52,15 @@
 											<td>{{$item->id}}</td>
 											<td>
 												<div class="row">
-													<div class="col-md-3"><img src="{{$item->avatar}}" alt="{{$item->name}}" width="100px" class="thumbnail"></div>
+													<div class="col-md-3"><img src="{{$item->images}}" alt="{{$item->name}}" width="100px" class="thumbnail"></div>
 													<div class="col-md-9">
-														<p><strong>Tên Khách sạn : {{ $item->name }}</strong></p>
+														<p><strong><h4>Tên Khách sạn : {{ $item->name }}</h4></strong></p>
 													</div>
 												</div>
                                             </td>
                                             <td>{{$item->address}}</td>
                                             <td>{{ $item->detail }}</td>
+                                            <td>{{ $item->suggest_price }}</td>
 
                                             {{--  <td>{{ optional($item->category)->name }}</td>  --}}
                                             {{-- $item là 1 bản ghi product, hàm category() định nghĩa ở entities/product --}}

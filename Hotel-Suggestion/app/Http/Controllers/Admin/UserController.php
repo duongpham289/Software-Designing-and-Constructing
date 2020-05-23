@@ -17,17 +17,50 @@ class UserController extends Controller
         //     'email' => 'abcd@gmail.com',
         //     'name' => 'Hieu Bui',
         // ]);
+        // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
+        $users = User::get();
+        // $accounts = Account::select(['id','email','level'])
+        // // ->get();
 
+        // $accounts = DB::table('account')->select(['id','email','level'])->get();
 
-        $accounts = DB::table('account')->select(['id','name','email','level'])->get();
+        //$users = DB::table('users')->select(['id','name','email','address'])
+        // $users = User::select(['id','name','email','address'])
+        // ->get();
+        // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
+        // $users = Users::select(['id','first_name','last_name','address','phone','nationality'])
+        // ->get();
+        // $accounts = Account::select(['id','email','level'])
+        // ->get();
+        $accounts = Account::get();
 
         // $accounts = Users::select(['id','email','level'])
         // ->get();
+        // ->where('email','=','%o@mail.com%')
+        //->whereId('2')
+        //->whereName('abc')
+        //->whereEmailVerifieldAt('abc')
+        //->where('id','>','2') // = > < >= <= <> like
+        //->limit(2)->offset(1) // bỏ qua
+        //=
+        //->skip(1)->take(2)
+        //->get(); //lấy ra dạng mảng
+        //->first(); //lấy ra chính xác 1 cái
+        // print_r($users);
+        // DB::table('users')->insert([
+        //     'name'=>'Boss',
+        //     'email'=>'boss@mail.com',
+        //     'password'=>'123123123',
+        // ]);
+        // $users = DB::table('users')->where('email','=','boss@mail.com')->first();
+        // print_r($users);
+        // die;
 
 
         return view('admin.users.index',[
             'accounts' => $accounts
         ]);
+
     }
     public function create(){
         return view('admin.users.create');
@@ -42,7 +75,7 @@ class UserController extends Controller
         $account = Account::create($input);
         return redirect("/admin/users/{$account->id}/edit");
     }
-    public function edit($account){ // User $user ?
+    public function edit($account){
         $account = Account::findOrFail($account);
         return view('admin.users.edit',compact('account'));
     }
@@ -55,9 +88,7 @@ class UserController extends Controller
         ]);
         $account = Account::findOrFail($account);
         $account->fill($input);
-
         $account->save();
-        // print_r($account);die;
         return back();
     }
     public function destroy($account){

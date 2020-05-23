@@ -33,6 +33,7 @@ Route::group([
 ], function () {
 
     Route::resource('rooms', 'RoomController');
+    Route::post('rooms/sort', 'RoomController@show')->name('show');
     // Route::get('', 'DashboardController');
     Route::get('login', 'LoginController@showLoginForm');
     Route::post('login', 'LoginController@login');
@@ -50,7 +51,6 @@ Route::group([
         Route::get('{Hotel}/edit', 'HotelController@edit');
         Route::put('{Hotel}', 'HotelController@update');
         Route::delete('{Hotel}', 'HotelController@destroy');
-        Route::get('{Hotel}', 'HotelController@show');
     });
     Route::get('','DashboardController');
 
