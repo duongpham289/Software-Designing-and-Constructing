@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Entities\Account;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +31,16 @@ Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin'
 ], function () {
+
+    Route::get('conv',function () {
+        $accounts = Account::all();
+        foreach($accounts as $account)
+        {
+            $a = Account::find($account->id);
+            $a->password=bcrypt($account->password);
+            $a->save();
+        }
+    });
 
     Route::resource('rooms', 'RoomController');
     // Route::get('', 'DashboardController');
