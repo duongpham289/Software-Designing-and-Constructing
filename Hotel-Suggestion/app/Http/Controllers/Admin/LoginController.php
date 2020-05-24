@@ -22,11 +22,12 @@ class LoginController extends Controller
          return redirect('admin');
       }
       else {
-         return redirect()->back();
+         return redirect()->back()->with("thongbao",'Email hoặc Mật khẩu không hợp lệ')->withInput();
       }
 
     }
     public function logout(){
+        Auth::logout();
         return redirect('login');
     }
 }

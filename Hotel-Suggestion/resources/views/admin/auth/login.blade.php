@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forms</title>
+    <title>Login</title>
     <base href="/">
 	<link href="assets/admin/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/admin/css/datepicker3.css" rel="stylesheet">
@@ -23,6 +23,12 @@
 		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
 			<div class="login-panel panel panel-default">
                 <div class="panel-heading">HOTEL SUGGESTION LOGIN</div>
+
+                @if (session("thongbao"))
+                <div class="alert alert-danger" role="alert">
+                    <strong>{{ session("thongbao") }}</strong>
+                </div>
+                @endif
 
                 @if ($errors->any())
                 @component('admin.layouts.components.alert')

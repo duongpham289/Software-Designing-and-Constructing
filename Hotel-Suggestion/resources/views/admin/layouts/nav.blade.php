@@ -21,11 +21,11 @@
                                     ></use></svg>Thông tin</a>
                         </li>
                         <li>
-                            <a href="login.html"
-                                ><svg class="glyph stroked cancel">
+                            <a href="/logout">
+                                <svg class="glyph stroked cancel">
                                     <use xlink:href="#stroked-cancel"></use>
-                                </svg>
-                                Logout</a>
+                                </svg>Logout
+                            </a>
                         </li>
                     </ul>
                 </li>
