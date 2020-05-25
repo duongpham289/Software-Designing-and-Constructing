@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules\Unique;
 
-class UpdateProductRequest extends FormRequest
+class UpdateHotelRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,12 +25,10 @@ class UpdateProductRequest extends FormRequest
     public function rules()
     {
         return [
-            'category_id' => 'required',
-            'sku' => 'required|unique:products,sku,{$this->products}',
-            'name' => 'required|numeric',
-            'price' =>'required|numeric|min:0',
-            'img' => 'sometimes|image',
-            'quantity' =>'required|numeric'
+            'name' => 'required|',
+            'suggest_price' =>'required|numeric|min:0',
+            'images' => 'sometimes|image',
+            'address' => 'required|'
         ];
     }
 }

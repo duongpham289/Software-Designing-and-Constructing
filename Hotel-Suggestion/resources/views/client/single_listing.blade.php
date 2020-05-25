@@ -42,12 +42,12 @@
 
 							<div class="search_tabs_container">
 								<div class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
-									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/suitcase.png" alt=""><span>hotels</span></div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/bus.png" alt="">car rentals</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/departure.png" alt="">flights</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/island.png" alt="">trips</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/cruise.png" alt="">cruises</div>
-									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="images/diving.png" alt="">activities</div>
+									<div class="search_tab active d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/suitcase.png" alt=""><span>hotels</span></div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/bus.png" alt="">car rentals</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/departure.png" alt="">flights</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/island.png" alt="">trips</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/cruise.png" alt="">cruises</div>
+									<div class="search_tab d-flex flex-row align-items-center justify-content-lg-center justify-content-start"><img src="/assets/client/images/diving.png" alt="">activities</div>
 								</div>
 							</div>
 
@@ -357,7 +357,7 @@
 							<!-- Title -->
 							<div class="hotel_title_container d-flex flex-lg-row flex-column">
 								<div class="hotel_title_content">
-                                <h1 class="hotel_title">{{$hotel->name}}</h1>
+									<h1 class="hotel_title">{{ $hotel->name }}</h1>
 									<div class="rating_r rating_r_4 hotel_rating">
 										<i></i>
 										<i></i>
@@ -365,7 +365,7 @@
 										<i></i>
 										<i></i>
 									</div>
-                                <div class="hotel_location">{{$hotel->address}}</div>
+									<div class="hotel_location">{{ $hotel->address }}</div>
 								</div>
 								<div class="hotel_title_button ml-lg-auto text-lg-right">
 									<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
@@ -502,7 +502,7 @@
 							<!-- Hotel Info Text -->
 
 							<div class="hotel_info_text">
-                            <p>{{$hotel->detail}}</p>
+								<p>{{ $hotel->detail }}</p>
 							</div>
 
 							<!-- Hotel Info Tags -->
@@ -522,35 +522,33 @@
 
 						<div class="rooms">
 
-							<!-- Room -->
+                            <!-- Room -->
+                            @foreach ($hotel->rooms()->get() as $item)
 							<div class="room">
-
-                                <!-- Room -->
-                                @foreach ($hotel->room()->get() as $item)
-
+								<!-- Room -->
 								<div class="row">
 									<div class="col-lg-2">
 										<div class="room_image"><img src="/assets/client/images/room_1.jpg" alt="https://unsplash.com/@grovemade"></div>
 									</div>
 									<div class="col-lg-7">
 										<div class="room_content">
-											<div class="room_title">{{ $item->name  }}</div>
-											<div class="room_price">Giá: {{ number_format($item->price)}}VNĐ/ 1 đêm</div>
+											<div class="room_title">{{ $item->type }}</div>
+											<div class="room_price">{{ number_format($item->price) }}</div>
 											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
 											<div class="room_extra">{{ $item->type  }}</div>
 										</div>
 									</div>
 									<div class="col-lg-3 text-lg-right">
 										<div class="room_button">
-											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
+											<div class="button book_button trans_200"><a href="/{{ $item->id }}/booking">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
-                                </div>
-                                @endforeach
-							</div>
+								</div>
+                            </div>
+                            @endforeach
 
-							{{-- <!-- Room -->
-							<div class="room">
+							<!-- Room -->
+							{{-- <div class="room">
 
 								<!-- Room -->
 								<div class="row">
@@ -633,8 +631,8 @@
 						</div>
 
 						<!-- Location on Map -->
-
-						{{-- <div class="location_on_map">
+{{--
+						<div class="location_on_map">
 							<div class="location_on_map_title">location on map</div>
 
 							<!-- Google Map -->

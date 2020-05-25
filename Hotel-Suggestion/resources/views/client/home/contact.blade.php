@@ -124,7 +124,7 @@
 <script src="/assets/client/styles/bootstrap4/popper.js"></script>
 <script src="/assets/client/styles/bootstrap4/bootstrap.min.js"></script>
 <script src="/assets/client/plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+{{-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script> --}}
 <script src="/assets/client/js/contact_custom.js"></script>
 
 @endsection

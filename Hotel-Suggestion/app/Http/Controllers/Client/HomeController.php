@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Entities\Hotel;
+use App\Entities\Room;
 
 class HomeController extends Controller
 {
@@ -41,7 +42,6 @@ class HomeController extends Controller
     public function single_listing($id){
         $hotel = Hotel::findOrFail($id);
         // echo $hotel; die;
-
         // echo $room; die;
         // $room = Room::
         return view('client.single_listing', compact('hotel'));

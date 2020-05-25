@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateUserRequest extends FormRequest
+class LoginRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,15 +24,14 @@ class UpdateUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' =>'required',
             'email'=>'required|email',
             'password'=>'required|min:6',
         ];
     }
+
     public function messages()
     {
         return [
-            'name.required'=>'Không được để trống name',
             'email.required'=>'Không được để trống email',
             'email.email'=>'Email không đúng định dạng',
             'password.required'=>'Password không được để trống',

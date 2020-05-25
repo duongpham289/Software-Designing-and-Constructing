@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Room extends Model
 {
-    protected $table= 'room';
-    public function hotel()
+    protected $guarded = ['id'];
+    public $timestamps = false;
+    public function hotels()
     {
         return $this->belongsTo(Hotel::class);
     }
