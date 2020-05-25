@@ -540,7 +540,7 @@
 									</div>
 									<div class="col-lg-3 text-lg-right">
 										<div class="room_button">
-											<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
+											<div class="button book_button trans_200"><a href="/{{ $item->id }}/booking">book<span></span><span></span><span></span></a></div>
 										</div>
 									</div>
 								</div>
