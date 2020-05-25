@@ -25,6 +25,9 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('offers','HomeController@offers');
 Route::get('{detail}/single_listing','HomeController@single_listing');
     Route::get('booking','HomeController@booking');
+    Route::get('single_listing','HomeController@single_listing');
+    Route::get('booking','BookController@index');
+    Route::post('booking','BookController@store');
 });
 // admin
 Route::group([

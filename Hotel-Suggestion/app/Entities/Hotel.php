@@ -12,4 +12,5 @@ class Hotel extends Model
     {
         return $this->hasMany(Room::class, 'hotel_id', 'id');
     }
+    protected $table = 'hotels';
 }
