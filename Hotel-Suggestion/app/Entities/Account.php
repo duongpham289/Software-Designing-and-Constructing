@@ -40,4 +40,11 @@ class Account extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    protected $guarded = ['id'];
+    protected $table = "accounts";
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class, 'account_id','id');
+    }
 }
