@@ -907,7 +907,7 @@
         <div class="row trending_container">
 
             <!-- Trending Item -->
-            @foreach ($hotel->slice(0,7) as $item)
+            @foreach ($hotel->slice(0,4) as $item)
 
 
             <div class="col-lg-3 col-sm-6">

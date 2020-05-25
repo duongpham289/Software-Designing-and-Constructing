@@ -18,7 +18,7 @@ class UserController extends Controller
         //     'name' => 'Hieu Bui',
         // ]);
         // $users = DB::table('users')->select(['id','first_name','last_name','address','phone','nationality']);
-        $users = User::get();
+        // $users = User::get();
         // $accounts = Account::select(['id','email','level'])
         // // ->get();
 
