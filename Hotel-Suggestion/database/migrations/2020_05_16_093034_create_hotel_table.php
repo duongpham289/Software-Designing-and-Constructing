@@ -13,12 +13,11 @@ class CreateHotelTable extends Migration
      */
     public function up()
     {
-        Schema::create('hotels', function (Blueprint $table) {
+        Schema::create('hotel', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('address');
             $table->string('images');
-            $table->decimal('suggest_price',15,2);
             $table->string('detail');
         });
     }

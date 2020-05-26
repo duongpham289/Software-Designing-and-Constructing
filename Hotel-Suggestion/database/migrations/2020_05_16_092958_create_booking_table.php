@@ -13,15 +13,11 @@ class CreateBookingTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookings', function (Blueprint $table) {
+        Schema::create('booking', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('account_id');
+            $table->foreignId('user_id');
             $table->foreignId('room_id');
-            $table->string('name');
-            $table->string('address');
-            $table->string('phone');
-            $table->string('nationality')->nullable();
-            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('time')->useCurrent();
 
         });
     }
