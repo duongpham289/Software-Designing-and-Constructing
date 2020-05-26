@@ -11,15 +11,15 @@ class HotelSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('hotel')->insert([
-            ['name' => 'Mường thanh','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'baro','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'hello','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'Biển xanh','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'Hà Nội','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'Sao Mai','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'Đâu Cũng Được','address' => 'Hà Nội','images' =>'', 'detail'=>''],
-            ['name' => 'Sài Gòn','address' => 'Hà Nội','images' =>'', 'detail'=>''],
+        DB::table('hotels')->insert([
+            ['name' => 'Mường thanh','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'baro','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'hello','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'Biển xanh','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'Hà Nội','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'Sao Mai','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'Đâu Cũng Được','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
+            ['name' => 'Sài Gòn','address' => 'Hà Nội','images' =>'', 'detail'=>'','suggest_price'=>1000000],
         ]);
     }
 }

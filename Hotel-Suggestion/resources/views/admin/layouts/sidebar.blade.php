@@ -1,8 +1,7 @@
 <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
     <form role="search"></form>
     <ul class="nav menu">
-        <li class="active">
-            <a href="/admin" class="menu-dashboard">
+        <li><a href="/admin" class="menu-dashboard">
                 <svg class="glyph stroked dashboard-dial">
                     <use xlink:href="#stroked-dashboard-dial"></use>
                 </svg>
@@ -10,29 +9,29 @@
             </a>
         </li>
         <li>
-            <a href="/admin/categories" class="menu-dashboard">
+            <a href="/admin/rooms" class="menu-rooms">
                 <svg class="glyph stroked clipboard with paper">
                     <use xlink:href="#stroked-clipboard-with-paper" />
                 </svg>
-                Danh Mục
+                Quản lý phòng
             </a>
         </li>
         <li>
-            <a href="admin/products" class="menu-products">
-                <svg class="glyph stroked bag">
-                    <use xlink:href="#stroked-bag"></use>
+            <a href="/admin/hotels" class="menu-hotels">
+                <svg class="glyph stroked home">
+                    <use xlink:href="#stroked-home"/>
                 </svg>
-                Sản phẩm
+                Quản lý khách sạn
             </a>
         </li>
-        <li>
-            <a href="/admin/orders" class="menu-orders"></a>
-                ><svg class="glyph stroked notepad ">
-                    <use xlink:href="#stroked-notepad" />
+        {{-- <li>
+            <a href="/admin/orders" class="menu-orders">
+                <svg class="glyph stroked notepad ">
+                    <use xlink:href="#stroked-notepad"></use>
                 </svg>
                 Đơn hàng
             </a>
-        </li>
+        </li> --}}
         <li role="presentation" class="divider"></li>
         <li>
             <a href="/admin/users" class="menu-users">

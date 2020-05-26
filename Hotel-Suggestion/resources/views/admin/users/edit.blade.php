@@ -11,17 +11,17 @@
         <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading"><i class="fas fa-user"></i> Sửa thành viên - admin@gmail.com</div>
-
+{{--
                 @if ($errors->any())
                 @component('admin.layouts.components.alert')
                 @slot('type', 'danger')
                 @slot('stroke', 'cancel')
                 {{ $errors->first() }}
                 @endcomponent
-                @endif
+                @endif  --}}
 
                 <div class="panel-body">
-                    <form action="/admin/users/{{$user->id}}" method="POST">
+                    <form action="/admin/users/{{$account->id}}" method="POST">
                         @csrf
                         @method('PUT')
                     <div class="row justify-content-center" style="margin-bottom:40px">
@@ -30,31 +30,24 @@
 
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="text" name="email" class="form-control" value="{{$user->email}}">
+                                <input type="text" name="email" class="form-control" value="{{$account->email}}">
                                 <div class="alert alert-danger" role="alert">
                                     <strong>email đã tồn tại!</strong>
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label>Tên</label>
+                                <input type="text" name="name" class="form-control" value="{{$account->name}}">
+                                <div class="alert" role="alert">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label>password</label>
-                                <input type="text" name="password" class="form-control" value="{{$user->password}}">
+                                <input type="text" name="password" class="form-control" value="{{$account->password}}">
                             </div>
-                            <div class="form-group">
-                                <label>Full name</label>
-                                <input type="full" name="full" class="form-control" value="{{$user->name}}">
-                            </div>
-                            <div class="form-group">
-                                <label>Address</label>
-                                <input type="address" name="address" class="form-control" value="{{$user->address}}">
-                            </div>
-                            <div class="form-group">
-                                <label>Phone</label>
-                                <input type="phone" name="phone" class="form-control" value="{{$user->phone}}">
-                            </div>
-
                             <div class="form-group">
                                 <label>Level</label>
-                                <select name="level" class="form-control" value="">
+                                <select name="level" class="form-control" value="{{$account->level}}">
                                     <option value="1">admin</option>
                                     <option selected value="2">user</option>
                                 </select>
