@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Entities\Account;
+use App\Http\Middleware\CheckLogout;
+use App\Http\Middleware\CheckLogin;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,19 +28,31 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('offers','HomeController@offers');
 Route::get('{detail}/single_listing','HomeController@single_listing');
     Route::get('booking','HomeController@booking');
+    Route::get('single_listing','HomeController@single_listing');
+    Route::get('booking','BookController@index');
+    Route::post('booking','BookController@store');
 });
 // admin
 Route::group([
     'prefix' => 'admin',
-    'namespace' => 'Admin'
+    'namespace' => 'Admin',
+    'middleware' => 'CheckLogin',
 ], function () {
+
+    Route::get('conv',function () {
+        $accounts = Account::all();
+        foreach($accounts as $account)
+        {
+            $a = Account::find($account->id);
+            $a->password=bcrypt('123456');
+            $a->save();
+        }
+    });
 
     Route::resource('rooms', 'RoomController');
     Route::post('rooms/sort', 'RoomController@show')->name('show');
     // Route::get('', 'DashboardController');
-    Route::get('login', 'LoginController@showLoginForm');
-    Route::post('login', 'LoginController@login');
-    Route::post('logout', 'LoginController@logout');
+
     Route::group(['prefix' => 'orders'], function () {
         Route::get('', 'OrderController@index');
         Route::get('processed', 'OrderController@processed');
@@ -64,4 +79,15 @@ Route::group([
         Route::delete('{account}', 'UserController@destroy');
         Route::get('{account}', 'UserController@show');
     });
+});
+
+
+Route::group([
+    'namespace' => 'Admin',
+], function () {
+
+Route::get('login', 'LoginController@showLoginForm')->middleware('CheckLogout');
+Route::post('login', 'LoginController@login');
+Route::get('logout', 'LoginController@logout');
+
 });
