@@ -41,7 +41,7 @@ Route::group([
         foreach($accounts as $account)
         {
             $a = Account::find($account->id);
-            $a->password=bcrypt($account->password);
+            $a->password=bcrypt('123456');
             $a->save();
         }
     });

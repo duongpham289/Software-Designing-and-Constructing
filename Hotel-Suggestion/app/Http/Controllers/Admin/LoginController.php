@@ -17,12 +17,27 @@ class LoginController extends Controller
         // dd($request->all());
         $email = $request->email;
         $password = $request->password;
-       if(Auth::attempt(['email' => $email, 'password' => $password]))
+        $arr = [
+            'email' => $email,
+            'password' => $password
+        ];
+         $level = Account::select(['level'])->whereEmail($email)->get();
+        //  dd($level);
+         //Auth::user()->level=1;
+       if(Auth::attempt($arr) && $level = "1")
       {
-         return redirect('admin');
+        // if(Auth::user()->level=1)
+        // {
+        //  return redirect('admin');
+        // }
+        // else{
+        //     return redirect('');
+        // }
+        return redirect('admin');
+
       }
       else {
-         return redirect()->back()->with("thongbao",'Email hoặc Mật khẩu không hợp lệ')->withInput();
+         return back()->with("thongbao",'Email hoặc Mật khẩu không hợp lệ')->withInput();
       }
 
     }
@@ -30,4 +45,5 @@ class LoginController extends Controller
         Auth::logout();
         return redirect('login');
     }
+
 }
