@@ -13,12 +13,12 @@ class CreateCommentTable extends Migration
      */
     public function up()
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('comment', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('account_id');
+            $table->foreignId('user_id');
             $table->foreignId('hotel_id');
             $table->string('detail');
-            $table->timestamp('commenttime')->useCurrent();
+            $table->timestamp('time')->useCurrent();
         });
     }
 

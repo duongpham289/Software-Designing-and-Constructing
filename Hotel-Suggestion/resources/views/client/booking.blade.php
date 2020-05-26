@@ -1,5 +1,7 @@
 
+@extends('client.layouts.web', ['title' => 'Booking'])
 
+@section('css')
 
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/bootstrap4/bootstrap.min.css">
 <link href="/assets/client/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
