@@ -37,7 +37,7 @@
                                                     <div class="form-group">
                                                         <label>Account</label>
                                                         <input type="text" name="account_id" class="form-control" value="{{ $account[1]->id }}">
-                                                        <input type="text" name="room_id" class="form-control" value="{{ $room[1]->id }}">
+                                                        {{-- <input type="text" name="room_id" class="form-control" value="{{ $room->id }}"> --}}
                                                     </div>
 
                                                     <input type="text" id="contact_form_name" class="contact_form_name input_field" name="name" placeholder="name" required="required" data-error="Name is required.">

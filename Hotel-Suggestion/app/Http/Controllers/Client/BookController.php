@@ -10,15 +10,15 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    public function index(){
+    public function index(Booking $room){
         $account=Account::get();
         $room=Room::get();
+
         return view("client.booking",compact('account','room'));
     }
-    public function store(Request $request){
+    public function store(Request $request,$room_id){
         $input = $request->only([
             'account_id',
-            'room_id',
             'name',
             'phone',
             'email',
@@ -27,6 +27,7 @@ class BookController extends Controller
 
         ]);
         $booking = Booking::create($input);
+        $room->save;
         $booking->save();
 
         return view("client.single_listing");
