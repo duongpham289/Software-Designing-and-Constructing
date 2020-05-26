@@ -39,15 +39,7 @@ Route::group([
     'middleware' => 'CheckLogin',
 ], function () {
 
-    Route::get('conv',function () {
-        $accounts = Account::all();
-        foreach($accounts as $account)
-        {
-            $a = Account::find($account->id);
-            $a->password=bcrypt('123456');
-            $a->save();
-        }
-    });
+
 
     Route::resource('rooms', 'RoomController');
     Route::post('rooms/sort', 'RoomController@show')->name('show');
@@ -90,4 +82,13 @@ Route::get('login', 'LoginController@showLoginForm')->middleware('CheckLogout');
 Route::post('login', 'LoginController@login');
 Route::get('logout', 'LoginController@logout');
 
+});
+Route::get('conv',function () {
+    $accounts = Account::all();
+    foreach($accounts as $account)
+    {
+        $a = Account::find($account->id);
+        $a->password=bcrypt('123456');
+        $a->save();
+    }
 });
