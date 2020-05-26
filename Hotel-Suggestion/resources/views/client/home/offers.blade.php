@@ -414,12 +414,12 @@
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
 										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
-										<div class="offer_name"><a href="single_listing.html">{{ $item->name }}</a></div>
+										<div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
 									</div>
 								</div>
 								<div class="col-lg-8">
 									<div class="offers_content">
-										<div class="offers_price">{{ $item->suggest_price }}đ<span>per night</span></div>
+										<div class="offers_price">{{ number_format($item->suggest_price) }}VND <span>per night</span></div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 											<i></i>
 											<i></i>
