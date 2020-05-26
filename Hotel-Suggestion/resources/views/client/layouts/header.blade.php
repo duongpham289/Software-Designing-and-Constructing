@@ -18,7 +18,7 @@
                         </ul>
                     </div>
                     <div class="user_box ml-auto">
-                        <div class="user_box_login user_box_link"><a href="/login">login</a></div>
+                        <div class="user_box_login user_box_link"><a href="#">login</a></div>
                         <div class="user_box_register user_box_link"><a href="#">register</a></div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                     <div class="logo_container">
-                        <div class="logo"><a href="/"><img src="/assets/client/images/logo.png" alt="">Hotel Suggestion</a></div>
+                        <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
                     </div>
                     <div class="main_nav_container ml-auto">
                         <ul class="main_nav_list">
@@ -86,7 +86,7 @@
     <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
         <div class="menu_close_container"><div class="menu_close"></div></div>
         <div class="logo menu_logo"><a href="#"><img src="/assets/client/images/logo.png" alt=""></a></div>
-        <div class="logo menu_logo"><a href="#"><img src="/assets/client/images/logo.png" alt=""></a></div>
+        <div class="logo menu_logo"><a href="#"><img src="/assets/clientimages/logo.png" alt=""></a></div>
         <div class="logo menu_logo"><a href="#"><img src="/assets/client/images/logo.png" alt=""></a></div>
         <ul>
             <li class="menu_item"><a href="">home</a></li>
