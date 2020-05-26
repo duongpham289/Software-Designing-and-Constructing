@@ -744,6 +744,7 @@
                     <div class="owl-carousel owl-theme test_slider">
 
                         <!-- Testimonial Item -->
+                        @foreach ($accounts as $item)
                         <div class="owl-item">
                             <div class="test_item">
                                 <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
@@ -751,16 +752,20 @@
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
-                                            <div class="test_name">carla smith</div>
-                                            <div class="test_date">May 24, 2017</div>
+                                            <div class="test_name"> {{ $item->name }}</div>
+                                            {{-- <div class="test_date">May 24, 2017</div> --}}
                                         </div>
-                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        @foreach ($item->comments()->get() as $cm)
+
+                                        <div class="test_quote_title">{{ $cm->detail }}</div>
+                                        
+                                        @endforeach
                                         {{--  <p class="test_quote_text">{{ $item->detail }}</p>  --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {{--  @endforeach  --}}
+                        @endforeach
                         {{--  <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">

@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Entities\Hotel;
 use App\Entities\Room;
+use App\Entities\Account;
+
 
 class HomeController extends Controller
 {
@@ -15,7 +17,10 @@ class HomeController extends Controller
     public function index()
     {
         $hotel = Hotel::get();
-        return view('client.home.index',compact('hotel'));
+        $accounts = Account::with('comments')->get();
+        // $cm=$accounts->comments()->get();
+        // dd($accounts);
+        return view('client.home.index',compact('hotel','accounts'));
     }
 
     public function about()

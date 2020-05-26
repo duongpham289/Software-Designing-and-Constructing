@@ -21,7 +21,7 @@ class RoomController extends Controller
         //         'name' => json_decode($res->getBody()->getContents())
         //     ]);
         // }
-
+            // dd($hotels);
 
         return view('admin.rooms.index',compact('hotels'));
 
