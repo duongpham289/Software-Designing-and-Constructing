@@ -390,7 +390,7 @@
                         <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
                         <div class="intro_center text-center">
                             <h1>{{$item->address}}</h1>
-                            <div class="intro_price">From {{ number_format($item->suggest_price) }}VND</div>
+                            <div class="intro_price">From {{ $item->suggest_price }}đ</div>
                             <div class="rating rating_4">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
@@ -579,7 +579,7 @@
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
                                 <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
-                                <div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{$item->name}}</a></div>
+                                <div class="offer_name"><a href="#">{{$item->name}}</a></div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -744,7 +744,6 @@
                     <div class="owl-carousel owl-theme test_slider">
 
                         <!-- Testimonial Item -->
-                        @foreach ($accounts as $item)
                         <div class="owl-item">
                             <div class="test_item">
                                 <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
@@ -752,20 +751,16 @@
                                 <div class="test_content_container">
                                     <div class="test_content">
                                         <div class="test_item_info">
-                                            <div class="test_name"> {{ $item->name }}</div>
-                                            {{-- <div class="test_date">May 24, 2017</div> --}}
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
                                         </div>
-                                        @foreach ($item->comments()->get() as $cm)
-
-                                        <div class="test_quote_title">{{ $cm->detail }}</div>
-                                        
-                                        @endforeach
+                                        <div class="test_quote_title">" Best holliday ever "</div>
                                         {{--  <p class="test_quote_text">{{ $item->detail }}</p>  --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @endforeach
+                        {{--  @endforeach  --}}
                         {{--  <!-- Testimonial Item -->
                         <div class="owl-item">
                             <div class="test_item">
@@ -912,14 +907,14 @@
         <div class="row trending_container">
 
             <!-- Trending Item -->
-            @foreach ($hotel->slice(0,4) as $item)
+            @foreach ($hotel->slice(0,7) as $item)
 
 
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
                     <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
-                        <div class="trending_title"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
+                        <div class="trending_title"><a href="#">{{ $item->name }}</a></div>
                         <div class="trending_price">From {{ $item->suggest_price }}</div>
                         <div class="trending_location">{{ $item->address }}</div>
                     </div>
