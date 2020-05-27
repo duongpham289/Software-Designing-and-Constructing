@@ -21,7 +21,7 @@
                 @endif
 
                 <div class="panel-body">
-                    <form action="/admin/users" method="POST">
+                    <form action="/admin/users" method="post">
                     @csrf
                     <div class="row justify-content-center" style="margin-bottom:40px">
 
@@ -35,15 +35,22 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Tên</label>
-                                <input type="name" name="name" class="form-control">
-                                <div class="alert" role="alert">
-                                </div>
-                            </div>
-                            <div class="form-group">
                                 <label>password</label>
                                 <input type="password" name="password" class="form-control">
                             </div>
+                            <div class="form-group">
+                                <label>Full name</label>
+                                <input type="full" name="full" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="address" name="address" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="phone" name="phone" class="form-control">
+                            </div>
+
                             <div class="form-group">
                                 <label>Level</label>
                                 <select name="level" class="form-control">

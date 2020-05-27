@@ -33,13 +33,13 @@
                                 {{ $errors->first() }}
                                 @endcomponent
                                 @endif
-                                {{-- <form action="/admin/categories" method="POST">
+                                <form action="/admin/categories" method="POST">
                                     @csrf
 								<div class="form-group">
 									<label for="">Danh mục cha:</label>
 									<select class="form-control" name="parent_id" >
 										<option value="0" selected>----ROOT----</option>
-										@include('admin.rooms.option') //level có nhiệm vụ in ra --
+										@include('admin.categories.option', ['level' => 0, 'categories' => $categories] ) //level có nhiệm vụ in ra --
 									</select>
 								</div>
 								<div class="form-group">
@@ -47,7 +47,7 @@
 									<input type="text" class="form-control" name="name"  placeholder="Tên danh mục mới" value="Áo khoác nữ">
 								</div>
                                 <button type="submit" class="btn btn-primary">Sửa danh mục</button>
-                            </form> --}}
+                            </form>
 							</div>
 						</div>
 					</div>
