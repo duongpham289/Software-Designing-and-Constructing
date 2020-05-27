@@ -73,7 +73,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Ảnh Phòng</label>
-                                            <input id="images" type="file" name="images" class="form-control hidden"
+                                            <input id="img" type="file" name="images" class="form-control hidden"
                                                 onchange="changeImg(this)">
                                             <img id="avatar" class="thumbnail" width="100%" height="350px" src="/assets/admin/img/import-img.png">
                                         </div>
@@ -110,3 +110,25 @@
 	</div>
 	<!--/.main-->
     @endsection
+    @push('adminJs')
+    <script>
+        function changeImg(input){
+               //Nếu như tồn thuộc tính file, đồng nghĩa người dùng đã chọn file mới
+               if(input.files && input.files[0]){
+                   var reader = new FileReader();
+                   //Sự kiện file đã được load vào website
+                   reader.onload = function(e){
+                       //Thay đổi đường dẫn ảnh
+                       $('#avatar').attr('src',e.target.result);
+                   }
+                   reader.readAsDataURL(input.files[0]);
+               }
+           }
+           $(document).ready(function() {
+               $('#avatar').click(function(){
+                   $('#img').click();
+               });
+           });
+
+    </script>
+@endpush

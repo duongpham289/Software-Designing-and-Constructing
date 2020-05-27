@@ -41,7 +41,7 @@
                                                     </div>
 
                                                     <input type="text" id="contact_form_name" class="contact_form_name input_field" name="name" placeholder="name" required="required" data-error="Name is required.">
-                                                    <input type="text" id="contact_form_email" class="contact_form_email input_field" name="e_mail" placeholder="e-mail" required="required" data-error="Email is required.">
+                                                    {{-- <input type="text" id="contact_form_email" class="contact_form_email input_field" name="e_mail" placeholder="e-mail" required="required" data-error="Email is required."> --}}
                                                     <input type="text" id="contact_form_phone" class="contact_form_name input_field" name="phone" placeholder="phone" required="required" data-error="Phone number is required.">
                                                     <input type="text" id="contact_form_nationality" class="contact_form_name input_field" name="nationality" placeholder="nationality" required="required" data-error="Phone number is required.">
                                                     <textarea id="contact_form_message" class="text_field contact_form_message" name="address" rows="4" placeholder="Address" required="required" data-error="Address is required."></textarea>

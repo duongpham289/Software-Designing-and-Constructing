@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Client;
 
 use App\Entities\Account;
 use App\Entities\Booking;
+use App\Entities\Room;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    public function index(Booking $room){
+    public function index(Room $room){
         $account=Account::get();
+        // dd($room);
 
         return view("client.booking",compact('account','room'));
     }
