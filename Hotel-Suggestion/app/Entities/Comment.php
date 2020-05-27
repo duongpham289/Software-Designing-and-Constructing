@@ -6,9 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-    public function accounts()
-    {
-        return $this->belongsTo(Account::class);
-    }
-
+    protected $table='comment';
 }

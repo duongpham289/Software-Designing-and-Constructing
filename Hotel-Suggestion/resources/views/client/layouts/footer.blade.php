@@ -8,9 +8,9 @@
                     <div class="footer_content footer_about">
                         <div class="logo_container footer_logo">
 
-                            <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">Hotel Suggestion</a></div>
+                            <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">travelix</a></div>
                         </div>
-                        <p class="footer_about_text">Hệ thống gợi ý đặt phòng khách sạn</p>
+                        <p class="footer_about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
                         <ul class="footer_social_list">
                             <li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             <li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>

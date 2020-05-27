@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class BookingSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,42 +11,34 @@ class BookingSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('bookings')->insert([
-            ['account_id'=>'1',
-            'room_id'=>'3',
-            'name'=>'tuan',
+        DB::table('users')->insert([
+            ['first_name'=>'Tuan',
+            'last_name'=>'Le',
             'phone'=>'0931231242',
             'address'=>'Hanoi',
             'nationality'=>'Vietnam',
-            'created_at'=>now()
             ],
             [
-                'account_id'=>'2',
-                'room_id'=>'2',
-                'name'=>'hieu',
+            'first_name'=>'Hieu',
+            'last_name'=>'Bui',
             'phone'=>'0931231984',
             'address'=>'Hanoi',
             'nationality'=>'Vietnam',
-            'created_at'=>now()
 
             ],
-            ['account_id'=>'4',
-            'room_id'=>'1',
-            'name'=>'ducanh',
+            ['first_name'=>'duong',
+            'last_name'=>'pham',
             'phone'=>'09312431242',
             'address'=>'Hanoi',
             'nationality'=>'Vietnam',
-            'created_at'=>now()
 
             ],
             [
-                'account_id'=>'1',
-                'room_id'=>'5',
-                'name'=>'tuan',
+            'first_name'=>'duc anh',
+            'last_name'=>'bui',
             'phone'=>'0931431242',
             'address'=>'Hanoi',
             'nationality'=>'Vietnam',
-            'created_at'=>now()
 
             ]
         ]);
