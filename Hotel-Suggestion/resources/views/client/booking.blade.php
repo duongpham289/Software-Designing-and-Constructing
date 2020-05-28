@@ -1,5 +1,4 @@
 
-@extends('client.layouts.web', ['title' => 'Booking'])
 
 @section('css')
 
