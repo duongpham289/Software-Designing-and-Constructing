@@ -368,7 +368,9 @@
 									<div class="hotel_location">{{ $hotel->address }}</div>
 								</div>
 								<div class="hotel_title_button ml-lg-auto text-lg-right">
-									<div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div>
+                                    {{-- @foreach ($hotel->rooms()->get()->slice(0,1) as $item)
+                                    <div class="button book_button trans_200"><a href="/{{ $item->id }}/booking">book<span></span><span></span><span></span></a></div>
+                                    @endforeach --}}
 									<div class="hotel_map_link_container">
 										<div class="hotel_map_link">See Location on Map</div>
 									</div>

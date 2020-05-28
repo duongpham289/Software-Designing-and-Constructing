@@ -34,19 +34,30 @@ class RoomController extends Controller
     }
 
     public function create(){
-        return view('admin.rooms.create');
+        $hotels= Hotel::get();
+        return view('admin.rooms.create',compact('hotels'));
     }
 
-    public function store(Request $request){
-        $request->validate([
-            'parent_id' => 'require',
-            'name' => 'name',
+    public function store(UpdateRoomRequest $request){
+        $input = $request->only([
+            'type',
+            'price',
+            'detail',
+            'hotel_id',
+            'status'
         ]);
-        $room = new Room();
-        $room->name = $request->name;
-        $room->parent_id = $request->parent_id;
-        $room->save();
-        return redirect('/admin/rooms');
+
+            if ($request->hasFile('images')){
+                $imgName=uniqid('hotels').".".$request->images->getClientOriginalExtension();
+                $destinationDir = public_path('/files/images/hotels');
+                $request->images->move($destinationDir,$imgName);
+                $input['images'] = asset("files/images/hotels/{$imgName}");
+            }
+
+            //.gitignore ignore mọi thứ (.) thư mục trừ file .gitigore
+            // print_r($input);die;
+            $room = Room::create($input);
+            return redirect("/admin/rooms");
     }
     public function edit($id){ //Bắt id trên uri
         $room = Room::findOrFail($id); //Model room , biến lưu bản ghi

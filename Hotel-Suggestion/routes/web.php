@@ -27,10 +27,10 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('blog','HomeController@blog');
     Route::get('offers','HomeController@offers');
 Route::get('{detail}/single_listing','HomeController@single_listing');
-    Route::get('booking','HomeController@booking');
-    Route::get('single_listing','HomeController@single_listing');
-    Route::get('booking','BookController@index');
-    Route::post('booking','BookController@store');
+    // Route::get('{detail}/booking','HomeController@booking');
+    // Route::get('single_listing','HomeController@single_listing');
+    Route::get('{room}/booking','BookController@index');
+    Route::post('{detail}/booking','BookController@store');
 });
 // admin
 Route::group([
@@ -90,4 +90,14 @@ Route::get('login', 'LoginController@showLoginForm')->middleware('CheckLogout');
 Route::post('login', 'LoginController@login');
 Route::get('logout', 'LoginController@logout');
 
+});
+
+Route::get('conv',function () {
+    $accounts = Account::all();
+    foreach($accounts as $account)
+    {
+        $a = Account::find($account->id);
+        $a->password=bcrypt('123456');
+        $a->save();
+    }
 });
