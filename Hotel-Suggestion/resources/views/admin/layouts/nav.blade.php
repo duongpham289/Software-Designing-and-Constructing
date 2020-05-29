@@ -19,7 +19,7 @@
                             </a>
                         </li>  --}}
                         <li>
-                            <a href="/logout">
+                            <a href="/admin/logout">
                                 <svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"/></svg>
                                     Logout
                             </a>

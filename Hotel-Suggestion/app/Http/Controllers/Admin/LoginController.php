@@ -21,18 +21,9 @@ class LoginController extends Controller
             'email' => $email,
             'password' => $password
         ];
-         $level = Account::select(['level'])->whereEmail($email)->get();
-        //  dd($level);
-         //Auth::user()->level=1;
-       if(Auth::attempt($arr) && $level = "1")
+
+       if(Auth::attempt($arr))
       {
-        // if(Auth::user()->level=1)
-        // {
-        //  return redirect('admin');
-        // }
-        // else{
-        //     return redirect('');
-        // }
         return redirect('admin');
 
       }
@@ -43,7 +34,7 @@ class LoginController extends Controller
     }
     public function logout(){
         Auth::logout();
-        return redirect('login');
+        return redirect('admin/login');
     }
 
 }
