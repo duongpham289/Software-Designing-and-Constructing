@@ -14,15 +14,11 @@ class LoginController extends Controller
         return view('admin.auth.login');
     }
     public function login(LoginRequest $request){
-        // dd($request->all());
-        $email = $request->email;
-        $password = $request->password;
-        $arr = [
-            'email' => $email,
-            'password' => $password
-        ];
-        $arr = 
-       if(Auth::attempt($arr))
+
+        $credentials = $request->only(['email','password']);
+        $credentials['level'] = '1';
+
+       if(Auth::attempt($credentials))
       {
         return redirect('admin');
 

@@ -8,7 +8,7 @@
                     <div class="footer_content footer_about">
                         <div class="logo_container footer_logo">
 
-                            <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">Hotel Suggestion</a></div>
+                            <div class="logo"><a href="#"><img src="/assets/client/images/logo.png" alt="">Oasis</a></div>
                         </div>
                         <p class="footer_about_text">Hệ thống gợi ý đặt phòng khách sạn</p>
                         <ul class="footer_social_list">
@@ -17,6 +17,7 @@
                             <li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
                             <li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+                            <li class="footer_social_item"><a href="https://www.instagram.com/n.hieu_11"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,19 +90,19 @@
                             <li class="contact_info_item d-flex flex-row">
 
                                 <div><div class="contact_info_icon"><img src="/assets/client/images/placeholder.svg" alt=""></div></div>
-                                <div class="contact_info_text">4127 Raoul Wallenber 45b-c Gibraltar</div>
+                                <div class="contact_info_text">1 Dai Co Viet</div>
                             </li>
                             <li class="contact_info_item d-flex flex-row">
                                 <div><div class="contact_info_icon"><img src="/assets/client/images/phone-call.svg" alt=""></div></div>
-                                <div class="contact_info_text">2556-808-8613</div>
+                                <div class="contact_info_text">+84904515270</div>
                             </li>
                             <li class="contact_info_item d-flex flex-row">
                                 <div><div class="contact_info_icon"><img src="/assets/client/images/message.svg" alt=""></div></div>
-                                <div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">contactme@gmail.com</a></div>
+                                <div class="contact_info_text"><a href="mailto:hieu.bn187319@sis.hust.edu.vn?Subject=Hello" target="_top">hieu.bn187319@sis.hust.edu.vn</a></div>
                             </li>
                             <li class="contact_info_item d-flex flex-row">
                                 <div><div class="contact_info_icon"><img src="/assets/client/images/planet-earth.svg" alt=""></div></div>
-                                <div class="contact_info_text"><a href="https://colorlib.com">www.colorlib.com</a></div>
+                                <div class="contact_info_text"><a href="https://www.instagram.com/n.hieu_11">www.instagram.com/n.hieu_11</a></div>
                             </li>
                         </ul>
                     </div>
