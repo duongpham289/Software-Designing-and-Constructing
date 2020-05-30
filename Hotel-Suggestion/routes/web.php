@@ -22,10 +22,14 @@ Route::get('/', function () {
 // client
 Route::group(['namespace' => 'Client'], function () {
 
+    Route::group(['middleware' => 'guest:client'], function() {
         Route::get('login' , 'LoginController@showLoginForm');
         Route::post('login' , 'LoginController@login');
+    });
 
-        Route::post('logout' ,'LoginController@logout');
+    Route::group(['middleware' => 'auth:client'], function() {
+        Route::get('logout' ,'LoginController@logout');
+    });
 
     Route::get('', 'HomeController@index');
     Route::get('about', 'HomeController@about');

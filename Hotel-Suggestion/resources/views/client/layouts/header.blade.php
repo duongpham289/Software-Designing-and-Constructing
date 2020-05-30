@@ -18,7 +18,13 @@
                         </ul>
                     </div>
                     <div class="user_box ml-auto">
+                        @guest('client')
                         <div class="user_box_login user_box_link"><a href="/login">login</a></div>
+                        @endguest
+                        @auth('client')
+                        <div class="user_box_login user_box_link"><a href="/login">{{ auth()->guard('client')->user()->name }}</a></div>
+                        <div class="user_box_register user_box_link"><a href="/logout">logout</a></div>
+                        @endauth
                     </div>
                 </div>
             </div>
