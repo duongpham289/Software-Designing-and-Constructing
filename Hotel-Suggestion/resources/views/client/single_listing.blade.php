@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/client/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/single_listing_styles.css">
 <link rel="stylesheet" type="text/css" href="/assets/client/styles/single_listing_responsive.css">
+
 @endsection
 
 @section('content')
@@ -536,8 +537,8 @@
 										<div class="room_content">
 											<div class="room_title">{{ $item->type }}</div>
 											<div class="room_price">{{ number_format($item->price) }}</div>
-											<div class="room_text">FREE cancellation before 23:59 on 20 December 2017</div>
-											<div class="room_extra">Breakfast $7.50</div>
+											<div class="room_text">FREE cancellation before 23:59 on 20 December 2020</div>
+											<div class="room_extra">Breakfast $20.50</div>
 										</div>
 									</div>
 									<div class="col-lg-3 text-lg-right">
@@ -630,7 +631,18 @@
 								</div>
 
 							</div>
-						</div>
+                        </div>
+                        <br/>
+                        <div class="contact_form_container">
+                            <div class="contact_title">Leave comment below</div>
+                            <form action="#" id="contact_form" class="contact_form">
+                                <input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
+                                <input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
+                                {{-- <input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Subject" required="required" data-error="Subject is required."> --}}
+                                <textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Comment" required="required" data-error="Please, write us a Comment."></textarea>
+                                <button type="submit" id="form_submit_button" class="form_submit_button button">send comment<span></span><span></span><span></span></button>
+                            </form>
+                        </div>
 
 						<!-- Location on Map -->
 {{--
@@ -652,7 +664,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+    </div>
 
 <script src="/assets/client/js/jquery-3.2.1.min.js"></script>
 <script src="/assets/client/styles/bootstrap4/popper.js"></script>

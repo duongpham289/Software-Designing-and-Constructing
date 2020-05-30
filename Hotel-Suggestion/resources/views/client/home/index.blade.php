@@ -32,7 +32,7 @@
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                         <h1>discover</h1>
                         <h1>the world</h1>
-                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="/offers">explore now<span></span><span></span><span></span></a></div>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                         <h1>discover</h1>
                         <h1>the world</h1>
-                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="/offers">explore now<span></span><span></span><span></span></a></div>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <div class="home_slider_content_inner" data-animation-in="flipInX" data-animation-out="animate-out fadeOut">
                         <h1>discover</h1>
                         <h1>the world</h1>
-                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="#">explore now<span></span><span></span><span></span></a></div>
+                        <div class="button home_slider_button"><div class="button_bcg"></div><a href="/offers">explore now<span></span><span></span><span></span></a></div>
                     </div>
                 </div>
             </div>
@@ -365,13 +365,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="intro_title text-center">We have the best tours</h2>
+                <h2 class="intro_title text-center">Find deals on hotels, homes and much more...</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
                 <div class="intro_text text-center">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. </p>
+                    <p>From cosy country homes to funky city flats </p>
                 </div>
             </div>
         </div>
@@ -387,7 +387,7 @@
                     <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_1.jpg)"></div>
                     <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
                         <div class="intro_date">May 25th - June 01st</div>
-                        <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
+                        <div class="button intro_button"><div class="button_bcg"></div><a href="/{{ $item->id }}/single_listing">see more<span></span><span></span><span></span></a></div>
                         <div class="intro_center text-center">
                             <h1>{{$item->address}}</h1>
                             <div class="intro_price">From {{ number_format($item->suggest_price) }}VND</div>
@@ -471,9 +471,23 @@
 
                 <div class="cta_slider_container">
                     <div class="owl-carousel owl-theme cta_slider">
-
+                        @foreach ($hotel->slice(0,4) as $item)
                         <!-- CTA Slider Item -->
                         <div class="owl-item cta_item text-center">
+                            <div class="cta_title">{{ $item->name }}</div>
+                            <div class="rating_r rating_r_4">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <p class="cta_text">{{ $item->detail }}</p>
+                            <div class="button cta_button"><div class="button_bcg"></div><a href="/{{ $item->id }}/single_listing">book now<span></span><span></span><span></span></a></div>
+                        </div>
+                        @endforeach
+                        <!-- CTA Slider Item -->
+                        {{-- <div class="owl-item cta_item text-center">
                             <div class="cta_title">maldives deluxe package</div>
                             <div class="rating_r rating_r_4">
                                 <i></i>
@@ -498,21 +512,7 @@
                             </div>
                             <p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
                             <div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
-                        </div>
-
-                        <!-- CTA Slider Item -->
-                        <div class="owl-item cta_item text-center">
-                            <div class="cta_title">maldives deluxe package</div>
-                            <div class="rating_r rating_r_4">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </div>
-                            <p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
-                            <div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
-                        </div>
+                        </div> --}}
 
                     </div>
 
@@ -584,7 +584,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="offers_content">
-                                <div class="offers_price">{{ $item->suggest_price }}đ<span>per night</span></div>
+                                <div class="offers_price">{{ number_format($item->suggest_price) }} <span>VND/night</span></div>
                                 <div class="rating_r rating_r_4 offers_rating">
                                     <i></i>
                                     <i></i>
@@ -601,7 +601,7 @@
                                         <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
                                     </ul>
                                 </div>
-                                <div class="offers_link"><a href="offers.html">read more</a></div>
+                                <div class="offers_link"><a href="/{{ $item->id }}/single_listing">read more</a></div>
                             </div>
                         </div>
                     </div>
@@ -744,23 +744,24 @@
                     <div class="owl-carousel owl-theme test_slider">
 
                         <!-- Testimonial Item -->
-                        @foreach ($accounts as $item)
+                        @foreach ($comments as $item)
                         <div class="owl-item">
                             <div class="test_item">
                                 <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
                                 <div class="test_icon"><img src="/assets/client/images/backpack.png" alt=""></div>
                                 <div class="test_content_container">
                                     <div class="test_content">
+                                        @foreach ($item->accounts()->get() as $account)
                                         <div class="test_item_info">
-                                            <div class="test_name"> {{ $item->name }}</div>
-                                            {{-- <div class="test_date">May 24, 2017</div> --}}
+                                            <div class="test_name"> {{ $account->name }}</div>
                                         </div>
-                                        @foreach ($item->comments()->get() as $cm)
-
-                                        <div class="test_quote_title">{{ $cm->detail }}</div>
-                                        
                                         @endforeach
-                                        {{--  <p class="test_quote_text">{{ $item->detail }}</p>  --}}
+
+                                        {{-- <div class="test_date">{{ $cm->commenttime }}</div> --}}
+                                        <div class="test_quote_title">{{ $item->detail }}</div>
+                                        <p class="test_quote_text">{{ $item->commenttime }}</p>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -920,7 +921,7 @@
                     <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
-                        <div class="trending_price">From {{ $item->suggest_price }}</div>
+                        <div class="trending_price">From {{ number_format($item->suggest_price) }} VND</div>
                         <div class="trending_location">{{ $item->address }}</div>
                     </div>
                 </div>

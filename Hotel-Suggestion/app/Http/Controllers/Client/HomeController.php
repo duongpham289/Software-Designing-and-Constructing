@@ -17,10 +17,10 @@ class HomeController extends Controller
     public function index()
     {
         $hotel = Hotel::get();
-        $accounts = Account::with('comments')->get();
-        // $cm=$accounts->comments()->get();
-        // dd($accounts);
-        return view('client.home.index',compact('hotel','accounts'));
+        $comments = Comment::with('accounts')->get();
+        // $cm=$comments->accounts()->get();
+        // dd($comments);
+        return view('client.home.index',compact('hotel','comments'));
     }
 
     public function about()
