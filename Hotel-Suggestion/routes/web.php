@@ -23,12 +23,14 @@ Route::get('/', function () {
 Route::group(['namespace' => 'Client'], function () {
 
     Route::group(['middleware' => 'guest:client'], function() {
-        Route::get('login' , 'LoginController@showLoginForm');
+        Route::get('login' , 'LoginController@showLoginForm')->name('login');
         Route::post('login' , 'LoginController@login');
     });
 
     Route::group(['middleware' => 'auth:client'], function() {
         Route::get('logout' ,'LoginController@logout');
+        Route::get('{room}/booking','BookController@index');
+        Route::post('{detail}/booking','BookController@store');
     });
 
     Route::get('', 'HomeController@index');
@@ -39,8 +41,6 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('{detail}/single_listing','HomeController@single_listing');
     // Route::get('{detail}/booking','HomeController@booking');
     // Route::get('single_listing','HomeController@single_listing');
-    Route::get('{room}/booking','BookController@index');
-    Route::post('{detail}/booking','BookController@store');
 });
 
 
