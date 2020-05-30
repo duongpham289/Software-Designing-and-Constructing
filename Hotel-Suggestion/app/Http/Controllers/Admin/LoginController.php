@@ -21,7 +21,7 @@ class LoginController extends Controller
             'email' => $email,
             'password' => $password
         ];
-
+        $arr = 
        if(Auth::attempt($arr))
       {
         return redirect('admin');
