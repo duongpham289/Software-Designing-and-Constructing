@@ -76,7 +76,7 @@ class RoomController extends Controller
         $input = $r->only([
             'type',
             'price',
-            'detail ',
+            'detail',
             'status',
             ]);
 

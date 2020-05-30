@@ -40,7 +40,12 @@
                                     <td>{{ $account->id }}</td>
                                     <td>{{ $account->email }}</td>
                                     <td>{{ $account->name }}</td>
-                                    <td>{{ $account->level ?? '' }}</td>
+                                    {{-- <td>{{ $account->level ?? '' }}</td> --}}
+                                    <td>
+                                    <a class="btn btn-{{ $account->level == 1 ? 'danger' : 'success' }}" role="button">
+                                        {{ $account->level == 1 ? 'Admin' : 'User' }}
+                                    </a>
+                                    </td>
 
 
                                         <td>
