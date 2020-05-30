@@ -1,6 +1,6 @@
 <div class="form-group">
     <label>Khách sạn</label>
-    <select name="hotel_id" class="form-control" id="hotels"   >
+    <select name="hotel_id" class="form-control" id="hotels">
         {{-- <option value='1' selected>Nam</option>
         <option value='3'>---|Áo khoác nam</option>
         <option value='2'>Nữ</option>

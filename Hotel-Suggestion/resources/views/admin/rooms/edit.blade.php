@@ -47,7 +47,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Trạng thái</label>
-                                <select  name="featured" class="form-control">
+                                <select  name="status" class="form-control" value="{{$room->status}}">
                                     <option selected value="1">Còn Phòng</option>
                                     <option value="0">Hết Phòng</option>
                                 </select>
@@ -64,7 +64,7 @@
                             <div class="form-group">
                                 <label>Chi tiết</label>
                                 <textarea name="detail" style="width: 100%;height: 100px;">
-                                    {{ $room->detail }}
+                                {{$room->detail}}
                                 </textarea>
                             </div>
                         </div>
