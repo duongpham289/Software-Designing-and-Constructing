@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-9 col-lg-7 widget-right">
                         <div class="large">24</div>
-                        <div class="text-muted">Số đơn hàng</div>
+                        <div class="text-muted">Lượt đặt phòng</div>
                     </div>
                 </div>
             </div>

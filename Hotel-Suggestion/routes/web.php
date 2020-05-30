@@ -21,66 +21,75 @@ Route::get('/', function () {
 });
 // client
 Route::group(['namespace' => 'Client'], function () {
+
+    Route::group(['middleware' => 'guest:client'], function() {
+        Route::get('login' , 'LoginController@showLoginForm')->name('login');
+        Route::post('login' , 'LoginController@login');
+    });
+
+    Route::group(['middleware' => 'auth:client'], function() {
+        Route::get('logout' ,'LoginController@logout');
+        Route::get('{room}/booking','BookController@index');
+        Route::post('{detail}/booking','BookController@store');
+    });
+
     Route::get('', 'HomeController@index');
     Route::get('about', 'HomeController@about');
     Route::get('contact', 'HomeController@contact');
     Route::get('blog','HomeController@blog');
     Route::get('offers','HomeController@offers');
-Route::get('{detail}/single_listing','HomeController@single_listing');
+    Route::get('{detail}/single_listing','HomeController@single_listing');
     // Route::get('{detail}/booking','HomeController@booking');
     // Route::get('single_listing','HomeController@single_listing');
-    Route::get('{room}/booking','BookController@index');
-    Route::post('{detail}/booking','BookController@store');
 });
+
+
+
 // admin
 Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin',
-    'middleware' => 'CheckLogin',
 ], function () {
 
+    Route::get('login', 'LoginController@showLoginForm')->middleware('CheckLogout');
+    Route::post('login', 'LoginController@login');
+    Route::get('logout', 'LoginController@logout');
+
+    Route::group(['middleware' => 'CheckLogin'], function () {
+
+        Route::resource('rooms', 'RoomController');
+        Route::post('rooms/sort', 'RoomController@show')->name('show');
+        // Route::get('', 'DashboardController');
+
+        Route::group(['prefix' => 'orders'], function () {
+            Route::get('', 'OrderController@index');
+            Route::get('processed', 'OrderController@processed');
+            Route::get('{order}/edit', 'OrderController@edit');
+            Route::put('{order}', 'OrderController@update');
+        });
+        Route::group(['prefix' => 'hotels'], function () {
+            Route::get('', 'HotelController@index');
+            Route::get('create', 'HotelController@create');
+            Route::post('', 'HotelController@store');
+            Route::get('{Hotel}/edit', 'HotelController@edit');
+            Route::put('{Hotel}', 'HotelController@update');
+            Route::delete('{Hotel}', 'HotelController@destroy');
+        });
+        Route::get('','DashboardController');
 
 
-    Route::resource('rooms', 'RoomController');
-    Route::post('rooms/sort', 'RoomController@show')->name('show');
-    // Route::get('', 'DashboardController');
+        Route::group(['prefix' => 'users'], function () {
+            Route::get('', 'UserController@index');
+            Route::get('create', 'UserController@create');
+            Route::post('', 'UserController@store');
+            Route::get('{account}/edit', 'UserController@edit');
+            Route::put('{account}', 'UserController@update');
+            Route::delete('{account}', 'UserController@destroy');
+            Route::get('{account}', 'UserController@show');
+        });
 
-    Route::group(['prefix' => 'orders'], function () {
-        Route::get('', 'OrderController@index');
-        Route::get('processed', 'OrderController@processed');
-        Route::get('{order}/edit', 'OrderController@edit');
-        Route::put('{order}', 'OrderController@update');
     });
-    Route::group(['prefix' => 'hotels'], function () {
-        Route::get('', 'HotelController@index');
-        Route::get('create', 'HotelController@create');
-        Route::post('', 'HotelController@store');
-        Route::get('{Hotel}/edit', 'HotelController@edit');
-        Route::put('{Hotel}', 'HotelController@update');
-        Route::delete('{Hotel}', 'HotelController@destroy');
-    });
-    Route::get('','DashboardController');
 
-
-    Route::group(['prefix' => 'users'], function () {
-        Route::get('', 'UserController@index');
-        Route::get('create', 'UserController@create');
-        Route::post('', 'UserController@store');
-        Route::get('{account}/edit', 'UserController@edit');
-        Route::put('{account}', 'UserController@update');
-        Route::delete('{account}', 'UserController@destroy');
-        Route::get('{account}', 'UserController@show');
-    });
-});
-
-
-Route::group([
-    'namespace' => 'Admin',
-], function () {
-
-Route::get('login', 'LoginController@showLoginForm')->middleware('CheckLogout');
-Route::post('login', 'LoginController@login');
-Route::get('logout', 'LoginController@logout');
 
 });
 

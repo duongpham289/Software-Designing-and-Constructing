@@ -7,6 +7,8 @@ use App\Http\Requests\UpdateUserRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Entities\Account;
+use Illuminate\Support\Facades\Hash;
+
 class UserController extends Controller
 {
     public function index(){
@@ -28,6 +30,7 @@ class UserController extends Controller
             'password',
             'level',
         ]);
+        
         $account = Account::create($input);
         return redirect("/admin/users/{$account->id}/edit");
     }

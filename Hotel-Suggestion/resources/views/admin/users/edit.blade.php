@@ -31,9 +31,9 @@
                             <div class="form-group">
                                 <label>Email</label>
                                 <input type="text" name="email" class="form-control" value="{{$account->email}}">
-                                <div class="alert alert-danger" role="alert">
+                                {{-- <div class="alert alert-danger" role="alert">
                                     <strong>email đã tồn tại!</strong>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="form-group">
                                 <label>Tên</label>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="form-group">
                                 <label>password</label>
-                                <input type="text" name="password" class="form-control" value="{{$account->password}}">
+                                <input type="text" name="password" class="form-control" value="">
                             </div>
                             <div class="form-group">
                                 <label>Level</label>

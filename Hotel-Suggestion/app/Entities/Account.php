@@ -49,4 +49,9 @@ class Account extends Authenticatable
     {
         return $this->hasMany(Booking::class, 'account_id','id');
     }
+
+    public function setPasswordAttribute($password) //Mã hóa password khi store lên DB
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
 }

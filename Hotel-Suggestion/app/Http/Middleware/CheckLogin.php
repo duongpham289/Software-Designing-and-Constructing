@@ -20,7 +20,7 @@ class CheckLogin
         return $next($request);
         }
         else {
-            return redirect('login');
+            return redirect('admin/login');
         }
     }
 }

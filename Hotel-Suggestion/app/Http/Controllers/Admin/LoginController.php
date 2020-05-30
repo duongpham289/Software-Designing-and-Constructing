@@ -14,25 +14,12 @@ class LoginController extends Controller
         return view('admin.auth.login');
     }
     public function login(LoginRequest $request){
-        // dd($request->all());
-        $email = $request->email;
-        $password = $request->password;
-        $arr = [
-            'email' => $email,
-            'password' => $password
-        ];
-         $level = Account::select(['level'])->whereEmail($email)->get();
-        //  dd($level);
-         //Auth::user()->level=1;
-       if(Auth::attempt($arr) && $level = "1")
+
+        $credentials = $request->only(['email','password']);
+        $credentials['level'] = '1';
+
+       if(Auth::attempt($credentials))
       {
-        // if(Auth::user()->level=1)
-        // {
-        //  return redirect('admin');
-        // }
-        // else{
-        //     return redirect('');
-        // }
         return redirect('admin');
 
       }
@@ -43,7 +30,7 @@ class LoginController extends Controller
     }
     public function logout(){
         Auth::logout();
-        return redirect('login');
+        return redirect('admin/login');
     }
 
 }
