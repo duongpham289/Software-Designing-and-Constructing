@@ -30,7 +30,7 @@ class BookController extends Controller
         $booking = Booking::create($input);
         $booking->save();
 
-        return redirect("/");
+        // return redirect("/");
+        return view('client.home.success');
     }
-
 }
