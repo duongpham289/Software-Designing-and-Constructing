@@ -579,17 +579,18 @@
 						<!-- Reviews -->
 
 						<div class="reviews">
-							<div class="reviews_title">reviews</div>
+							<div class="reviews_title">Comments</div>
 							<div class="reviews_container">
 
-								<!-- Review -->
+                                <!-- Review -->
+                                @foreach ($comments as $item)
 								<div class="review">
 									<div class="row">
-										<div class="col-lg-1">
+										{{-- <div class="col-lg-1">
 											<div class="review_image">
 												<img src="/assets/client/images/review_1.jpg" alt="https://unsplash.com/@saaout">
 											</div>
-										</div>
+										</div> --}}
 										<div class="col-lg-11">
 											<div class="review_content">
 												<div class="review_title_container">
@@ -597,17 +598,19 @@
 													<div class="review_rating">9.5</div>
 												</div>
 												<div class="review_text">
-													<p>Tetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum.</p>
-												</div>
-												<div class="review_name">Christinne Smith</div>
-												<div class="review_date">12 November 2017</div>
+													<p>{{ $item->detail }}</p>
+                                                </div>
+                                                @foreach ($item->accounts()->get() as $account)
+                                                <div class="review_name">{{ $account->name }}</div>
+                                                @endforeach
+												<div class="review_date">{{ $item->commenttime }}</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
+                                @endforeach
 								<!-- Review -->
-								<div class="review">
+								{{-- <div class="review">
 									<div class="row">
 										<div class="col-lg-1">
 											<div class="review_image">
@@ -628,18 +631,19 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> --}}
 
 							</div>
                         </div>
                         <br/>
                         <div class="contact_form_container">
                             <div class="contact_title">Leave comment below</div>
-                            <form action="#" id="contact_form" class="contact_form">
-                                <input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="Name" required="required" data-error="Name is required.">
-                                <input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="E-mail" required="required" data-error="Email is required.">
+                            <form action="/single_listing" method="POST" id="contact_form" class="contact_form">
+                                @csrf
+                                <input type="hidden" id="contact_form_name" class="contact_form_name input_field" name="account_id" placeholder="Name" required="required" data-error="Name is required." value="{{ auth()->guard('client')->user()->id }}">
+                                <input type="hidden" id="contact_form_email" class="contact_form_email input_field" name="hotel_id" placeholder="E-mail" required="required" data-error="Email is required." value="{{ $hotel->id }}">
                                 {{-- <input type="text" id="contact_form_subject" class="contact_form_subject input_field" placeholder="Subject" required="required" data-error="Subject is required."> --}}
-                                <textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="Comment" required="required" data-error="Please, write us a Comment."></textarea>
+                                <textarea id="contact_form_message" class="text_field contact_form_message" name="detail" rows="4" placeholder="Comment" required="required" data-error="Please, write us a Comment."></textarea>
                                 <button type="submit" id="form_submit_button" class="form_submit_button button">send comment<span></span><span></span><span></span></button>
                             </form>
                         </div>

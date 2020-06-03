@@ -39,6 +39,7 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('blog','HomeController@blog');
     Route::get('offers','HomeController@offers');
     Route::get('{detail}/single_listing','HomeController@single_listing');
+    Route::post('{detail}', 'HomeController@comment');
     // Route::get('{detail}/booking','HomeController@booking');
     // Route::get('single_listing','HomeController@single_listing');
 });
