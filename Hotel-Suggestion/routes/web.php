@@ -102,3 +102,9 @@ Route::get('conv',function () {
         $a->save();
     }
 });
+Route::group([
+    'prefix' => 'flybleu',
+    'namespace' => 'FlyBleu'
+],function(){
+    Route::get('','FlybleuController@index');
+});
