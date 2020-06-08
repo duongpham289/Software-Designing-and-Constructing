@@ -9,7 +9,7 @@ use GuzzleHttp\Client;
 
 class FlybleuController extends Controller
 {
-    public function index(){
+    public function index(Flights $flights){
         $client = new Client([
             // Base URI is used with relative requests
             'base_uri' => 'http://127.0.0.1:8000/api/',
@@ -19,30 +19,48 @@ class FlybleuController extends Controller
         // dd($res);
         $str=(string)$res->getBody()->getContents();
         // dd($str);
-        $flights=json_decode($str);
-        // dd($flights);
+        $api=json_decode($str);
+        // dd($api);
 
-        // Flights::insert($flights);
 
-        // Flights::insert([
-        //     [
-        //         'name'=>'Vn3214',
-        //         'from'=>'Đà Lạt',
-        //         'to'=>'Cao Bằng',
-        //         'depature'=>'2020-09-19',
-        //         'return'=>null,
-        //         'price'=>'1000000',
-        //         'time'=>'07:30:00',
 
-        //     ]
-        // ]);
-        foreach($flights as $item){
-        // if (!(isset($item->name))) {
-            Flights::insert([$item]);
+
+        foreach($api as $item){
+        // print_r($item);
+        // $name = Flights::find($item->name);
+        // dd($name);
+        // if ( empty ($name) ) {
             // dd($item);
-        // }
+        //     // $itemfly = new Flights();
+        //     // $input = $item->only([
+        //     //     'name',
+        //     //     'from',
+        //     //     'to',
+        //     //     'depature',
+        //     //     'return',
+        //     //     'price',
+        //     //     'time'
+        //     // ]);
 
+            $flights->name = $item->name;
+            $flights->from = $item->from;
+            $flights->to = $item->to;
+            $flights->depature = $item->depature;
+            $flights->return = $item->return;
+            $flights->price = $item->price;
+            $flights->time = $item->time;
+        //     // dd($item);
+        //     // $item = Flights::create($input);
+            // $flights->fill();
+            $flights->save();
+            // dd($item);
         }
+
+
+
+
+
+
         //đưa lên csdl
 
         // dd($flight);
@@ -61,7 +79,7 @@ class FlybleuController extends Controller
             //         json_decode($res->getBody()->getContents());
             // // }
             // // print_r($res);die;
-        return view('flybleu.index',compact('flights'));
+        return view('flybleu.index',compact('api'));
     }
     public function book($id)
     {

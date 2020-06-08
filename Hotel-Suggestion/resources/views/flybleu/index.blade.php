@@ -41,9 +41,9 @@
 									<span class="form-label">Điểm khởi hành</span>
                                     {{-- <input class="form-control" type="text" placeholder="Enter a destination or hotel name"> --}}
                                     <select class="form-control">
-                                        @foreach ($flights as $item)
+                                        {{-- @foreach ($flights as $item)
                                         <option>{{ $item->from }}</option>
-                                        @endforeach
+                                        @endforeach --}}
 
                                     </select>
                                     </div>
@@ -52,9 +52,9 @@
 									<span class="form-label">Nơi đến</span>
                                     {{-- <input class="form-control" type="text" placeholder="Enter a destination or hotel name"> --}}
                                     <select class="form-control">
-                                        @foreach ($flights as $item)
+                                        {{-- @foreach ($flights as $item)
                                         <option>{{ $item->to }}</option>
-                                        @endforeach
+                                        @endforeach --}}
 
                                     </select>
                                     </div>
