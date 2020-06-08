@@ -21,15 +21,16 @@ class FlybleuController extends Controller
         // dd($str);
         $api=json_decode($str);
         // dd($api);
+        // $apie =json_encode($api);
+        // dd($apie);
 
 
-
-
+        // Flights::insert($api);
         foreach($api as $item){
         // print_r($item);
-        // $name = Flights::find($item->name);
+        $name = Flights::find($item);
         // dd($name);
-        // if ( empty ($name) ) {
+        if ( empty ($name) ) {
             // dd($item);
         //     // $itemfly = new Flights();
         //     // $input = $item->only([
@@ -41,7 +42,7 @@ class FlybleuController extends Controller
         //     //     'price',
         //     //     'time'
         //     // ]);
-
+            // print('abc');
             $flights->name = $item->name;
             $flights->from = $item->from;
             $flights->to = $item->to;
@@ -49,11 +50,13 @@ class FlybleuController extends Controller
             $flights->return = $item->return;
             $flights->price = $item->price;
             $flights->time = $item->time;
-        //     // dd($item);
-        //     // $item = Flights::create($input);
-            // $flights->fill();
+            // print_r($flights);
+        // //     // dd($item);
+        // //     // $item = Flights::create($input);
+        //     // $flights->fill();
             $flights->save();
             // dd($item);
+            }
         }
 
 
