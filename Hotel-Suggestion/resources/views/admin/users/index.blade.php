@@ -61,7 +61,7 @@
 
                                 </tbody>
                             </table>
-                            <div class='text-right'>
+                            {{-- <div class='text-right'>
                                 <ul class="pagination">
                                     <li class="page-item"><a class="page-link" href="#">Trở lại</a></li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -69,7 +69,8 @@
                                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item"><a class="page-link" href="#">tiếp theo</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
+                            {{ $accounts->links() }}
                         </div>
                         <div class="clearfix"></div>
                     </div>

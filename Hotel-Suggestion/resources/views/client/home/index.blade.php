@@ -578,7 +578,7 @@
                         <div class="col-lg-6">
                             <div class="offers_image_container">
                                 <!-- Image by https://unsplash.com/@kensuarez -->
-                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
+                                <div class="offers_image_background" style="background-image:url({{ $item->images }})"></div>
                                 <div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{$item->name}}</a></div>
                             </div>
                         </div>
@@ -918,7 +918,7 @@
 
             <div class="col-lg-3 col-sm-6">
                 <div class="trending_item clearfix">
-                    <div class="trending_image"><img src="/assets/client/images/trend_1.png" alt="https://unsplash.com/@fransaraco"></div>
+                    <div class="trending_image"><img src="{{ $item->images }}" alt="https://unsplash.com/@fransaraco"></div>
                     <div class="trending_content">
                         <div class="trending_title"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
                         <div class="trending_price">From {{ number_format($item->suggest_price) }} VND</div>

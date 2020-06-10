@@ -37,7 +37,7 @@
 
 									<thead>
 										<tr class="bg-primary">
-											<th>ID</th>
+											{{-- <th>ID</th> --}}
                                             <th>Thông tin khách sạn</th>
                                             <th>Địa chỉ</th>
                                             <th>Chi tiết</th>
@@ -49,7 +49,7 @@
 
                                         @forelse ($hotels as $item)
 										<tr>
-											<td>{{$item->id}}</td>
+											{{-- <td>{{$item->id}}</td> --}}
 											<td>
 												<div class="row">
 													<div class="col-md-3"><img src="{{$item->images}}" alt="{{$item->name}}" width="100px" class="thumbnail"></div>
@@ -102,7 +102,7 @@
 
 									</tbody>
 								</table>
-								<div align='right'>
+								{{-- <div align='right'>
 									<ul class="pagination">
 										<li class="page-item"><a class="page-link" href="#">Trở lại</a></li>
 										<li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -110,7 +110,8 @@
 										<li class="page-item"><a class="page-link" href="#">3</a></li>
 										<li class="page-item"><a class="page-link" href="#">tiếp theo</a></li>
 									</ul>
-								</div>
+                                </div> --}}
+                                {{ $hotels->links() }}
 							</div>
 							<div class="clearfix"></div>
 						</div>

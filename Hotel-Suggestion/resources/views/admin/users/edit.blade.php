@@ -11,14 +11,14 @@
         <div class="col-xs-12 col-md-12 col-lg-12">
             <div class="panel panel-primary">
                 <div class="panel-heading"><i class="fas fa-user"></i> Sửa thành viên - admin@gmail.com</div>
-{{--
+
                 @if ($errors->any())
                 @component('admin.layouts.components.alert')
                 @slot('type', 'danger')
                 @slot('stroke', 'cancel')
                 {{ $errors->first() }}
                 @endcomponent
-                @endif  --}}
+                @endif
 
                 <div class="panel-body">
                     <form action="/admin/users/{{$account->id}}" method="POST">
@@ -41,10 +41,10 @@
                                 <div class="alert" role="alert">
                                 </div>
                             </div>
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label>password</label>
                                 <input type="text" name="password" class="form-control" value="">
-                            </div>
+                            </div> --}}
                             <div class="form-group">
                                 <label>Level</label>
                                 <select name="level" class="form-control" value="{{$account->level}}">

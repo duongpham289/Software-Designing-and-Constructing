@@ -26,7 +26,7 @@ class UpdateUserRequest extends FormRequest
         return [
             'name' =>'required',
             'email'=>'required|email',
-            'password'=>'required|min:6',
+            // 'password'=>'required|min:6',
         ];
     }
     public function messages()
@@ -35,8 +35,8 @@ class UpdateUserRequest extends FormRequest
             'name.required'=>'Không được để trống name',
             'email.required'=>'Không được để trống email',
             'email.email'=>'Email không đúng định dạng',
-            'password.required'=>'Password không được để trống',
-            'password.min'=>'Password không được nhỏ hơn 6 ký tự',
+            // 'password.required'=>'Password không được để trống',
+            // 'password.min'=>'Password không được nhỏ hơn 6 ký tự',
         ];
     }
 }

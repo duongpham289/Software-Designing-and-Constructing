@@ -3,7 +3,7 @@
 
     <thead>
         <tr class="bg-primary">
-            <th>ID</th>
+            {{-- <th>ID</th> --}}
             <th>Thông tin phòng</th>
             <th>Giá</th>
             <th>Chi tiết</th>
@@ -15,7 +15,7 @@
 
         @forelse ($rooms as $item)
         <tr>
-            <td>{{$item->id}}</td>
+            {{-- <td>{{$item->id}}</td> --}}
             <td>
                 <div class="row">
                     <div class="col-md-3"><img src="{{$item->images}}" alt="{{$item->type}}" width="100px" class="thumbnail"></div>

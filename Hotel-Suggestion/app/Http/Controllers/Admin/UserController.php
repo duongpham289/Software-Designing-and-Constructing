@@ -13,11 +13,9 @@ class UserController extends Controller
 {
     public function index(){
 
-         $accounts = Account::get();
+         $accounts = Account::paginate(5);
 
-        return view('admin.users.index',[
-            'accounts' => $accounts
-        ]);
+        return view('admin.users.index',compact('accounts'));
 
     }
     public function create(){
@@ -30,7 +28,7 @@ class UserController extends Controller
             'password',
             'level',
         ]);
-        
+
         $account = Account::create($input);
         return redirect("/admin/users/{$account->id}/edit");
     }
@@ -42,13 +40,14 @@ class UserController extends Controller
         $input = $request->only([
             'email',
             'name',
-            'password',
+            // 'password',
             'level',
         ]);
         $account = Account::findOrFail($account);
         $account->fill($input);
+        // dd($account);
         $account->save();
-        return back();
+        return redirect('/admin/users');
     }
     public function destroy($account){
         $deleted = Account::destroy($account);

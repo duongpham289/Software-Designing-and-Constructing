@@ -413,7 +413,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<!-- Image by https://unsplash.com/@kensuarez -->
-										<div class="offers_image_background" style="background-image:url(/assets/client/images/offer_1.jpg)"></div>
+										<div class="offers_image_background" style="background-image:url({{$item->images}})"></div>
 										<div class="offer_name"><a href="/{{ $item->id }}/single_listing">{{ $item->name }}</a></div>
 									</div>
 								</div>

@@ -10,7 +10,7 @@ class HotelController extends Controller
 {
     public function index(){
         // DB::table('hotels') //truy vấn cả db
-        $hotels = Hotel::get();
+        $hotels = Hotel::paginate(5);
         return view('admin.hotels.index',compact('hotels'));
     }
 
