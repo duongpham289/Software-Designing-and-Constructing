@@ -3,8 +3,8 @@
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
         <ol class="breadcrumb">
-            <li><a href="#"><svg class="glyph valoked home">
-                        <use xlink:href="#valoked-home"></use>
+            <li><a href="/admin"><svg class="glyph valoked home">
+                        <use xlink:href="#stroked-home"></use>
                     </svg></a></li>
             <li class="active">Danh mục</li>
         </ol>
@@ -51,7 +51,7 @@
 $(document).ready(function(){
     const hotelId = $('#hotels').val()
     getRoom(hotelId)
-    $('#hotels').on("change", function(e){ //bắt sự kiện keyup khi người dùng gõ từ khóa tim kiếm
+    $('#hotels').on("change", function(e){
         const hotelId = $(this).val()
         getRoom(hotelId)
     });

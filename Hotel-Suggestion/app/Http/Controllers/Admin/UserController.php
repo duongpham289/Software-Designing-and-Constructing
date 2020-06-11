@@ -30,7 +30,7 @@ class UserController extends Controller
         ]);
 
         $account = Account::create($input);
-        return redirect("/admin/users/{$account->id}/edit");
+        return redirect("/admin/users");
     }
     public function edit($account){
         $account = Account::findOrFail($account);

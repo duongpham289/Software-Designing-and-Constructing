@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="/admin"><span>Hotel Suggestion </span>Admin</a>
             <ul class="user-menu">
                 <li class="dropdown pull-right">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <a href="/admin" class="dropdown-toggle" data-toggle="dropdown">
                         <svg class="glyph stroked male-user">
                             <use xlink:href="#stroked-male-user"></use>
                         </svg>

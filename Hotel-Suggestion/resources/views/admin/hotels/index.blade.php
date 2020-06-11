@@ -4,7 +4,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
-				<li><a href="#"><svg class="glyph stroked home">
+				<li><a href="/admin"><svg class="glyph stroked home">
 							<use xlink:href="#stroked-home"></use>
 						</svg></a></li>
 				<li class="active">Danh sách </li>
@@ -54,13 +54,13 @@
 												<div class="row">
 													<div class="col-md-3"><img src="{{$item->images}}" alt="{{$item->name}}" width="100px" class="thumbnail"></div>
 													<div class="col-md-9">
-														<p><strong><h4>Tên Khách sạn : {{ $item->name }}</h4></strong></p>
+														<p><strong><h4>Khách sạn {{ $item->name }}</h4></strong></p>
 													</div>
 												</div>
                                             </td>
                                             <td>{{$item->address}}</td>
                                             <td>{{ $item->detail }}</td>
-                                            <td>{{ $item->suggest_price }}</td>
+                                            <td>{{ number_format($item->suggest_price) }} VND </td>
 
                                             {{--  <td>{{ optional($item->category)->name }}</td>  --}}
                                             {{-- $item là 1 bản ghi product, hàm category() định nghĩa ở entities/product --}}
