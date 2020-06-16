@@ -107,6 +107,6 @@ Route::group([
     'namespace' => 'FlyBleu'
 ],function(){
     Route::get('','FlybleuController@index');
-    Route::post('{id}/book','FlybleuController@book');
+    Route::post('book','FlybleuController@book');
 
 });

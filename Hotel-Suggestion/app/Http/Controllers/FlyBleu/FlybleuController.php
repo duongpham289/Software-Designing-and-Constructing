@@ -24,40 +24,40 @@ class FlybleuController extends Controller
         // $apie =json_encode($api);
         // dd($apie);
 
+        // $flights = F
+        // dd($flights);
 
         // Flights::insert($api);
-        foreach($api as $item){
-        // print_r($item);
-        $name = Flights::find($item);
-        // dd($name);
-        if ( empty ($name) ) {
-            // dd($item);
-        //     // $itemfly = new Flights();
-        //     // $input = $item->only([
-        //     //     'name',
-        //     //     'from',
-        //     //     'to',
-        //     //     'depature',
-        //     //     'return',
-        //     //     'price',
-        //     //     'time'
-        //     // ]);
-            // print('abc');
-            $flights->name = $item->name;
-            $flights->from = $item->from;
-            $flights->to = $item->to;
-            $flights->depature = $item->depature;
-            $flights->return = $item->return;
-            $flights->price = $item->price;
-            $flights->time = $item->time;
-            // print_r($flights);
-        // //     // dd($item);
-        // //     // $item = Flights::create($input);
-        //     // $flights->fill();
-            $flights->save();
-            // dd($item);
-            }
-        }
+        // foreach($api as $item){
+        // // print_r($item);
+        // $name = Flights::find($item->name);
+        // // dd($name);
+        //     if ( empty ($name) ) {
+        //         // dd($item);
+        //         $input = $item->only([
+        //             'name',
+        //             'from',
+        //             'to',
+        //             'depature',
+        //             'return',
+        //             'price',
+        //             'time'
+        //         ]);
+        //         // $flights->name = $item->name;
+        //         // $flights->from = $item->from;
+        //         // $flights->to = $item->to;
+        //         // $flights->depature = $item->depature;
+        //         // $flights->return = $item->return;
+        //         // $flights->price = $item->price;
+        //         // $flights->time = $item->time;
+        //         // print_r($flights);
+        //     // //     // dd($item);
+        //     // //     // $item = Flights::create($input);
+        //         $flights->fill($input);
+        //         $flights->save();
+        //         // dd($item);
+        //         }
+        // }
 
 
 
@@ -84,9 +84,9 @@ class FlybleuController extends Controller
             // // print_r($res);die;
         return view('flybleu.index',compact('api'));
     }
-    public function book($id)
+    public function book(Request $request)
     {
 
-        return view('flybleu.book');
+        return redirect('http://127.0.0.1:8000',compact('request'));
     }
 }

@@ -40,10 +40,10 @@
                                     <div class="col-sm-6">
 									<span class="form-label">Điểm khởi hành</span>
                                     {{-- <input class="form-control" type="text" placeholder="Enter a destination or hotel name"> --}}
-                                    <select class="form-control">
-                                        {{-- @foreach ($flights as $item)
+                                    <select name="from" class="form-control">
+                                        @foreach ($api as $item)
                                         <option>{{ $item->from }}</option>
-                                        @endforeach --}}
+                                        @endforeach
 
                                     </select>
                                     </div>
@@ -51,10 +51,10 @@
                                     <div class="col-sm-6">
 									<span class="form-label">Nơi đến</span>
                                     {{-- <input class="form-control" type="text" placeholder="Enter a destination or hotel name"> --}}
-                                    <select class="form-control">
-                                        {{-- @foreach ($flights as $item)
+                                    <select class="form-control" name="to">
+                                        @foreach ($api as $item)
                                         <option>{{ $item->to }}</option>
-                                        @endforeach --}}
+                                        @endforeach
 
                                     </select>
                                     </div>
@@ -64,7 +64,7 @@
 									<div class="col-sm-6">
 										<div class="form-group">
 											<span class="form-label">Ngày đi</span>
-											<input class="form-control" type="date" required>
+											<input name="departure" class="form-control" type="date" required>
 										</div>
                                     </div>
 									<div class="col-sm-6">
@@ -110,6 +110,7 @@
             document.getElementById("date_return").appendChild(span);
             var input = document.createElement("input");
             input.type = "date";
+            input.name = "return";
             input.required = true;
             input.className = "form-control";
             input.id ="div_date_return";
