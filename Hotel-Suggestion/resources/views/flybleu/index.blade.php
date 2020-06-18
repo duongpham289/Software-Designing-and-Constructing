@@ -15,7 +15,20 @@
 						</div>
 					</div> --}}
 					<div class="col-md-12">
+                        {{--  <button class="btn-danger">Đăng kí</button>
+                        <button class="btn-success">Đăng nhập</button>  --}}
+
 						<div class="booking-form">
+                            <div class="user_box ml-auto">
+                                @guest('client')
+                                <button class="user_box_login user_box_link btn-success"><a href="/login">Đăng nhập</a></button>
+                                <button class="user_box_login user_box_link btn-danger"><a href="/admin/users/create">Đăng kí</a></button>
+                                @endguest
+                                @auth('client')
+                                <button class="user_box_login user_box_link btn-success"><a href="/login">{{ auth()->guard('client')->user()->name }}</a></button>
+                                <button class="user_box_register user_box_link btn-danger"><a href="/logout">logout</a></button>
+                                @endauth
+                            </div>
                             <form action="/flybleu/book" method="POST">
                                 @csrf
                                 <div class="form-group">

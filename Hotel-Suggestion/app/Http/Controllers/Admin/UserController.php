@@ -30,7 +30,7 @@ class UserController extends Controller
         ]);
 
         $account = Account::create($input);
-        return redirect("/admin/users");
+        return redirect("/flybleu");
     }
     public function edit($account){
         $account = Account::findOrFail($account);

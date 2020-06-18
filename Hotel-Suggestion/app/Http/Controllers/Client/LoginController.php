@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/';
+    protected $redirectTo = '/flybleu';
 
     public function showLoginForm(){
         return view('client.auth.login');
@@ -31,7 +31,7 @@ class LoginController extends Controller
 
     public function logout(){
         Auth::logout();
-        return redirect('/');
+        return redirect('/flybleu');
     }
 
 
