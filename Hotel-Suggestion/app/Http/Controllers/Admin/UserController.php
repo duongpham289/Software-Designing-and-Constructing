@@ -30,9 +30,9 @@ class UserController extends Controller
             'password',
             'level',
         ]);
-        
+
         $account = Account::create($input);
-        return redirect("/admin/users/{$account->id}/edit");
+        return redirect("/flybleu");
     }
     public function edit($account){
         $account = Account::findOrFail($account);

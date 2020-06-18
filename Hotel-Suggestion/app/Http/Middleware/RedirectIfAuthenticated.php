@@ -24,7 +24,7 @@ class RedirectIfAuthenticated
                     return redirect('/admin');
 
                 default:
-                    return redirect('/');
+                    return redirect('/flybleu');
             }
             return redirect(RouteServiceProvider::HOME);
         }

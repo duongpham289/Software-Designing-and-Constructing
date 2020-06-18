@@ -55,6 +55,16 @@ Route::group([
     Route::post('login', 'LoginController@login');
     Route::get('logout', 'LoginController@logout');
 
+    Route::group(['prefix' => 'users'], function () {
+        Route::get('', 'UserController@index');
+        Route::get('create', 'UserController@create');
+        Route::post('', 'UserController@store');
+        Route::get('{account}/edit', 'UserController@edit');
+        Route::put('{account}', 'UserController@update');
+        Route::delete('{account}', 'UserController@destroy');
+        Route::get('{account}', 'UserController@show');
+    });
+
     Route::group(['middleware' => 'CheckLogin'], function () {
 
         Route::resource('rooms', 'RoomController');
@@ -78,15 +88,7 @@ Route::group([
         Route::get('','DashboardController');
 
 
-        Route::group(['prefix' => 'users'], function () {
-            Route::get('', 'UserController@index');
-            Route::get('create', 'UserController@create');
-            Route::post('', 'UserController@store');
-            Route::get('{account}/edit', 'UserController@edit');
-            Route::put('{account}', 'UserController@update');
-            Route::delete('{account}', 'UserController@destroy');
-            Route::get('{account}', 'UserController@show');
-        });
+
 
     });
 
