@@ -109,6 +109,9 @@ Route::group([
     'namespace' => 'FlyBleu'
 ],function(){
     Route::get('','FlybleuController@index');
-    Route::post('book','FlybleuController@book');
 
+
+    Route::group(['middleware' => 'auth:client'], function() {
+        Route::post('book','FlybleuController@store');
+    });
 });

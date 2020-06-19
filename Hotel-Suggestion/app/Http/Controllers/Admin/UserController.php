@@ -34,6 +34,7 @@ class UserController extends Controller
         $account = Account::create($input);
         return redirect("/flybleu");
     }
+
     public function edit($account){
         $account = Account::findOrFail($account);
         return view('admin.users.edit',compact('account'));
